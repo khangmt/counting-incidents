@@ -57,7 +57,11 @@ def decompose(rows, lab, B=1000, min_n=20, seed=0):
                     'producer_shift': 'over' if lo > 1 else 'under' if hi < 1 else '', 'producer_p': round(pp, 4), 'duplicate_ratio': round(sR[t] / sI[t], 3)})
     from share_bootstrap import bh
     bh(out, 'producer_p', 'producer_q_bh')
+    from scipy.stats import spearmanr
+    rho_s = spearmanr([x['producer_ratio'] for x in out], [x['duplicate_ratio'] for x in out])[0]
     return {'n_reports': len(rows), 'n_vendors': len(nv), 'n_unknown_producer': sum(1 for v in vend if v.startswith('unknown:')), 'top_vendors': nv.most_common(12),
+            'n_tested': len(out), 'spearman_producer_vs_duplicate': round(float(rho_s), 3),
+            'n_producer_ci_excludes_1': sum(1 for x in out if x['producer_shift']), 'n_producer_bh_sig': sum(1 for x in out if x['producer_q_bh'] <= 0.05),
             'top_vendor_share_of_reports': round(nv.most_common(1)[0][1] / len(rows), 3), 'techniques': sorted(out, key=lambda x: -x['producer_ratio'])}
 
 def top_k(rows, lab, k=10, level=lambda t: t):
