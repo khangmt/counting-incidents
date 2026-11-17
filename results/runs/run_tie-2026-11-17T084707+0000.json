@@ -1,0 +1,36 @@
+{
+ "script": "run_tie.py",
+ "args": [],
+ "status": "ok",
+ "exit_code": 0,
+ "start_utc": "2026-11-17T08:47:07+00:00",
+ "seconds": 23.3,
+ "machine": "vm",
+ "platform": "Linux-6.18.44-fc-v553-x86_64-with-glibc2.39",
+ "python": "3.13.18",
+ "git_commit": "66155a121335c091a6c2782fb616be29194d624a",
+ "git_dirty": false,
+ "script_sha256": "0a1650c63cdd04f95c74f75b96f2be996938c62b544a1fa8676041aeaf2e8844",
+ "command": "python3 run_tie.py",
+ "env": {
+  "RB_ROOT": "/home/user/cleanrun/repo/",
+  "RB_DATA": "/mnt/project-files/causality-benchmark/data/",
+  "RB_TEXTS": "/home/user/rb_texts",
+  "WITH_CISA": null
+ },
+ "seeds": "bootstrap seed 0 (share_bootstrap.py, paper_extra.py); permutation seed 1 (reviewer_checks.py)",
+ "llm_used": null,
+ "inputs": {
+  "$DATA/tie/combined_dataset_full_frequency.json": "559c3f7fd341975e8951fbf0d894c5b08ad9980af72f553e53e954301893c5dc",
+  "$RB/data/otx/pulses.jsonl": "0eb85a328ffd5b0d5a728bc598be5606edb3ea65820fc582edb6a8533962f973"
+ },
+ "outputs": {
+  "$RB/results/tie_main_parent.csv": "fdc40086f4800d117ef994a234aee032c32cfad6064764ba65ad59e9b4ce69e2",
+  "$RB/results/tie_main_parent.json": "4fcdff01f110512e19da663b3f980fcdec9e4d21de1e363e088db225aa02f4a2",
+  "$RB/results/tie_main_tech.csv": "a1b32f1e91aea7de4576bb026fcf9ebec77650f872858af942cb3f00a1d061ba",
+  "$RB/results/tie_main_tech.json": "abc73926468ee20dcc8d228326cd3477eba49c2c304c3f54fa030880c5c9b948",
+  "$RB/results/tie_sensitivity.json": "64ef406520a0398c82eada6b133be7e8315e54566cc36807adf8636597d15072",
+  "$RB/results/tie_share_shift.json": "491bebdbbb715306cbaaf94b2a1f464b9af1bb431a8ef7e51364cf1b01c75de8"
+ },
+ "log": "$RB/results/runs/run_tie-2026-11-17T084707+0000.log"
+}

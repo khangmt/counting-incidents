@@ -7,6 +7,9 @@
   "ci_lo": 0.976,
   "ci_hi": 1.347,
   "shift": "",
+  "p_two_sided": 0.1319,
+  "q_bh": 0.4816,
+  "shift_bh": "",
   "name": "Disk Structure Wipe"
  },
  {
@@ -17,6 +20,9 @@
   "ci_lo": 0.985,
   "ci_hi": 1.246,
   "shift": "",
+  "p_two_sided": 0.1139,
+  "q_bh": 0.4653,
+  "shift_bh": "",
   "name": "Data from Removable Media"
  },
  {
@@ -27,6 +33,9 @@
   "ci_lo": 0.988,
   "ci_hi": 1.208,
   "shift": "",
+  "p_two_sided": 0.1239,
+  "q_bh": 0.474,
+  "shift_bh": "",
   "name": "Data Destruction"
  },
  {
@@ -37,6 +46,9 @@
   "ci_lo": 0.975,
   "ci_hi": 1.213,
   "shift": "",
+  "p_two_sided": 0.2378,
+  "q_bh": 0.5674,
+  "shift_bh": "",
   "name": "Shared Modules"
  },
  {
@@ -47,6 +59,9 @@
   "ci_lo": 0.975,
   "ci_hi": 1.173,
   "shift": "",
+  "p_two_sided": 0.1798,
+  "q_bh": 0.5381,
+  "shift_bh": "",
   "name": "Execution Guardrails"
  },
  {
@@ -57,6 +72,9 @@
   "ci_lo": 0.997,
   "ci_hi": 1.133,
   "shift": "",
+  "p_two_sided": 0.0759,
+  "q_bh": 0.3976,
+  "shift_bh": "",
   "name": "Domain Trust Discovery"
  },
  {
@@ -67,6 +85,9 @@
   "ci_lo": 0.97,
   "ci_hi": 1.168,
   "shift": "",
+  "p_two_sided": 0.2418,
+  "q_bh": 0.5713,
+  "shift_bh": "",
   "name": "Data from Network Shared Drive"
  },
  {
@@ -77,6 +98,9 @@
   "ci_lo": 0.943,
   "ci_hi": 1.236,
   "shift": "",
+  "p_two_sided": 0.6813,
+  "q_bh": 0.8757,
+  "shift_bh": "",
   "name": "Taint Shared Content"
  },
  {
@@ -87,6 +111,9 @@
   "ci_lo": 1.011,
   "ci_hi": 1.095,
   "shift": "over",
+  "p_two_sided": 0.006,
+  "q_bh": 0.0425,
+  "shift_bh": "over",
   "name": "Spearphishing Attachment"
  },
  {
@@ -97,6 +124,9 @@
   "ci_lo": 0.987,
   "ci_hi": 1.118,
   "shift": "",
+  "p_two_sided": 0.1479,
+  "q_bh": 0.4951,
+  "shift_bh": "",
   "name": "Application Window Discovery"
  },
  {
@@ -107,6 +137,9 @@
   "ci_lo": 1.021,
   "ci_hi": 1.067,
   "shift": "over",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "over",
   "name": "Process Discovery"
  },
  {
@@ -117,6 +150,9 @@
   "ci_lo": 0.963,
   "ci_hi": 1.141,
   "shift": "",
+  "p_two_sided": 0.3816,
+  "q_bh": 0.6748,
+  "shift_bh": "",
   "name": "Account Access Removal"
  },
  {
@@ -127,6 +163,9 @@
   "ci_lo": 1.012,
   "ci_hi": 1.078,
   "shift": "over",
+  "p_two_sided": 0.004,
+  "q_bh": 0.0292,
+  "shift_bh": "over",
   "name": "Native API"
  },
  {
@@ -137,6 +176,9 @@
   "ci_lo": 0.977,
   "ci_hi": 1.118,
   "shift": "",
+  "p_two_sided": 0.2278,
+  "q_bh": 0.5674,
+  "shift_bh": "",
   "name": "Timestomp"
  },
  {
@@ -147,6 +189,9 @@
   "ci_lo": 0.945,
   "ci_hi": 1.154,
   "shift": "",
+  "p_two_sided": 0.4296,
+  "q_bh": 0.7076,
+  "shift_bh": "",
   "name": "Mail Protocols"
  },
  {
@@ -157,6 +202,9 @@
   "ci_lo": 0.984,
   "ci_hi": 1.1,
   "shift": "",
+  "p_two_sided": 0.1898,
+  "q_bh": 0.5381,
+  "shift_bh": "",
   "name": "Rundll32"
  },
  {
@@ -167,6 +215,9 @@
   "ci_lo": 0.984,
   "ci_hi": 1.101,
   "shift": "",
+  "p_two_sided": 0.2058,
+  "q_bh": 0.5475,
+  "shift_bh": "",
   "name": "Fallback Channels"
  },
  {
@@ -177,6 +228,9 @@
   "ci_lo": 1.02,
   "ci_hi": 1.057,
   "shift": "over",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "over",
   "name": "System Information Discovery"
  },
  {
@@ -187,6 +241,9 @@
   "ci_lo": 1.02,
   "ci_hi": 1.055,
   "shift": "over",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "over",
   "name": "Deobfuscate/Decode Files or Information"
  },
  {
@@ -197,6 +254,9 @@
   "ci_lo": 0.982,
   "ci_hi": 1.106,
   "shift": "",
+  "p_two_sided": 0.2118,
+  "q_bh": 0.5475,
+  "shift_bh": "",
   "name": "Web Shell"
  },
  {
@@ -207,6 +267,9 @@
   "ci_lo": 1.012,
   "ci_hi": 1.06,
   "shift": "over",
+  "p_two_sided": 0.004,
+  "q_bh": 0.0292,
+  "shift_bh": "over",
   "name": "File and Directory Discovery"
  },
  {
@@ -217,6 +280,9 @@
   "ci_lo": 0.951,
   "ci_hi": 1.141,
   "shift": "",
+  "p_two_sided": 0.4795,
+  "q_bh": 0.7408,
+  "shift_bh": "",
   "name": "Windows Management Instrumentation Event Subscription"
  },
  {
@@ -227,6 +293,9 @@
   "ci_lo": 0.951,
   "ci_hi": 1.16,
   "shift": "",
+  "p_two_sided": 0.6114,
+  "q_bh": 0.8502,
+  "shift_bh": "",
   "name": "Dynamic Resolution"
  },
  {
@@ -237,6 +306,9 @@
   "ci_lo": 0.949,
   "ci_hi": 1.133,
   "shift": "",
+  "p_two_sided": 0.5015,
+  "q_bh": 0.7554,
+  "shift_bh": "",
   "name": "Web Services"
  },
  {
@@ -247,6 +319,9 @@
   "ci_lo": 1.015,
   "ci_hi": 1.046,
   "shift": "over",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "over",
   "name": "Obfuscated Files or Information"
  },
  {
@@ -257,6 +332,9 @@
   "ci_lo": 0.984,
   "ci_hi": 1.076,
   "shift": "",
+  "p_two_sided": 0.2338,
+  "q_bh": 0.5674,
+  "shift_bh": "",
   "name": "Bypass User Account Control"
  },
  {
@@ -267,6 +345,9 @@
   "ci_lo": 0.974,
   "ci_hi": 1.094,
   "shift": "",
+  "p_two_sided": 0.3796,
+  "q_bh": 0.6748,
+  "shift_bh": "",
   "name": "Office Application Startup"
  },
  {
@@ -277,6 +358,9 @@
   "ci_lo": 0.996,
   "ci_hi": 1.065,
   "shift": "",
+  "p_two_sided": 0.0839,
+  "q_bh": 0.4044,
+  "shift_bh": "",
   "name": "Exploitation for Client Execution"
  },
  {
@@ -287,6 +371,9 @@
   "ci_lo": 1.004,
   "ci_hi": 1.05,
   "shift": "over",
+  "p_two_sided": 0.024,
+  "q_bh": 0.1411,
+  "shift_bh": "",
   "name": "System Owner/User Discovery"
  },
  {
@@ -297,6 +384,9 @@
   "ci_lo": 0.995,
   "ci_hi": 1.058,
   "shift": "",
+  "p_two_sided": 0.0939,
+  "q_bh": 0.4191,
+  "shift_bh": "",
   "name": "Windows Management Instrumentation"
  },
  {
@@ -307,6 +397,9 @@
   "ci_lo": 0.948,
   "ci_hi": 1.118,
   "shift": "",
+  "p_two_sided": 0.5934,
+  "q_bh": 0.8462,
+  "shift_bh": "",
   "name": "Non-Standard Encoding"
  },
  {
@@ -317,6 +410,9 @@
   "ci_lo": 0.947,
   "ci_hi": 1.128,
   "shift": "",
+  "p_two_sided": 0.5674,
+  "q_bh": 0.8139,
+  "shift_bh": "",
   "name": "Data Transfer Size Limits"
  },
  {
@@ -327,6 +423,9 @@
   "ci_lo": 0.983,
   "ci_hi": 1.073,
   "shift": "",
+  "p_two_sided": 0.3497,
+  "q_bh": 0.662,
+  "shift_bh": "",
   "name": "Account Discovery"
  },
  {
@@ -337,6 +436,9 @@
   "ci_lo": 0.981,
   "ci_hi": 1.075,
   "shift": "",
+  "p_two_sided": 0.3616,
+  "q_bh": 0.6625,
+  "shift_bh": "",
   "name": "Service Stop"
  },
  {
@@ -347,6 +449,9 @@
   "ci_lo": 0.973,
   "ci_hi": 1.084,
   "shift": "",
+  "p_two_sided": 0.4935,
+  "q_bh": 0.748,
+  "shift_bh": "",
   "name": "Software Packing"
  },
  {
@@ -357,6 +462,9 @@
   "ci_lo": 0.977,
   "ci_hi": 1.071,
   "shift": "",
+  "p_two_sided": 0.4236,
+  "q_bh": 0.7076,
+  "shift_bh": "",
   "name": "Code Signing"
  },
  {
@@ -367,6 +475,9 @@
   "ci_lo": 0.993,
   "ci_hi": 1.048,
   "shift": "",
+  "p_two_sided": 0.1439,
+  "q_bh": 0.4884,
+  "shift_bh": "",
   "name": "Modify Registry"
  },
  {
@@ -377,6 +488,9 @@
   "ci_lo": 0.974,
   "ci_hi": 1.07,
   "shift": "",
+  "p_two_sided": 0.4116,
+  "q_bh": 0.6986,
+  "shift_bh": "",
   "name": "SMB/Windows Admin Shares"
  },
  {
@@ -387,6 +501,9 @@
   "ci_lo": 0.987,
   "ci_hi": 1.051,
   "shift": "",
+  "p_two_sided": 0.2777,
+  "q_bh": 0.5853,
+  "shift_bh": "",
   "name": "DLL"
  },
  {
@@ -397,6 +514,9 @@
   "ci_lo": 0.994,
   "ci_hi": 1.043,
   "shift": "",
+  "p_two_sided": 0.1439,
+  "q_bh": 0.4884,
+  "shift_bh": "",
   "name": "Exfiltration Over C2 Channel"
  },
  {
@@ -407,6 +527,9 @@
   "ci_lo": 0.947,
   "ci_hi": 1.119,
   "shift": "",
+  "p_two_sided": 0.7992,
+  "q_bh": 0.9331,
+  "shift_bh": "",
   "name": "Disable or Modify System Firewall"
  },
  {
@@ -417,6 +540,9 @@
   "ci_lo": 0.984,
   "ci_hi": 1.053,
   "shift": "",
+  "p_two_sided": 0.3836,
+  "q_bh": 0.6748,
+  "shift_bh": "",
   "name": "System Time Discovery"
  },
  {
@@ -427,6 +553,9 @@
   "ci_lo": 0.986,
   "ci_hi": 1.051,
   "shift": "",
+  "p_two_sided": 0.2957,
+  "q_bh": 0.6039,
+  "shift_bh": "",
   "name": "Data Encrypted for Impact"
  },
  {
@@ -437,6 +566,9 @@
   "ci_lo": 0.948,
   "ci_hi": 1.109,
   "shift": "",
+  "p_two_sided": 0.6573,
+  "q_bh": 0.8635,
+  "shift_bh": "",
   "name": "Data from Information Repositories"
  },
  {
@@ -447,6 +579,9 @@
   "ci_lo": 0.992,
   "ci_hi": 1.039,
   "shift": "",
+  "p_two_sided": 0.1898,
+  "q_bh": 0.5381,
+  "shift_bh": "",
   "name": "Screen Capture"
  },
  {
@@ -457,6 +592,9 @@
   "ci_lo": 0.961,
   "ci_hi": 1.085,
   "shift": "",
+  "p_two_sided": 0.6993,
+  "q_bh": 0.8757,
+  "shift_bh": "",
   "name": "Template Injection"
  },
  {
@@ -467,6 +605,9 @@
   "ci_lo": 0.991,
   "ci_hi": 1.044,
   "shift": "",
+  "p_two_sided": 0.3097,
+  "q_bh": 0.6197,
+  "shift_bh": "",
   "name": "Process Injection"
  },
  {
@@ -477,6 +618,9 @@
   "ci_lo": 0.989,
   "ci_hi": 1.042,
   "shift": "",
+  "p_two_sided": 0.2777,
+  "q_bh": 0.5853,
+  "shift_bh": "",
   "name": "File Deletion"
  },
  {
@@ -487,6 +631,9 @@
   "ci_lo": 0.975,
   "ci_hi": 1.061,
   "shift": "",
+  "p_two_sided": 0.5375,
+  "q_bh": 0.7803,
+  "shift_bh": "",
   "name": "Service Execution"
  },
  {
@@ -497,6 +644,9 @@
   "ci_lo": 0.963,
   "ci_hi": 1.073,
   "shift": "",
+  "p_two_sided": 0.6154,
+  "q_bh": 0.8502,
+  "shift_bh": "",
   "name": "Steal Web Session Cookie"
  },
  {
@@ -507,6 +657,9 @@
   "ci_lo": 0.98,
   "ci_hi": 1.049,
   "shift": "",
+  "p_two_sided": 0.4416,
+  "q_bh": 0.7143,
+  "shift_bh": "",
   "name": "Windows Service"
  },
  {
@@ -517,6 +670,9 @@
   "ci_lo": 0.986,
   "ci_hi": 1.046,
   "shift": "",
+  "p_two_sided": 0.3936,
+  "q_bh": 0.6824,
+  "shift_bh": "",
   "name": "Visual Basic"
  },
  {
@@ -527,6 +683,9 @@
   "ci_lo": 0.994,
   "ci_hi": 1.036,
   "shift": "",
+  "p_two_sided": 0.1858,
+  "q_bh": 0.5381,
+  "shift_bh": "",
   "name": "PowerShell"
  },
  {
@@ -537,6 +696,9 @@
   "ci_lo": 0.965,
   "ci_hi": 1.068,
   "shift": "",
+  "p_two_sided": 0.7133,
+  "q_bh": 0.8771,
+  "shift_bh": "",
   "name": "Archive via Utility"
  },
  {
@@ -547,6 +709,9 @@
   "ci_lo": 0.993,
   "ci_hi": 1.035,
   "shift": "",
+  "p_two_sided": 0.2298,
+  "q_bh": 0.5674,
+  "shift_bh": "",
   "name": "Malicious File"
  },
  {
@@ -557,6 +722,9 @@
   "ci_lo": 0.942,
   "ci_hi": 1.114,
   "shift": "",
+  "p_two_sided": 0.8591,
+  "q_bh": 0.9461,
+  "shift_bh": "",
   "name": "Email Addresses"
  },
  {
@@ -567,6 +735,9 @@
   "ci_lo": 0.998,
   "ci_hi": 1.027,
   "shift": "",
+  "p_two_sided": 0.0999,
+  "q_bh": 0.4377,
+  "shift_bh": "",
   "name": "Ingress Tool Transfer"
  },
  {
@@ -577,6 +748,9 @@
   "ci_lo": 0.991,
   "ci_hi": 1.034,
   "shift": "",
+  "p_two_sided": 0.3117,
+  "q_bh": 0.6197,
+  "shift_bh": "",
   "name": "Registry Run Keys / Startup Folder"
  },
  {
@@ -587,6 +761,9 @@
   "ci_lo": 0.969,
   "ci_hi": 1.061,
   "shift": "",
+  "p_two_sided": 0.6673,
+  "q_bh": 0.8646,
+  "shift_bh": "",
   "name": "Exploitation of Remote Services"
  },
  {
@@ -597,6 +774,9 @@
   "ci_lo": 0.984,
   "ci_hi": 1.038,
   "shift": "",
+  "p_two_sided": 0.4476,
+  "q_bh": 0.7175,
+  "shift_bh": "",
   "name": "Spearphishing Link"
  },
  {
@@ -607,6 +787,9 @@
   "ci_lo": 0.965,
   "ci_hi": 1.065,
   "shift": "",
+  "p_two_sided": 0.7013,
+  "q_bh": 0.8757,
+  "shift_bh": "",
   "name": "Acquire Infrastructure"
  },
  {
@@ -617,6 +800,9 @@
   "ci_lo": 0.938,
   "ci_hi": 1.171,
   "shift": "",
+  "p_two_sided": 0.8691,
+  "q_bh": 0.9461,
+  "shift_bh": "",
   "name": "Disk Wipe"
  },
  {
@@ -627,6 +813,9 @@
   "ci_lo": 0.99,
   "ci_hi": 1.036,
   "shift": "",
+  "p_two_sided": 0.3656,
+  "q_bh": 0.6625,
+  "shift_bh": "",
   "name": "System Network Configuration Discovery"
  },
  {
@@ -637,6 +826,9 @@
   "ci_lo": 0.961,
   "ci_hi": 1.074,
   "shift": "",
+  "p_two_sided": 0.8132,
+  "q_bh": 0.9332,
+  "shift_bh": "",
   "name": "Account Manipulation"
  },
  {
@@ -647,6 +839,9 @@
   "ci_lo": 0.975,
   "ci_hi": 1.056,
   "shift": "",
+  "p_two_sided": 0.6533,
+  "q_bh": 0.8635,
+  "shift_bh": "",
   "name": "Network Share Discovery"
  },
  {
@@ -657,6 +852,9 @@
   "ci_lo": 0.966,
   "ci_hi": 1.064,
   "shift": "",
+  "p_two_sided": 0.6993,
+  "q_bh": 0.8757,
+  "shift_bh": "",
   "name": "Inhibit System Recovery"
  },
  {
@@ -667,6 +865,9 @@
   "ci_lo": 0.959,
   "ci_hi": 1.069,
   "shift": "",
+  "p_two_sided": 0.7972,
+  "q_bh": 0.9331,
+  "shift_bh": "",
   "name": "Hidden Files and Directories"
  },
  {
@@ -677,6 +878,9 @@
   "ci_lo": 0.942,
   "ci_hi": 1.104,
   "shift": "",
+  "p_two_sided": 0.9251,
+  "q_bh": 0.9693,
+  "shift_bh": "",
   "name": "Firmware Corruption"
  },
  {
@@ -687,6 +891,9 @@
   "ci_lo": 0.979,
   "ci_hi": 1.038,
   "shift": "",
+  "p_two_sided": 0.6174,
+  "q_bh": 0.8502,
+  "shift_bh": "",
   "name": "Query Registry"
  },
  {
@@ -697,6 +904,9 @@
   "ci_lo": 0.99,
   "ci_hi": 1.028,
   "shift": "",
+  "p_two_sided": 0.4535,
+  "q_bh": 0.7175,
+  "shift_bh": "",
   "name": "Web Protocols"
  },
  {
@@ -707,6 +917,9 @@
   "ci_lo": 0.977,
   "ci_hi": 1.048,
   "shift": "",
+  "p_two_sided": 0.7113,
+  "q_bh": 0.8771,
+  "shift_bh": "",
   "name": "Data from Local System"
  },
  {
@@ -717,6 +930,9 @@
   "ci_lo": 0.962,
   "ci_hi": 1.067,
   "shift": "",
+  "p_two_sided": 0.8412,
+  "q_bh": 0.9461,
+  "shift_bh": "",
   "name": "Python"
  },
  {
@@ -727,6 +943,9 @@
   "ci_lo": 0.962,
   "ci_hi": 1.056,
   "shift": "",
+  "p_two_sided": 0.8312,
+  "q_bh": 0.9449,
+  "shift_bh": "",
   "name": "Mshta"
  },
  {
@@ -737,6 +956,9 @@
   "ci_lo": 0.956,
   "ci_hi": 1.069,
   "shift": "",
+  "p_two_sided": 0.961,
+  "q_bh": 0.9939,
+  "shift_bh": "",
   "name": "Compromise Infrastructure"
  },
  {
@@ -747,6 +969,9 @@
   "ci_lo": 0.948,
   "ci_hi": 1.09,
   "shift": "",
+  "p_two_sided": 0.965,
+  "q_bh": 0.9939,
+  "shift_bh": "",
   "name": "Regsvr32"
  },
  {
@@ -757,6 +982,9 @@
   "ci_lo": 0.946,
   "ci_hi": 1.078,
   "shift": "",
+  "p_two_sided": 0.8931,
+  "q_bh": 0.9461,
+  "shift_bh": "",
   "name": "Develop Capabilities"
  },
  {
@@ -767,6 +995,9 @@
   "ci_lo": 0.965,
   "ci_hi": 1.052,
   "shift": "",
+  "p_two_sided": 0.8252,
+  "q_bh": 0.9425,
+  "shift_bh": "",
   "name": "Lateral Tool Transfer"
  },
  {
@@ -777,6 +1008,9 @@
   "ci_lo": 0.959,
   "ci_hi": 1.072,
   "shift": "",
+  "p_two_sided": 0.8751,
+  "q_bh": 0.9461,
+  "shift_bh": "",
   "name": "Replication Through Removable Media"
  },
  {
@@ -787,17 +1021,10 @@
   "ci_lo": 0.975,
   "ci_hi": 1.042,
   "shift": "",
+  "p_two_sided": 0.7672,
+  "q_bh": 0.9153,
+  "shift_bh": "",
   "name": "Brute Force"
- },
- {
-  "t": "T1497.001",
-  "n_report": 118,
-  "n_incident": 111,
-  "share_ratio": 1.005,
-  "ci_lo": 0.954,
-  "ci_hi": 1.092,
-  "shift": "",
-  "name": "System Checks"
  },
  {
   "t": "T1059.003",
@@ -807,7 +1034,23 @@
   "ci_lo": 0.986,
   "ci_hi": 1.028,
   "shift": "",
+  "p_two_sided": 0.6454,
+  "q_bh": 0.8635,
+  "shift_bh": "",
   "name": "Windows Command Shell"
+ },
+ {
+  "t": "T1497.001",
+  "n_report": 118,
+  "n_incident": 111,
+  "share_ratio": 1.005,
+  "ci_lo": 0.954,
+  "ci_hi": 1.092,
+  "shift": "",
+  "p_two_sided": 0.993,
+  "q_bh": 0.997,
+  "shift_bh": "",
+  "name": "System Checks"
  },
  {
   "t": "T1018",
@@ -817,6 +1060,9 @@
   "ci_lo": 0.977,
   "ci_hi": 1.035,
   "shift": "",
+  "p_two_sided": 0.7852,
+  "q_bh": 0.9276,
+  "shift_bh": "",
   "name": "Remote System Discovery"
  },
  {
@@ -827,6 +1073,9 @@
   "ci_lo": 0.981,
   "ci_hi": 1.032,
   "shift": "",
+  "p_two_sided": 0.7632,
+  "q_bh": 0.9151,
+  "shift_bh": "",
   "name": "Disable or Modify Tools"
  },
  {
@@ -837,6 +1086,9 @@
   "ci_lo": 0.943,
   "ci_hi": 1.098,
   "shift": "",
+  "p_two_sided": 0.953,
+  "q_bh": 0.99,
+  "shift_bh": "",
   "name": "Steganography"
  },
  {
@@ -847,6 +1099,9 @@
   "ci_lo": 0.941,
   "ci_hi": 1.09,
   "shift": "",
+  "p_two_sided": 0.989,
+  "q_bh": 0.997,
+  "shift_bh": "",
   "name": "Kernel Modules and Extensions"
  },
  {
@@ -857,6 +1112,9 @@
   "ci_lo": 0.978,
   "ci_hi": 1.031,
   "shift": "",
+  "p_two_sided": 0.8951,
+  "q_bh": 0.9461,
+  "shift_bh": "",
   "name": "System Network Connections Discovery"
  },
  {
@@ -867,6 +1125,9 @@
   "ci_lo": 0.97,
   "ci_hi": 1.037,
   "shift": "",
+  "p_two_sided": 0.991,
+  "q_bh": 0.997,
+  "shift_bh": "",
   "name": "Security Software Discovery"
  },
  {
@@ -877,6 +1138,9 @@
   "ci_lo": 0.957,
   "ci_hi": 1.064,
   "shift": "",
+  "p_two_sided": 0.997,
+  "q_bh": 0.997,
+  "shift_bh": "",
   "name": "Local Account"
  },
  {
@@ -887,6 +1151,9 @@
   "ci_lo": 0.98,
   "ci_hi": 1.028,
   "shift": "",
+  "p_two_sided": 0.9171,
+  "q_bh": 0.9652,
+  "shift_bh": "",
   "name": "User Execution"
  },
  {
@@ -897,6 +1164,9 @@
   "ci_lo": 0.955,
   "ci_hi": 1.059,
   "shift": "",
+  "p_two_sided": 0.975,
+  "q_bh": 0.997,
+  "shift_bh": "",
   "name": "Abuse Elevation Control Mechanism"
  },
  {
@@ -907,6 +1177,9 @@
   "ci_lo": 0.941,
   "ci_hi": 1.091,
   "shift": "",
+  "p_two_sided": 0.9391,
+  "q_bh": 0.9798,
+  "shift_bh": "",
   "name": "Local Groups"
  },
  {
@@ -917,6 +1190,9 @@
   "ci_lo": 0.97,
   "ci_hi": 1.038,
   "shift": "",
+  "p_two_sided": 0.981,
+  "q_bh": 0.997,
+  "shift_bh": "",
   "name": "External Remote Services"
  },
  {
@@ -927,6 +1203,9 @@
   "ci_lo": 0.964,
   "ci_hi": 1.046,
   "shift": "",
+  "p_two_sided": 0.991,
+  "q_bh": 0.997,
+  "shift_bh": "",
   "name": "Automated Exfiltration"
  },
  {
@@ -937,6 +1216,9 @@
   "ci_lo": 0.972,
   "ci_hi": 1.03,
   "shift": "",
+  "p_two_sided": 0.8891,
+  "q_bh": 0.9461,
+  "shift_bh": "",
   "name": "Hijack Execution Flow"
  },
  {
@@ -947,6 +1229,9 @@
   "ci_lo": 0.968,
   "ci_hi": 1.031,
   "shift": "",
+  "p_two_sided": 0.8831,
+  "q_bh": 0.9461,
+  "shift_bh": "",
   "name": "Software Discovery"
  },
  {
@@ -957,6 +1242,9 @@
   "ci_lo": 0.971,
   "ci_hi": 1.029,
   "shift": "",
+  "p_two_sided": 0.8831,
+  "q_bh": 0.9461,
+  "shift_bh": "",
   "name": "Non-Application Layer Protocol"
  },
  {
@@ -967,6 +1255,9 @@
   "ci_lo": 0.968,
   "ci_hi": 1.038,
   "shift": "",
+  "p_two_sided": 0.8771,
+  "q_bh": 0.9461,
+  "shift_bh": "",
   "name": "Automated Collection"
  },
  {
@@ -977,6 +1268,9 @@
   "ci_lo": 0.971,
   "ci_hi": 1.033,
   "shift": "",
+  "p_two_sided": 0.8072,
+  "q_bh": 0.9331,
+  "shift_bh": "",
   "name": "Indicator Removal"
  },
  {
@@ -987,6 +1281,9 @@
   "ci_lo": 0.941,
   "ci_hi": 1.078,
   "shift": "",
+  "p_two_sided": 0.8871,
+  "q_bh": 0.9461,
+  "shift_bh": "",
   "name": "Local Email Collection"
  },
  {
@@ -997,6 +1294,9 @@
   "ci_lo": 0.94,
   "ci_hi": 1.07,
   "shift": "",
+  "p_two_sided": 0.8931,
+  "q_bh": 0.9461,
+  "shift_bh": "",
   "name": "Credentials"
  },
  {
@@ -1007,6 +1307,9 @@
   "ci_lo": 0.947,
   "ci_hi": 1.07,
   "shift": "",
+  "p_two_sided": 0.8871,
+  "q_bh": 0.9461,
+  "shift_bh": "",
   "name": "Browser Information Discovery"
  },
  {
@@ -1017,6 +1320,9 @@
   "ci_lo": 0.941,
   "ci_hi": 1.078,
   "shift": "",
+  "p_two_sided": 0.8911,
+  "q_bh": 0.9461,
+  "shift_bh": "",
   "name": "Launch Agent"
  },
  {
@@ -1027,6 +1333,9 @@
   "ci_lo": 0.968,
   "ci_hi": 1.027,
   "shift": "",
+  "p_two_sided": 0.8092,
+  "q_bh": 0.9331,
+  "shift_bh": "",
   "name": "Network Service Discovery"
  },
  {
@@ -1037,17 +1346,10 @@
   "ci_lo": 0.95,
   "ci_hi": 1.058,
   "shift": "",
+  "p_two_sided": 0.8412,
+  "q_bh": 0.9461,
+  "shift_bh": "",
   "name": "Time Based Checks"
- },
- {
-  "t": "T1529",
-  "n_report": 59,
-  "n_incident": 56,
-  "share_ratio": 0.996,
-  "ci_lo": 0.944,
-  "ci_hi": 1.058,
-  "shift": "",
-  "name": "System Shutdown/Reboot"
  },
  {
   "t": "T1219",
@@ -1057,7 +1359,23 @@
   "ci_lo": 0.964,
   "ci_hi": 1.037,
   "shift": "",
+  "p_two_sided": 0.7812,
+  "q_bh": 0.9274,
+  "shift_bh": "",
   "name": "Remote Access Tools"
+ },
+ {
+  "t": "T1529",
+  "n_report": 59,
+  "n_incident": 56,
+  "share_ratio": 0.996,
+  "ci_lo": 0.944,
+  "ci_hi": 1.058,
+  "shift": "",
+  "p_two_sided": 0.8771,
+  "q_bh": 0.9461,
+  "shift_bh": "",
+  "name": "System Shutdown/Reboot"
  },
  {
   "t": "T1036.005",
@@ -1067,6 +1385,9 @@
   "ci_lo": 0.968,
   "ci_hi": 1.03,
   "shift": "",
+  "p_two_sided": 0.6993,
+  "q_bh": 0.8757,
+  "shift_bh": "",
   "name": "Match Legitimate Resource Name or Location"
  },
  {
@@ -1077,6 +1398,9 @@
   "ci_lo": 0.955,
   "ci_hi": 1.05,
   "shift": "",
+  "p_two_sided": 0.8072,
+  "q_bh": 0.9331,
+  "shift_bh": "",
   "name": "Network Sniffing"
  },
  {
@@ -1087,6 +1411,9 @@
   "ci_lo": 0.974,
   "ci_hi": 1.021,
   "shift": "",
+  "p_two_sided": 0.6494,
+  "q_bh": 0.8635,
+  "shift_bh": "",
   "name": "Scheduled Task"
  },
  {
@@ -1097,6 +1424,9 @@
   "ci_lo": 0.957,
   "ci_hi": 1.041,
   "shift": "",
+  "p_two_sided": 0.7572,
+  "q_bh": 0.9124,
+  "shift_bh": "",
   "name": "Unsecured Credentials"
  },
  {
@@ -1107,6 +1437,9 @@
   "ci_lo": 0.964,
   "ci_hi": 1.024,
   "shift": "",
+  "p_two_sided": 0.6414,
+  "q_bh": 0.8635,
+  "shift_bh": "",
   "name": "Access Token Manipulation"
  },
  {
@@ -1117,6 +1450,9 @@
   "ci_lo": 0.971,
   "ci_hi": 1.019,
   "shift": "",
+  "p_two_sided": 0.6633,
+  "q_bh": 0.8641,
+  "shift_bh": "",
   "name": "Valid Accounts"
  },
  {
@@ -1127,6 +1463,9 @@
   "ci_lo": 0.956,
   "ci_hi": 1.038,
   "shift": "",
+  "p_two_sided": 0.7493,
+  "q_bh": 0.9074,
+  "shift_bh": "",
   "name": "Protocol Tunneling"
  },
  {
@@ -1137,6 +1476,9 @@
   "ci_lo": 0.95,
   "ci_hi": 1.047,
   "shift": "",
+  "p_two_sided": 0.7493,
+  "q_bh": 0.9074,
+  "shift_bh": "",
   "name": "Create Account"
  },
  {
@@ -1147,6 +1489,9 @@
   "ci_lo": 0.961,
   "ci_hi": 1.032,
   "shift": "",
+  "p_two_sided": 0.6553,
+  "q_bh": 0.8635,
+  "shift_bh": "",
   "name": "Data Encoding"
  },
  {
@@ -1157,6 +1502,9 @@
   "ci_lo": 0.973,
   "ci_hi": 1.015,
   "shift": "",
+  "p_two_sided": 0.4276,
+  "q_bh": 0.7076,
+  "shift_bh": "",
   "name": "Application Layer Protocol"
  },
  {
@@ -1167,6 +1515,9 @@
   "ci_lo": 0.96,
   "ci_hi": 1.034,
   "shift": "",
+  "p_two_sided": 0.6054,
+  "q_bh": 0.8502,
+  "shift_bh": "",
   "name": "Resource Hijacking"
  },
  {
@@ -1177,6 +1528,9 @@
   "ci_lo": 0.956,
   "ci_hi": 1.038,
   "shift": "",
+  "p_two_sided": 0.6953,
+  "q_bh": 0.8757,
+  "shift_bh": "",
   "name": "Credentials In Files"
  },
  {
@@ -1187,6 +1541,9 @@
   "ci_lo": 0.953,
   "ci_hi": 1.039,
   "shift": "",
+  "p_two_sided": 0.6494,
+  "q_bh": 0.8635,
+  "shift_bh": "",
   "name": "Video Capture"
  },
  {
@@ -1197,6 +1554,9 @@
   "ci_lo": 0.969,
   "ci_hi": 1.016,
   "shift": "",
+  "p_two_sided": 0.4895,
+  "q_bh": 0.748,
+  "shift_bh": "",
   "name": "Exploit Public-Facing Application"
  },
  {
@@ -1207,6 +1567,9 @@
   "ci_lo": 0.952,
   "ci_hi": 1.039,
   "shift": "",
+  "p_two_sided": 0.7253,
+  "q_bh": 0.8873,
+  "shift_bh": "",
   "name": "Unix Shell"
  },
  {
@@ -1217,6 +1580,9 @@
   "ci_lo": 0.947,
   "ci_hi": 1.055,
   "shift": "",
+  "p_two_sided": 0.7113,
+  "q_bh": 0.8771,
+  "shift_bh": "",
   "name": "Shortcut Modification"
  },
  {
@@ -1227,6 +1593,9 @@
   "ci_lo": 0.968,
   "ci_hi": 1.014,
   "shift": "",
+  "p_two_sided": 0.4396,
+  "q_bh": 0.7143,
+  "shift_bh": "",
   "name": "Archive Collected Data"
  },
  {
@@ -1237,6 +1606,9 @@
   "ci_lo": 0.942,
   "ci_hi": 1.061,
   "shift": "",
+  "p_two_sided": 0.6593,
+  "q_bh": 0.8635,
+  "shift_bh": "",
   "name": "Domain Accounts"
  },
  {
@@ -1247,6 +1619,9 @@
   "ci_lo": 0.95,
   "ci_hi": 1.044,
   "shift": "",
+  "p_two_sided": 0.7013,
+  "q_bh": 0.8757,
+  "shift_bh": "",
   "name": "Exfiltration Over Alternative Protocol"
  },
  {
@@ -1257,6 +1632,9 @@
   "ci_lo": 0.963,
   "ci_hi": 1.019,
   "shift": "",
+  "p_two_sided": 0.4915,
+  "q_bh": 0.748,
+  "shift_bh": "",
   "name": "Symmetric Cryptography"
  },
  {
@@ -1267,6 +1645,9 @@
   "ci_lo": 0.968,
   "ci_hi": 1.015,
   "shift": "",
+  "p_two_sided": 0.3716,
+  "q_bh": 0.6683,
+  "shift_bh": "",
   "name": "OS Credential Dumping"
  },
  {
@@ -1277,6 +1658,9 @@
   "ci_lo": 0.947,
   "ci_hi": 1.044,
   "shift": "",
+  "p_two_sided": 0.6414,
+  "q_bh": 0.8635,
+  "shift_bh": "",
   "name": "Malware"
  },
  {
@@ -1287,6 +1671,9 @@
   "ci_lo": 0.972,
   "ci_hi": 1.006,
   "shift": "",
+  "p_two_sided": 0.2098,
+  "q_bh": 0.5475,
+  "shift_bh": "",
   "name": "Masquerading"
  },
  {
@@ -1297,6 +1684,9 @@
   "ci_lo": 0.949,
   "ci_hi": 1.034,
   "shift": "",
+  "p_two_sided": 0.6094,
+  "q_bh": 0.8502,
+  "shift_bh": "",
   "name": "Masquerade Task or Service"
  },
  {
@@ -1307,6 +1697,9 @@
   "ci_lo": 0.953,
   "ci_hi": 1.029,
   "shift": "",
+  "p_two_sided": 0.5175,
+  "q_bh": 0.7651,
+  "shift_bh": "",
   "name": "Asymmetric Cryptography"
  },
  {
@@ -1317,6 +1710,9 @@
   "ci_lo": 0.956,
   "ci_hi": 1.021,
   "shift": "",
+  "p_two_sided": 0.4615,
+  "q_bh": 0.7222,
+  "shift_bh": "",
   "name": "System Service Discovery"
  },
  {
@@ -1327,6 +1723,9 @@
   "ci_lo": 0.955,
   "ci_hi": 1.027,
   "shift": "",
+  "p_two_sided": 0.4735,
+  "q_bh": 0.7362,
+  "shift_bh": "",
   "name": "Domains"
  },
  {
@@ -1337,6 +1736,9 @@
   "ci_lo": 0.942,
   "ci_hi": 1.055,
   "shift": "",
+  "p_two_sided": 0.5994,
+  "q_bh": 0.8497,
+  "shift_bh": "",
   "name": "Domain Groups"
  },
  {
@@ -1347,6 +1749,9 @@
   "ci_lo": 0.954,
   "ci_hi": 1.028,
   "shift": "",
+  "p_two_sided": 0.5135,
+  "q_bh": 0.7639,
+  "shift_bh": "",
   "name": "Supply Chain Compromise"
  },
  {
@@ -1357,6 +1762,9 @@
   "ci_lo": 0.951,
   "ci_hi": 1.031,
   "shift": "",
+  "p_two_sided": 0.5315,
+  "q_bh": 0.7763,
+  "shift_bh": "",
   "name": "DNS"
  },
  {
@@ -1367,6 +1775,9 @@
   "ci_lo": 0.954,
   "ci_hi": 1.034,
   "shift": "",
+  "p_two_sided": 0.5415,
+  "q_bh": 0.7814,
+  "shift_bh": "",
   "name": "Standard Encoding"
  },
  {
@@ -1377,6 +1788,9 @@
   "ci_lo": 0.95,
   "ci_hi": 1.033,
   "shift": "",
+  "p_two_sided": 0.5135,
+  "q_bh": 0.7639,
+  "shift_bh": "",
   "name": "Process Hollowing"
  },
  {
@@ -1387,6 +1801,9 @@
   "ci_lo": 0.949,
   "ci_hi": 1.032,
   "shift": "",
+  "p_two_sided": 0.5275,
+  "q_bh": 0.7752,
+  "shift_bh": "",
   "name": "Rootkit"
  },
  {
@@ -1397,6 +1814,9 @@
   "ci_lo": 0.964,
   "ci_hi": 1.013,
   "shift": "",
+  "p_two_sided": 0.2657,
+  "q_bh": 0.5769,
+  "shift_bh": "",
   "name": "Encrypted Channel"
  },
  {
@@ -1407,6 +1827,9 @@
   "ci_lo": 0.96,
   "ci_hi": 1.018,
   "shift": "",
+  "p_two_sided": 0.3497,
+  "q_bh": 0.662,
+  "shift_bh": "",
   "name": "Credentials from Web Browsers"
  },
  {
@@ -1417,6 +1840,9 @@
   "ci_lo": 0.958,
   "ci_hi": 1.023,
   "shift": "",
+  "p_two_sided": 0.3616,
+  "q_bh": 0.6625,
+  "shift_bh": "",
   "name": "JavaScript"
  },
  {
@@ -1427,6 +1853,9 @@
   "ci_lo": 0.961,
   "ci_hi": 1.013,
   "shift": "",
+  "p_two_sided": 0.2478,
+  "q_bh": 0.5769,
+  "shift_bh": "",
   "name": "Keylogging"
  },
  {
@@ -1437,6 +1866,9 @@
   "ci_lo": 0.959,
   "ci_hi": 1.015,
   "shift": "",
+  "p_two_sided": 0.2817,
+  "q_bh": 0.5853,
+  "shift_bh": "",
   "name": "Malicious Link"
  },
  {
@@ -1447,6 +1879,9 @@
   "ci_lo": 0.963,
   "ci_hi": 1.008,
   "shift": "",
+  "p_two_sided": 0.2158,
+  "q_bh": 0.5475,
+  "shift_bh": "",
   "name": "System Binary Proxy Execution"
  },
  {
@@ -1457,6 +1892,9 @@
   "ci_lo": 0.959,
   "ci_hi": 1.013,
   "shift": "",
+  "p_two_sided": 0.2138,
+  "q_bh": 0.5475,
+  "shift_bh": "",
   "name": "Virtualization/Sandbox Evasion"
  },
  {
@@ -1467,6 +1905,9 @@
   "ci_lo": 0.956,
   "ci_hi": 1.023,
   "shift": "",
+  "p_two_sided": 0.3616,
+  "q_bh": 0.6625,
+  "shift_bh": "",
   "name": "Non-Standard Port"
  },
  {
@@ -1477,6 +1918,9 @@
   "ci_lo": 0.97,
   "ci_hi": 0.996,
   "shift": "under",
+  "p_two_sided": 0.012,
+  "q_bh": 0.0761,
+  "shift_bh": "",
   "name": "Phishing"
  },
  {
@@ -1487,6 +1931,9 @@
   "ci_lo": 0.962,
   "ci_hi": 1.009,
   "shift": "",
+  "p_two_sided": 0.1858,
+  "q_bh": 0.5381,
+  "shift_bh": "",
   "name": "Web Service"
  },
  {
@@ -1497,6 +1944,9 @@
   "ci_lo": 0.966,
   "ci_hi": 1.01,
   "shift": "",
+  "p_two_sided": 0.1898,
+  "q_bh": 0.5381,
+  "shift_bh": "",
   "name": "Command and Scripting Interpreter"
  },
  {
@@ -1507,6 +1957,9 @@
   "ci_lo": 0.962,
   "ci_hi": 1.01,
   "shift": "",
+  "p_two_sided": 0.1838,
+  "q_bh": 0.5381,
+  "shift_bh": "",
   "name": "Remote Services"
  },
  {
@@ -1517,6 +1970,9 @@
   "ci_lo": 0.96,
   "ci_hi": 1.011,
   "shift": "",
+  "p_two_sided": 0.2098,
+  "q_bh": 0.5475,
+  "shift_bh": "",
   "name": "Exploitation for Privilege Escalation"
  },
  {
@@ -1527,6 +1983,9 @@
   "ci_lo": 0.947,
   "ci_hi": 1.027,
   "shift": "",
+  "p_two_sided": 0.3656,
+  "q_bh": 0.6625,
+  "shift_bh": "",
   "name": "Trusted Relationship"
  },
  {
@@ -1537,6 +1996,9 @@
   "ci_lo": 0.952,
   "ci_hi": 1.016,
   "shift": "",
+  "p_two_sided": 0.2797,
+  "q_bh": 0.5853,
+  "shift_bh": "",
   "name": "Audio Capture"
  },
  {
@@ -1547,6 +2009,9 @@
   "ci_lo": 0.941,
   "ci_hi": 1.039,
   "shift": "",
+  "p_two_sided": 0.3916,
+  "q_bh": 0.6824,
+  "shift_bh": "",
   "name": "Exfiltration to Cloud Storage"
  },
  {
@@ -1557,6 +2022,9 @@
   "ci_lo": 0.949,
   "ci_hi": 1.023,
   "shift": "",
+  "p_two_sided": 0.3516,
+  "q_bh": 0.662,
+  "shift_bh": "",
   "name": "Subvert Trust Controls"
  },
  {
@@ -1567,6 +2035,9 @@
   "ci_lo": 0.94,
   "ci_hi": 1.038,
   "shift": "",
+  "p_two_sided": 0.4515,
+  "q_bh": 0.7175,
+  "shift_bh": "",
   "name": "Domain Generation Algorithms"
  },
  {
@@ -1577,6 +2048,9 @@
   "ci_lo": 0.962,
   "ci_hi": 1.0,
   "shift": "under",
+  "p_two_sided": 0.048,
+  "q_bh": 0.2629,
+  "shift_bh": "",
   "name": "Scheduled Task/Job"
  },
  {
@@ -1587,6 +2061,9 @@
   "ci_lo": 0.957,
   "ci_hi": 1.002,
   "shift": "",
+  "p_two_sided": 0.0719,
+  "q_bh": 0.3851,
+  "shift_bh": "",
   "name": "Drive-by Compromise"
  },
  {
@@ -1597,6 +2074,9 @@
   "ci_lo": 0.945,
   "ci_hi": 1.019,
   "shift": "",
+  "p_two_sided": 0.2577,
+  "q_bh": 0.5769,
+  "shift_bh": "",
   "name": "Network Denial of Service"
  },
  {
@@ -1607,6 +2087,9 @@
   "ci_lo": 0.948,
   "ci_hi": 1.02,
   "shift": "",
+  "p_two_sided": 0.2577,
+  "q_bh": 0.5769,
+  "shift_bh": "",
   "name": "Create or Modify System Process"
  },
  {
@@ -1617,6 +2100,9 @@
   "ci_lo": 0.944,
   "ci_hi": 1.024,
   "shift": "",
+  "p_two_sided": 0.3137,
+  "q_bh": 0.6197,
+  "shift_bh": "",
   "name": "Data Staged"
  },
  {
@@ -1627,6 +2113,9 @@
   "ci_lo": 0.953,
   "ci_hi": 1.003,
   "shift": "",
+  "p_two_sided": 0.0819,
+  "q_bh": 0.4028,
+  "shift_bh": "",
   "name": "Multi-Stage Channels"
  },
  {
@@ -1637,6 +2126,9 @@
   "ci_lo": 0.956,
   "ci_hi": 1.004,
   "shift": "",
+  "p_two_sided": 0.0919,
+  "q_bh": 0.4191,
+  "shift_bh": "",
   "name": "LSASS Memory"
  },
  {
@@ -1647,6 +2139,9 @@
   "ci_lo": 0.951,
   "ci_hi": 1.007,
   "shift": "",
+  "p_two_sided": 0.1259,
+  "q_bh": 0.4741,
+  "shift_bh": "",
   "name": "Clipboard Data"
  },
  {
@@ -1657,6 +2152,9 @@
   "ci_lo": 0.943,
   "ci_hi": 1.032,
   "shift": "",
+  "p_two_sided": 0.3257,
+  "q_bh": 0.6382,
+  "shift_bh": "",
   "name": "Event Triggered Execution"
  },
  {
@@ -1667,6 +2165,9 @@
   "ci_lo": 0.954,
   "ci_hi": 1.01,
   "shift": "",
+  "p_two_sided": 0.1279,
+  "q_bh": 0.4742,
+  "shift_bh": "",
   "name": "Local Data Staging"
  },
  {
@@ -1677,6 +2178,9 @@
   "ci_lo": 0.939,
   "ci_hi": 1.057,
   "shift": "",
+  "p_two_sided": 0.4555,
+  "q_bh": 0.7175,
+  "shift_bh": "",
   "name": "Local Accounts"
  },
  {
@@ -1687,6 +2191,9 @@
   "ci_lo": 0.945,
   "ci_hi": 1.022,
   "shift": "",
+  "p_two_sided": 0.2657,
+  "q_bh": 0.5769,
+  "shift_bh": "",
   "name": "Hide Artifacts"
  },
  {
@@ -1697,6 +2204,9 @@
   "ci_lo": 0.948,
   "ci_hi": 1.009,
   "shift": "",
+  "p_two_sided": 0.1439,
+  "q_bh": 0.4884,
+  "shift_bh": "",
   "name": "Dynamic-link Library Injection"
  },
  {
@@ -1707,6 +2217,9 @@
   "ci_lo": 0.943,
   "ci_hi": 1.021,
   "shift": "",
+  "p_two_sided": 0.2617,
+  "q_bh": 0.5769,
+  "shift_bh": "",
   "name": "Clear Windows Event Logs"
  },
  {
@@ -1717,6 +2230,9 @@
   "ci_lo": 0.938,
   "ci_hi": 1.048,
   "shift": "",
+  "p_two_sided": 0.4076,
+  "q_bh": 0.6967,
+  "shift_bh": "",
   "name": "Reflective Code Loading"
  },
  {
@@ -1727,6 +2243,9 @@
   "ci_lo": 0.947,
   "ci_hi": 1.013,
   "shift": "",
+  "p_two_sided": 0.1638,
+  "q_bh": 0.5381,
+  "shift_bh": "",
   "name": "Email Collection"
  },
  {
@@ -1737,6 +2256,9 @@
   "ci_lo": 0.941,
   "ci_hi": 1.02,
   "shift": "",
+  "p_two_sided": 0.2817,
+  "q_bh": 0.5853,
+  "shift_bh": "",
   "name": "Multi-hop Proxy"
  },
  {
@@ -1747,6 +2269,9 @@
   "ci_lo": 0.938,
   "ci_hi": 1.043,
   "shift": "",
+  "p_two_sided": 0.4316,
+  "q_bh": 0.7076,
+  "shift_bh": "",
   "name": "VNC"
  },
  {
@@ -1757,6 +2282,9 @@
   "ci_lo": 0.946,
   "ci_hi": 1.015,
   "shift": "",
+  "p_two_sided": 0.1878,
+  "q_bh": 0.5381,
+  "shift_bh": "",
   "name": "Remote Desktop Protocol"
  },
  {
@@ -1767,6 +2295,9 @@
   "ci_lo": 0.955,
   "ci_hi": 0.998,
   "shift": "under",
+  "p_two_sided": 0.032,
+  "q_bh": 0.1836,
+  "shift_bh": "",
   "name": "Proxy"
  },
  {
@@ -1777,6 +2308,9 @@
   "ci_lo": 0.948,
   "ci_hi": 1.01,
   "shift": "",
+  "p_two_sided": 0.1379,
+  "q_bh": 0.4884,
+  "shift_bh": "",
   "name": "Data Obfuscation"
  },
  {
@@ -1787,6 +2321,9 @@
   "ci_lo": 0.943,
   "ci_hi": 1.019,
   "shift": "",
+  "p_two_sided": 0.2058,
+  "q_bh": 0.5475,
+  "shift_bh": "",
   "name": "Hidden Window"
  },
  {
@@ -1797,6 +2334,9 @@
   "ci_lo": 0.938,
   "ci_hi": 1.046,
   "shift": "",
+  "p_two_sided": 0.3996,
+  "q_bh": 0.6879,
+  "shift_bh": "",
   "name": "Adversary-in-the-Middle"
  },
  {
@@ -1807,6 +2347,9 @@
   "ci_lo": 0.938,
   "ci_hi": 1.042,
   "shift": "",
+  "p_two_sided": 0.4156,
+  "q_bh": 0.7004,
+  "shift_bh": "",
   "name": "NTFS File Attributes"
  },
  {
@@ -1817,6 +2360,9 @@
   "ci_lo": 0.952,
   "ci_hi": 0.999,
   "shift": "under",
+  "p_two_sided": 0.048,
+  "q_bh": 0.2629,
+  "shift_bh": "",
   "name": "Credentials from Password Stores"
  },
  {
@@ -1827,6 +2373,9 @@
   "ci_lo": 0.942,
   "ci_hi": 1.017,
   "shift": "",
+  "p_two_sided": 0.1978,
+  "q_bh": 0.5472,
+  "shift_bh": "",
   "name": "Bidirectional Communication"
  },
  {
@@ -1837,6 +2386,9 @@
   "ci_lo": 0.959,
   "ci_hi": 0.988,
   "shift": "under",
+  "p_two_sided": 0.004,
+  "q_bh": 0.0292,
+  "shift_bh": "under",
   "name": "Boot or Logon Autostart Execution"
  },
  {
@@ -1847,6 +2399,9 @@
   "ci_lo": 0.955,
   "ci_hi": 0.992,
   "shift": "under",
+  "p_two_sided": 0.014,
+  "q_bh": 0.0865,
+  "shift_bh": "",
   "name": "Input Capture"
  },
  {
@@ -1857,6 +2412,9 @@
   "ci_lo": 0.938,
   "ci_hi": 1.042,
   "shift": "",
+  "p_two_sided": 0.3317,
+  "q_bh": 0.6447,
+  "shift_bh": "",
   "name": "Scheduled Transfer"
  },
  {
@@ -1867,6 +2425,9 @@
   "ci_lo": 0.944,
   "ci_hi": 1.013,
   "shift": "",
+  "p_two_sided": 0.1658,
+  "q_bh": 0.5381,
+  "shift_bh": "",
   "name": "Domain Account"
  },
  {
@@ -1877,6 +2438,9 @@
   "ci_lo": 0.938,
   "ci_hi": 1.035,
   "shift": "",
+  "p_two_sided": 0.3437,
+  "q_bh": 0.662,
+  "shift_bh": "",
   "name": "Spearphishing Link"
  },
  {
@@ -1887,6 +2451,9 @@
   "ci_lo": 0.939,
   "ci_hi": 1.029,
   "shift": "",
+  "p_two_sided": 0.2997,
+  "q_bh": 0.607,
+  "shift_bh": "",
   "name": "Indicator Removal from Tools"
  },
  {
@@ -1897,6 +2464,9 @@
   "ci_lo": 0.941,
   "ci_hi": 1.033,
   "shift": "",
+  "p_two_sided": 0.2957,
+  "q_bh": 0.6039,
+  "shift_bh": "",
   "name": "Password Spraying"
  },
  {
@@ -1907,6 +2477,9 @@
   "ci_lo": 0.938,
   "ci_hi": 1.03,
   "shift": "",
+  "p_two_sided": 0.2657,
+  "q_bh": 0.5769,
+  "shift_bh": "",
   "name": "Steal Application Access Token"
  },
  {
@@ -1917,6 +2490,9 @@
   "ci_lo": 0.939,
   "ci_hi": 1.022,
   "shift": "",
+  "p_two_sided": 0.2338,
+  "q_bh": 0.5674,
+  "shift_bh": "",
   "name": "Dynamic Data Exchange"
  },
  {
@@ -1927,6 +2503,9 @@
   "ci_lo": 0.939,
   "ci_hi": 1.025,
   "shift": "",
+  "p_two_sided": 0.2378,
+  "q_bh": 0.5674,
+  "shift_bh": "",
   "name": "LSA Secrets"
  },
  {
@@ -1937,6 +2516,9 @@
   "ci_lo": 0.937,
   "ci_hi": 1.031,
   "shift": "",
+  "p_two_sided": 0.2657,
+  "q_bh": 0.5769,
+  "shift_bh": "",
   "name": "BITS Jobs"
  },
  {
@@ -1947,6 +2529,9 @@
   "ci_lo": 0.937,
   "ci_hi": 1.024,
   "shift": "",
+  "p_two_sided": 0.2498,
+  "q_bh": 0.5769,
+  "shift_bh": "",
   "name": "Upload Malware"
  },
  {
@@ -1957,6 +2542,9 @@
   "ci_lo": 0.947,
   "ci_hi": 1.002,
   "shift": "",
+  "p_two_sided": 0.0799,
+  "q_bh": 0.4028,
+  "shift_bh": "",
   "name": "Server Software Component"
  },
  {
@@ -1967,6 +2555,9 @@
   "ci_lo": 0.942,
   "ci_hi": 1.009,
   "shift": "",
+  "p_two_sided": 0.1139,
+  "q_bh": 0.4653,
+  "shift_bh": "",
   "name": "Peripheral Device Discovery"
  },
  {
@@ -1977,6 +2568,9 @@
   "ci_lo": 0.94,
   "ci_hi": 1.025,
   "shift": "",
+  "p_two_sided": 0.1878,
+  "q_bh": 0.5381,
+  "shift_bh": "",
   "name": "Exfiltration Over Unencrypted Non-C2 Protocol"
  },
  {
@@ -1987,6 +2581,9 @@
   "ci_lo": 0.938,
   "ci_hi": 1.018,
   "shift": "",
+  "p_two_sided": 0.1978,
+  "q_bh": 0.5472,
+  "shift_bh": "",
   "name": "Credential API Hooking"
  },
  {
@@ -1997,6 +2594,9 @@
   "ci_lo": 0.937,
   "ci_hi": 1.017,
   "shift": "",
+  "p_two_sided": 0.1738,
+  "q_bh": 0.5381,
+  "shift_bh": "",
   "name": "Gather Victim Identity Information"
  },
  {
@@ -2007,6 +2607,9 @@
   "ci_lo": 0.938,
   "ci_hi": 1.022,
   "shift": "",
+  "p_two_sided": 0.1998,
+  "q_bh": 0.5472,
+  "shift_bh": "",
   "name": "Internal Proxy"
  },
  {
@@ -2017,6 +2620,9 @@
   "ci_lo": 0.938,
   "ci_hi": 1.021,
   "shift": "",
+  "p_two_sided": 0.1898,
+  "q_bh": 0.5381,
+  "shift_bh": "",
   "name": "Stage Capabilities"
  },
  {
@@ -2027,6 +2633,9 @@
   "ci_lo": 0.939,
   "ci_hi": 1.012,
   "shift": "",
+  "p_two_sided": 0.1099,
+  "q_bh": 0.4653,
+  "shift_bh": "",
   "name": "External Proxy"
  },
  {
@@ -2037,6 +2646,9 @@
   "ci_lo": 0.938,
   "ci_hi": 1.013,
   "shift": "",
+  "p_two_sided": 0.1219,
+  "q_bh": 0.4738,
+  "shift_bh": "",
   "name": "Browser Session Hijacking"
  },
  {
@@ -2047,6 +2659,9 @@
   "ci_lo": 0.938,
   "ci_hi": 1.01,
   "shift": "",
+  "p_two_sided": 0.1219,
+  "q_bh": 0.4738,
+  "shift_bh": "",
   "name": "System Location Discovery"
  },
  {
@@ -2057,6 +2672,9 @@
   "ci_lo": 0.938,
   "ci_hi": 1.013,
   "shift": "",
+  "p_two_sided": 0.1119,
+  "q_bh": 0.4653,
+  "shift_bh": "",
   "name": "Archive via Custom Method"
  },
  {
@@ -2067,6 +2685,9 @@
   "ci_lo": 0.938,
   "ci_hi": 1.01,
   "shift": "",
+  "p_two_sided": 0.0939,
+  "q_bh": 0.4191,
+  "shift_bh": "",
   "name": "Binary Padding"
  },
  {
@@ -2077,6 +2698,9 @@
   "ci_lo": 0.938,
   "ci_hi": 1.011,
   "shift": "",
+  "p_two_sided": 0.1419,
+  "q_bh": 0.4884,
+  "shift_bh": "",
   "name": "Forced Authentication"
  },
  {
@@ -2087,6 +2711,9 @@
   "ci_lo": 0.938,
   "ci_hi": 1.012,
   "shift": "",
+  "p_two_sided": 0.1179,
+  "q_bh": 0.4736,
+  "shift_bh": "",
   "name": "Endpoint Denial of Service"
  },
  {
@@ -2097,6 +2724,9 @@
   "ci_lo": 0.939,
   "ci_hi": 1.004,
   "shift": "",
+  "p_two_sided": 0.0819,
+  "q_bh": 0.4028,
+  "shift_bh": "",
   "name": "Inter-Process Communication"
  },
  {
@@ -2107,6 +2737,9 @@
   "ci_lo": 0.938,
   "ci_hi": 1.005,
   "shift": "",
+  "p_two_sided": 0.0879,
+  "q_bh": 0.4154,
+  "shift_bh": "",
   "name": "Permission Groups Discovery"
  },
  {
@@ -2117,6 +2750,9 @@
   "ci_lo": 0.94,
   "ci_hi": 0.988,
   "shift": "under",
+  "p_two_sided": 0.008,
+  "q_bh": 0.0551,
+  "shift_bh": "",
   "name": "Software Extensions"
  },
  {
@@ -2127,6 +2763,9 @@
   "ci_lo": 0.937,
   "ci_hi": 0.995,
   "shift": "under",
+  "p_two_sided": 0.024,
+  "q_bh": 0.1411,
+  "shift_bh": "",
   "name": "Data from Cloud Storage"
  },
  {
@@ -2137,6 +2776,9 @@
   "ci_lo": 0.939,
   "ci_hi": 0.981,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Office Template Macros"
  },
  {
@@ -2147,6 +2789,9 @@
   "ci_lo": 0.939,
   "ci_hi": 0.982,
   "shift": "under",
+  "p_two_sided": 0.01,
+  "q_bh": 0.0651,
+  "shift_bh": "",
   "name": "Trusted Developer Utilities Proxy Execution"
  },
  {
@@ -2157,6 +2802,9 @@
   "ci_lo": 0.938,
   "ci_hi": 0.982,
   "shift": "under",
+  "p_two_sided": 0.01,
+  "q_bh": 0.0651,
+  "shift_bh": "",
   "name": "System Services"
  },
  {
@@ -2167,6 +2815,9 @@
   "ci_lo": 0.938,
   "ci_hi": 0.973,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Tool"
  },
  {
@@ -2177,6 +2828,9 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Gather Victim Host Information"
  },
  {
@@ -2187,6 +2841,9 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "NTDS"
  },
  {
@@ -2197,6 +2854,9 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Dead Drop Resolver"
  },
  {
@@ -2207,6 +2867,9 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Archive via Library"
  },
  {
@@ -2217,6 +2880,9 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Private Keys"
  },
  {
@@ -2227,6 +2893,9 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "File and Directory Permissions Modification"
  },
  {
@@ -2237,6 +2906,9 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Vulnerability Scanning"
  },
  {
@@ -2247,6 +2919,9 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Exfiltration Over Web Service"
  },
  {
@@ -2257,6 +2932,9 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Indirect Command Execution"
  },
  {
@@ -2267,17 +2945,10 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Virtual Private Server"
- },
- {
-  "t": "T1550.002",
-  "n_report": 31,
-  "n_incident": 31,
-  "share_ratio": 0.946,
-  "ci_lo": 0.934,
-  "ci_hi": 0.955,
-  "shift": "under",
-  "name": "Pass the Hash"
  },
  {
   "t": "T1550",
@@ -2287,7 +2958,23 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Use Alternate Authentication Material"
+ },
+ {
+  "t": "T1550.002",
+  "n_report": 31,
+  "n_incident": 31,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
+  "name": "Pass the Hash"
  },
  {
   "t": "T1598",
@@ -2297,6 +2984,9 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Phishing for Information"
  },
  {
@@ -2307,6 +2997,9 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Security Account Manager"
  },
  {
@@ -2317,6 +3010,9 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Msiexec"
  },
  {
@@ -2327,6 +3023,9 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Password Guessing"
  },
  {
@@ -2337,6 +3036,9 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Local Account"
  },
  {
@@ -2347,6 +3049,9 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Obtain Capabilities"
  },
  {
@@ -2357,6 +3062,9 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Compromise Software Supply Chain"
  },
  {
@@ -2367,6 +3075,9 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "SSH"
  },
  {
@@ -2377,6 +3088,9 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Active Scanning"
  },
  {
@@ -2387,6 +3101,9 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Token Impersonation/Theft"
  },
  {
@@ -2397,6 +3114,9 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Server"
  },
  {
@@ -2407,6 +3127,9 @@
   "ci_lo": 0.934,
   "ci_hi": 0.955,
   "shift": "under",
+  "p_two_sided": 0.002,
+  "q_bh": 0.0161,
+  "shift_bh": "under",
   "name": "Steal or Forge Kerberos Tickets"
  }
 ]

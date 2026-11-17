@@ -1,0 +1,31 @@
+{
+ "script": "cisa_features.py",
+ "args": [],
+ "status": "ok",
+ "exit_code": 0,
+ "start_utc": "2026-11-17T08:45:34+00:00",
+ "seconds": 63.5,
+ "machine": "vm",
+ "platform": "Linux-6.18.44-fc-v553-x86_64-with-glibc2.39",
+ "python": "3.13.18",
+ "git_commit": "66155a121335c091a6c2782fb616be29194d624a",
+ "git_dirty": false,
+ "script_sha256": "089490f4b5e98cbd3fe91f0224060a5908dcb986043bc2c0d72acd8c33759048",
+ "command": "python3 cisa_features.py",
+ "env": {
+  "RB_ROOT": "/home/user/cleanrun/repo/",
+  "RB_DATA": "/mnt/project-files/causality-benchmark/data/",
+  "RB_TEXTS": "/home/user/rb_texts",
+  "WITH_CISA": null
+ },
+ "seeds": "bootstrap seed 0 (share_bootstrap.py, paper_extra.py); permutation seed 1 (reviewer_checks.py)",
+ "llm_used": null,
+ "inputs": {
+  "$DATA/cisa_laptop/manifest.csv": "c0f54d90c2f987aa51441c10ce2588e1b724872d20a4d32a6466a48ac2cde011",
+  "$DATA/attack_stix/enterprise-attack.json": "539a843a7b53ed9749740b2123dddae3726b1a4831841c32aca740b011b910b5"
+ },
+ "outputs": {
+  "$RB/results/cisa_reports.jsonl": "26a19a025c8f784e0e1191bf11e93cd9ff7d7d2d84258546c123e8c626077f5f"
+ },
+ "log": "$RB/results/runs/cisa_features-2026-11-17T084534+0000.log"
+}

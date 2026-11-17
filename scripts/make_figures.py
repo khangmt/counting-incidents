@@ -15,7 +15,7 @@ SHORT = {'T1528': 'Steal Application Access Token', 'T1195.001': 'Compromise Sof
          'T1027.013': 'Encrypted/Encoded File', 'T1059.001': 'PowerShell', 'T1021.002': 'SMB/Windows Admin Shares'}
 lab = lambda t: f"{SHORT.get(t, names.get(t, t))} ({t})"
 
-# Figure 1: share ratio with 95% CI, significantly over-counted techniques, two panels
+# Figure 1: share ratio with 95% CI for techniques whose CI lies above 1; filled marker = BH q <= 0.05, two panels
 att = [x for x in json.load(open(RES + 'attack_share_shift.json')) if x['shift'] == 'over'][:9]
 txt = [x for x in json.load(open(RES + 'corpus_share_shift.json')) if x['shift'] == 'over']
 fig, axes = plt.subplots(2, 1, figsize=(4.6, 3.9), gridspec_kw={'height_ratios': [9, 5]})
@@ -24,7 +24,8 @@ for ax, data, title, base in [(axes[0], att, '(a) ATT&CK citations: 1,936 report
     data = data[::-1]; y = range(len(data))
     for i, x in zip(y, data):
         ax.plot([x['ci_lo'], x['ci_hi']], [i, i], color=INK, lw=1.2, solid_capstyle='round')
-        ax.plot(x['share_ratio'], i, 'o', ms=4.5, color=ACC, mec='white', mew=0.8, zorder=3)
+        sig = x.get('q_bh', 1) <= 0.05   # filled: still significant after Benjamini-Hochberg; hollow: nominal 95% CI only
+        ax.plot(x['share_ratio'], i, 'o', ms=4.5, color=ACC if sig else 'white', mec=ACC if not sig else 'white', mew=0.8 if sig else 1.1, zorder=3)
     ax.axvline(1, color=MUTED, lw=0.8, ls='--', zorder=0)
     ax.set_yticks(list(y)); ax.set_yticklabels([lab(x['t']) for x in data], fontsize=7.5)
     ax.set_title(title, fontsize=8, loc='left')

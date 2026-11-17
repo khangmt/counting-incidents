@@ -4,7 +4,7 @@ from paths import RB, DATA, TEXTS  # set RB_ROOT, RB_DATA, RB_TEXTS to relocate
  entity     - share a main actor/malware but were not merged, <= 365 days apart -> recall, hard cases
  cisa_xref  - a CISA advisory cites another advisory by number
  apt_folder - two PDFs in the same APT-collection campaign folder
-Output: results/gold_candidates.csv (no report text). Column label is filled by reading titles: same / different / unsure."""
+Output: audit/error_analysis/gold_candidates.csv (no report text). Column label is filled by reading titles: same / different / unsure."""
 import json, csv, re, random, itertools, sys, collections as C
 sys.path.insert(0, RB + 'scripts')
 src = open(RB + 'scripts/run_corpus.py').read()
@@ -70,7 +70,7 @@ for i, r in enumerate(rows):
 fp = [p for idx in fold.values() if len(idx) > 1 for p in itertools.combinations(idx, 2)]
 for a, b in random.sample(fp, min(40, len(fp))): add(a, b, 'apt_folder')
 nm = lambda es: '; '.join(names.get(e, e) for e in es)
-with open(RES + 'gold_candidates.csv', 'w', newline='') as f:
+with open(RB + "audit/error_analysis/gold_candidates.csv", 'w', newline='') as f:
     w = csv.writer(f)
     w.writerow(['pair', 'stratum', 'merged_by_method', 'days_apart', 'shared_iocs', 'date_a', 'vendor_a', 'title_a', 'main_a', 'date_b', 'vendor_b', 'title_b', 'main_b', 'id_a', 'id_b', 'label', 'note'])
     for k, ((a, b), s) in enumerate(sorted(cand.items(), key=lambda x: (x[1], rows[x[0][0]]['date'] or ''))):

@@ -32,7 +32,7 @@ Paths can be moved with `RB_ROOT`, `RB_DATA` and `RB_TEXTS` (see `scripts/paths.
 | `attack_yearly_top10.json` | yearly top-10, per report vs per incident |
 | `attack_clusters_main.json`, `corpus_clusters_main.json` | incident id of every report |
 | `reviewer_checks.json` | prior-work rule on both corpora, over-count stability across span caps, permutation null |
-| `gold_candidates.csv`, `gold_eval.json` | 205 tool-labelled pairs, used only for error analysis (not ground truth) |
+| `../audit/error_analysis/gold_*` | 205 AI-labelled pairs, used only for error analysis, never as evidence |
 
 ## Data and licences
 

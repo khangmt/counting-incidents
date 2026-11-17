@@ -6,7 +6,7 @@ C. Permutation null: same incident-size distribution, reports assigned at random
 import json, sys, random, collections as C
 NPERM = 2000
 sys.path.insert(0, RB + 'scripts')
-from cluster_rank import load, cluster, counts, compare, pairwise_eval, shared_software, cluster_edges, entity_edges
+from cluster_rank import load, cluster, counts, compare, pairwise_eval, pairwise_ci, shared_software, cluster_edges, entity_edges
 from share_bootstrap import share_ratio_boot
 RES = RB + 'results/'
 out = {}
@@ -20,20 +20,22 @@ for i, r in enumerate(rows):
 def summ(lab, rows_, gold_):
     ev = pairwise_eval(rows_, lab, gold_); cr, nr = counts(rows_, None); ci, ni = counts(rows_, lab); o = compare(cr, nr, ci, ni)
     return {'incidents': len(set(lab)), 'largest': max(C.Counter(lab).values()), 'P': round(ev['P'], 3), 'R': round(ev['R'], 3),
-            'tau_b': round(o['kendall_tau_b'], 3), 'top10': o['top10_overlap'], 'top20': o['top20_overlap']}
+            'tau_b': round(o['kendall_tau_b'], 3), 'top10': o['top10_overlap'], 'top20': o['top20_overlap'], **pairwise_ci(rows_, lab, gold_)}
 rahman = cluster(rows, 60, ('intrusion-set', 'malware'))          # their rule, as published
 out['attack_rahman_rule'] = summ(rahman, rows, gold)
 out['attack_rahman_rule_no_time_limit'] = summ(cluster(rows, None, ('intrusion-set', 'malware')), rows, gold)
 print('A attack', out['attack_rahman_rule'], out['attack_rahman_rule_no_time_limit'])
 # ---------- B: stability across span caps
-main = None; stab = {}
+main = None; stab = {}; stab_bh = {}
 for S in [45, 60, 90, 180, None]:
     lab = cluster_edges(rows, entity_edges(rows, 60, ('intrusion-set', 'campaign', 'malware'), exclude=SHARED), S)
-    over = {x['t'] for x in share_ratio_boot(rows, lab) if x['shift'] == 'over'}
-    stab[str(S)] = sorted(over)
-    if S == 60: main = over; mainlab = lab
+    boot = share_ratio_boot(rows, lab)
+    over = {x['t'] for x in boot if x['shift'] == 'over'}
+    stab[str(S)] = sorted(over); stab_bh[str(S)] = sorted(x['t'] for x in boot if x['shift_bh'] == 'over')
+    if S == 60: main = over; mainlab = lab; main_bh = set(stab_bh['60'])
 core = sorted(set.intersection(*[set(v) for v in stab.values()]))
 out['attack_over_by_span'] = stab; out['attack_over_in_every_span'] = core
+out['attack_over_bh_by_span'] = stab_bh; out['attack_over_bh_in_every_span'] = sorted(set.intersection(*[set(v) for v in stab_bh.values()]))
 print('B over at S=60', len(main), 'in every span', len(core), core)
 # ---------- C: permutation null (ATT&CK, main clustering)
 def rho(lab):
@@ -71,11 +73,12 @@ tested = [t for t in real if nR[t] >= 20]                       # same technique
 items = []
 for t in tested:
     z = sorted(null[t]); items.append({'t': t, 'real': round(real[t], 3), 'null_mean': round(sum(z) / len(z), 3), 'null_975': round(z[int(.975 * len(z)) - 1], 3),
-                                       'p_null': round((sum(x >= real[t] for x in z) + 1) / (len(z) + 1), 4), 'in_bootstrap_over_set': t in main})
+                                       'p_null': round((sum(x >= real[t] for x in z) + 1) / (len(z) + 1), 4), 'in_bootstrap_over_set': t in main, 'in_bootstrap_bh_over_set': t in main_bh})
 bh(items, 'p_null', 'q_null_bh')
 nl = {x['t']: x for x in sorted(items, key=lambda x: -x['real'])}
 out['attack_permutation_meta'] = {'n_permutations': NPERM, 'n_tested': len(items), 'seed': 1,
-    'over_bootstrap_and_null_bh': sorted(x['t'] for x in items if x['in_bootstrap_over_set'] and x['q_null_bh'] <= 0.05)}
+    'over_bootstrap_and_null_bh': sorted(x['t'] for x in items if x['in_bootstrap_over_set'] and x['q_null_bh'] <= 0.05),
+    'over_bootstrap_bh_and_null_bh': sorted(x['t'] for x in items if x['in_bootstrap_bh_over_set'] and x['q_null_bh'] <= 0.05)}
 out['attack_permutation_null'] = nl
 print('C', out['attack_permutation_meta'])
 # ---------- A on texts: Rahman rule on full texts (any matched group/malware, no subject guard, no indicator links)
@@ -88,7 +91,7 @@ def csumm(lab):
     ev = pairwise_eval(crow, lab, cgold); sub = [crow[i] for i in lab_idx]; L = [lab[i] for i in lab_idx]
     cr, nr = counts(sub, None); ci, ni = counts(sub, L); o = compare(cr, nr, ci, ni)
     return {'incidents_all': len(set(lab)), 'largest': max(C.Counter(lab).values()), 'P': round(ev['P'], 3), 'R': round(ev['R'], 3),
-            'tau_b': round(o['kendall_tau_b'], 3), 'top20': o['top20_overlap']}
+            'tau_b': round(o['kendall_tau_b'], 3), 'top20': o['top20_overlap'], **pairwise_ci(crow, lab, cgold)}
 out['texts_rahman_rule'] = csumm(cluster(crow, 60, ('intrusion-set', 'malware')))
 out['texts_main'] = csumm(g['cluster2'](tau=60))
 print('A texts', out['texts_rahman_rule'], out['texts_main'])

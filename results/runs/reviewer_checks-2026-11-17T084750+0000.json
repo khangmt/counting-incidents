@@ -1,0 +1,31 @@
+{
+ "script": "reviewer_checks.py",
+ "args": [],
+ "status": "ok",
+ "exit_code": 0,
+ "start_utc": "2026-11-17T08:47:50+00:00",
+ "seconds": 58.2,
+ "machine": "vm",
+ "platform": "Linux-6.18.44-fc-v553-x86_64-with-glibc2.39",
+ "python": "3.13.18",
+ "git_commit": "66155a121335c091a6c2782fb616be29194d624a",
+ "git_dirty": false,
+ "script_sha256": "51516615369ae537033d6d150725ae3f97cd866976720e69cecd94619d803071",
+ "command": "python3 reviewer_checks.py",
+ "env": {
+  "RB_ROOT": "/home/user/cleanrun/repo/",
+  "RB_DATA": "/mnt/project-files/causality-benchmark/data/",
+  "RB_TEXTS": "/home/user/rb_texts",
+  "WITH_CISA": null
+ },
+ "seeds": "bootstrap seed 0 (share_bootstrap.py, paper_extra.py); permutation seed 1 (reviewer_checks.py)",
+ "llm_used": null,
+ "inputs": {
+  "$RB/results/attack_reports.jsonl": "9fc8c15d7641988a71cfa7d40ec886910fbd4d3eea5d37a766c6242df45f1247",
+  "$RB/results/corpus_reports.jsonl": "3cd0a05417d93a52eac3e0d6156d458b6837b34bd071113e683dcc6c6e1dbbef"
+ },
+ "outputs": {
+  "$RB/results/reviewer_checks.json": "21dbe9c5bf4dbb924508810f5e1a4092a17c50c8b4c4593489f989acc0077f73"
+ },
+ "log": "$RB/results/runs/reviewer_checks-2026-11-17T084750+0000.log"
+}
