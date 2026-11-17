@@ -14,3 +14,5 @@ python3 run_logged.py run_tie.py                   # TIE/OpenCTI (fetch_otx.py f
 python3 run_logged.py paper_extra.py               # producer vs duplicate; yearly top-10
 python3 run_logged.py reviewer_checks.py           # prior-work rule, span stability, permutation null
 python3 run_logged.py make_figures.py              # paper figures
+python3 make_raw_samples.py                        # gate G2 sheet: audit/raw_samples.md
+python3 check_claims.py                            # evidence gate: audit/claims.md, fails if a paper number does not match results/

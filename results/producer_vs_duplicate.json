@@ -53,6 +53,10 @@
     33
    ]
   ],
+  "n_tested": 215,
+  "spearman_producer_vs_duplicate": -0.033,
+  "n_producer_ci_excludes_1": 27,
+  "n_producer_bh_sig": 0,
   "top_vendor_share_of_reports": 0.073,
   "techniques": [
    {
@@ -3766,6 +3770,10 @@
     1
    ]
   ],
+  "n_tested": 196,
+  "spearman_producer_vs_duplicate": 0.005,
+  "n_producer_ci_excludes_1": 50,
+  "n_producer_bh_sig": 0,
   "top_vendor_share_of_reports": 0.239,
   "techniques": [
    {
@@ -7016,23 +7024,6 @@
     "producer_q_bh": 0.1238
    },
    {
-    "t": "T1193",
-    "name": "",
-    "n_report": 16,
-    "share_report": 0.00143,
-    "share_vendor_bal": 0.00372,
-    "share_incident": 0.0015,
-    "producer_ratio": 0.383,
-    "producer_ci": [
-     0.2,
-     0.86
-    ],
-    "producer_shift": "under",
-    "producer_p": 0.018,
-    "duplicate_ratio": 0.95,
-    "producer_q_bh": 0.1307
-   },
-   {
     "t": "T1032",
     "name": "",
     "n_report": 16,
@@ -7048,6 +7039,23 @@
     "producer_p": 0.016,
     "duplicate_ratio": 1.014,
     "producer_q_bh": 0.1254
+   },
+   {
+    "t": "T1193",
+    "name": "",
+    "n_report": 16,
+    "share_report": 0.00143,
+    "share_vendor_bal": 0.00372,
+    "share_incident": 0.0015,
+    "producer_ratio": 0.383,
+    "producer_ci": [
+     0.2,
+     0.86
+    ],
+    "producer_shift": "under",
+    "producer_p": 0.018,
+    "duplicate_ratio": 0.95,
+    "producer_q_bh": 0.1307
    },
    {
     "t": "T1050",
