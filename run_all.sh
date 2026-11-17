@@ -12,4 +12,5 @@ fi
 python3 run_corpus.py                # report texts: sweep, validation, main results (uses results/*.jsonl)
 python3 run_tie.py                   # TIE/OpenCTI (fetch_otx.py first for OTX dates; slow, rate-limited)
 python3 paper_extra.py               # producer vs duplicate; yearly top-10
+python3 reviewer_checks.py           # prior-work rule, span stability, permutation null
 python3 make_figures.py              # paper figures

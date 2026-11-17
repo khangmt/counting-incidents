@@ -31,6 +31,7 @@ Paths can be moved with `RB_ROOT`, `RB_DATA` and `RB_TEXTS` (see `scripts/paths.
 | `producer_vs_duplicate.json` | vendor-balanced (producer) ratio next to the duplicate ratio |
 | `attack_yearly_top10.json` | yearly top-10, per report vs per incident |
 | `attack_clusters_main.json`, `corpus_clusters_main.json` | incident id of every report |
+| `reviewer_checks.json` | prior-work rule on both corpora, over-count stability across span caps, permutation null |
 | `gold_candidates.csv`, `gold_eval.json` | 205 tool-labelled pairs, used only for error analysis (not ground truth) |
 
 ## Data and licences
