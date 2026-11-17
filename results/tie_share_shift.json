@@ -1,0 +1,2412 @@
+[
+ {
+  "t": "T1561.002",
+  "n_report": 43,
+  "n_incident": 36,
+  "share_ratio": 1.13,
+  "ci_lo": 0.976,
+  "ci_hi": 1.347,
+  "shift": "",
+  "name": "Disk Structure Wipe"
+ },
+ {
+  "t": "T1025",
+  "n_report": 58,
+  "n_incident": 50,
+  "share_ratio": 1.097,
+  "ci_lo": 0.985,
+  "ci_hi": 1.246,
+  "shift": "",
+  "name": "Data from Removable Media"
+ },
+ {
+  "t": "T1485",
+  "n_report": 125,
+  "n_incident": 110,
+  "share_ratio": 1.075,
+  "ci_lo": 0.988,
+  "ci_hi": 1.208,
+  "shift": "",
+  "name": "Data Destruction"
+ },
+ {
+  "t": "T1129",
+  "n_report": 97,
+  "n_incident": 86,
+  "share_ratio": 1.067,
+  "ci_lo": 0.975,
+  "ci_hi": 1.213,
+  "shift": "",
+  "name": "Shared Modules"
+ },
+ {
+  "t": "T1480",
+  "n_report": 45,
+  "n_incident": 40,
+  "share_ratio": 1.064,
+  "ci_lo": 0.975,
+  "ci_hi": 1.173,
+  "shift": "",
+  "name": "Execution Guardrails"
+ },
+ {
+  "t": "T1482",
+  "n_report": 93,
+  "n_incident": 83,
+  "share_ratio": 1.06,
+  "ci_lo": 0.997,
+  "ci_hi": 1.133,
+  "shift": "",
+  "name": "Domain Trust Discovery"
+ },
+ {
+  "t": "T1039",
+  "n_report": 38,
+  "n_incident": 34,
+  "share_ratio": 1.057,
+  "ci_lo": 0.97,
+  "ci_hi": 1.168,
+  "shift": "",
+  "name": "Data from Network Shared Drive"
+ },
+ {
+  "t": "T1080",
+  "n_report": 40,
+  "n_incident": 36,
+  "share_ratio": 1.051,
+  "ci_lo": 0.943,
+  "ci_hi": 1.236,
+  "shift": "",
+  "name": "Taint Shared Content"
+ },
+ {
+  "t": "T1566.001",
+  "n_report": 609,
+  "n_incident": 549,
+  "share_ratio": 1.049,
+  "ci_lo": 1.011,
+  "ci_hi": 1.095,
+  "shift": "over",
+  "name": "Spearphishing Attachment"
+ },
+ {
+  "t": "T1010",
+  "n_report": 94,
+  "n_incident": 85,
+  "share_ratio": 1.046,
+  "ci_lo": 0.987,
+  "ci_hi": 1.118,
+  "shift": "",
+  "name": "Application Window Discovery"
+ },
+ {
+  "t": "T1057",
+  "n_report": 639,
+  "n_incident": 579,
+  "share_ratio": 1.044,
+  "ci_lo": 1.021,
+  "ci_hi": 1.067,
+  "shift": "over",
+  "name": "Process Discovery"
+ },
+ {
+  "t": "T1531",
+  "n_report": 43,
+  "n_incident": 39,
+  "share_ratio": 1.043,
+  "ci_lo": 0.963,
+  "ci_hi": 1.141,
+  "shift": "",
+  "name": "Account Access Removal"
+ },
+ {
+  "t": "T1106",
+  "n_report": 476,
+  "n_incident": 432,
+  "share_ratio": 1.042,
+  "ci_lo": 1.012,
+  "ci_hi": 1.078,
+  "shift": "over",
+  "name": "Native API"
+ },
+ {
+  "t": "T1070.006",
+  "n_report": 87,
+  "n_incident": 79,
+  "share_ratio": 1.041,
+  "ci_lo": 0.977,
+  "ci_hi": 1.118,
+  "shift": "",
+  "name": "Timestomp"
+ },
+ {
+  "t": "T1071.003",
+  "n_report": 33,
+  "n_incident": 30,
+  "share_ratio": 1.04,
+  "ci_lo": 0.945,
+  "ci_hi": 1.154,
+  "shift": "",
+  "name": "Mail Protocols"
+ },
+ {
+  "t": "T1218.011",
+  "n_report": 155,
+  "n_incident": 141,
+  "share_ratio": 1.04,
+  "ci_lo": 0.984,
+  "ci_hi": 1.1,
+  "shift": "",
+  "name": "Rundll32"
+ },
+ {
+  "t": "T1008",
+  "n_report": 89,
+  "n_incident": 81,
+  "share_ratio": 1.039,
+  "ci_lo": 0.984,
+  "ci_hi": 1.101,
+  "shift": "",
+  "name": "Fallback Channels"
+ },
+ {
+  "t": "T1082",
+  "n_report": 963,
+  "n_incident": 877,
+  "share_ratio": 1.038,
+  "ci_lo": 1.02,
+  "ci_hi": 1.057,
+  "shift": "over",
+  "name": "System Information Discovery"
+ },
+ {
+  "t": "T1140",
+  "n_report": 973,
+  "n_incident": 887,
+  "share_ratio": 1.037,
+  "ci_lo": 1.02,
+  "ci_hi": 1.055,
+  "shift": "over",
+  "name": "Deobfuscate/Decode Files or Information"
+ },
+ {
+  "t": "T1505.003",
+  "n_report": 102,
+  "n_incident": 93,
+  "share_ratio": 1.037,
+  "ci_lo": 0.982,
+  "ci_hi": 1.106,
+  "shift": "",
+  "name": "Web Shell"
+ },
+ {
+  "t": "T1083",
+  "n_report": 731,
+  "n_incident": 668,
+  "share_ratio": 1.035,
+  "ci_lo": 1.012,
+  "ci_hi": 1.06,
+  "shift": "over",
+  "name": "File and Directory Discovery"
+ },
+ {
+  "t": "T1546.003",
+  "n_report": 35,
+  "n_incident": 32,
+  "share_ratio": 1.034,
+  "ci_lo": 0.951,
+  "ci_hi": 1.141,
+  "shift": "",
+  "name": "Windows Management Instrumentation Event Subscription"
+ },
+ {
+  "t": "T1568",
+  "n_report": 59,
+  "n_incident": 54,
+  "share_ratio": 1.033,
+  "ci_lo": 0.951,
+  "ci_hi": 1.16,
+  "shift": "",
+  "name": "Dynamic Resolution"
+ },
+ {
+  "t": "T1583.006",
+  "n_report": 36,
+  "n_incident": 33,
+  "share_ratio": 1.032,
+  "ci_lo": 0.949,
+  "ci_hi": 1.133,
+  "shift": "",
+  "name": "Web Services"
+ },
+ {
+  "t": "T1027",
+  "n_report": 1397,
+  "n_incident": 1283,
+  "share_ratio": 1.03,
+  "ci_lo": 1.015,
+  "ci_hi": 1.046,
+  "shift": "over",
+  "name": "Obfuscated Files or Information"
+ },
+ {
+  "t": "T1548.002",
+  "n_report": 112,
+  "n_incident": 103,
+  "share_ratio": 1.028,
+  "ci_lo": 0.984,
+  "ci_hi": 1.076,
+  "shift": "",
+  "name": "Bypass User Account Control"
+ },
+ {
+  "t": "T1137",
+  "n_report": 75,
+  "n_incident": 69,
+  "share_ratio": 1.028,
+  "ci_lo": 0.974,
+  "ci_hi": 1.094,
+  "shift": "",
+  "name": "Office Application Startup"
+ },
+ {
+  "t": "T1203",
+  "n_report": 239,
+  "n_incident": 220,
+  "share_ratio": 1.027,
+  "ci_lo": 0.996,
+  "ci_hi": 1.065,
+  "shift": "",
+  "name": "Exploitation for Client Execution"
+ },
+ {
+  "t": "T1033",
+  "n_report": 423,
+  "n_incident": 390,
+  "share_ratio": 1.026,
+  "ci_lo": 1.004,
+  "ci_hi": 1.05,
+  "shift": "over",
+  "name": "System Owner/User Discovery"
+ },
+ {
+  "t": "T1047",
+  "n_report": 334,
+  "n_incident": 308,
+  "share_ratio": 1.025,
+  "ci_lo": 0.995,
+  "ci_hi": 1.058,
+  "shift": "",
+  "name": "Windows Management Instrumentation"
+ },
+ {
+  "t": "T1132.002",
+  "n_report": 39,
+  "n_incident": 36,
+  "share_ratio": 1.024,
+  "ci_lo": 0.948,
+  "ci_hi": 1.118,
+  "shift": "",
+  "name": "Non-Standard Encoding"
+ },
+ {
+  "t": "T1030",
+  "n_report": 39,
+  "n_incident": 36,
+  "share_ratio": 1.024,
+  "ci_lo": 0.947,
+  "ci_hi": 1.128,
+  "shift": "",
+  "name": "Data Transfer Size Limits"
+ },
+ {
+  "t": "T1087",
+  "n_report": 161,
+  "n_incident": 149,
+  "share_ratio": 1.022,
+  "ci_lo": 0.983,
+  "ci_hi": 1.073,
+  "shift": "",
+  "name": "Account Discovery"
+ },
+ {
+  "t": "T1489",
+  "n_report": 107,
+  "n_incident": 99,
+  "share_ratio": 1.022,
+  "ci_lo": 0.981,
+  "ci_hi": 1.075,
+  "shift": "",
+  "name": "Service Stop"
+ },
+ {
+  "t": "T1027.002",
+  "n_report": 204,
+  "n_incident": 189,
+  "share_ratio": 1.021,
+  "ci_lo": 0.973,
+  "ci_hi": 1.084,
+  "shift": "",
+  "name": "Software Packing"
+ },
+ {
+  "t": "T1553.002",
+  "n_report": 110,
+  "n_incident": 102,
+  "share_ratio": 1.02,
+  "ci_lo": 0.977,
+  "ci_hi": 1.071,
+  "shift": "",
+  "name": "Code Signing"
+ },
+ {
+  "t": "T1112",
+  "n_report": 402,
+  "n_incident": 373,
+  "share_ratio": 1.019,
+  "ci_lo": 0.993,
+  "ci_hi": 1.048,
+  "shift": "",
+  "name": "Modify Registry"
+ },
+ {
+  "t": "T1021.002",
+  "n_report": 97,
+  "n_incident": 90,
+  "share_ratio": 1.019,
+  "ci_lo": 0.974,
+  "ci_hi": 1.07,
+  "shift": "",
+  "name": "SMB/Windows Admin Shares"
+ },
+ {
+  "t": "T1574.001",
+  "n_report": 239,
+  "n_incident": 222,
+  "share_ratio": 1.018,
+  "ci_lo": 0.987,
+  "ci_hi": 1.051,
+  "shift": "",
+  "name": "DLL"
+ },
+ {
+  "t": "T1041",
+  "n_report": 522,
+  "n_incident": 485,
+  "share_ratio": 1.018,
+  "ci_lo": 0.994,
+  "ci_hi": 1.043,
+  "shift": "",
+  "name": "Exfiltration Over C2 Channel"
+ },
+ {
+  "t": "T1686",
+  "n_report": 56,
+  "n_incident": 52,
+  "share_ratio": 1.018,
+  "ci_lo": 0.947,
+  "ci_hi": 1.119,
+  "shift": "",
+  "name": "Disable or Modify System Firewall"
+ },
+ {
+  "t": "T1124",
+  "n_report": 172,
+  "n_incident": 160,
+  "share_ratio": 1.017,
+  "ci_lo": 0.984,
+  "ci_hi": 1.053,
+  "shift": "",
+  "name": "System Time Discovery"
+ },
+ {
+  "t": "T1486",
+  "n_report": 357,
+  "n_incident": 332,
+  "share_ratio": 1.017,
+  "ci_lo": 0.986,
+  "ci_hi": 1.051,
+  "shift": "",
+  "name": "Data Encrypted for Impact"
+ },
+ {
+  "t": "T1213",
+  "n_report": 43,
+  "n_incident": 40,
+  "share_ratio": 1.017,
+  "ci_lo": 0.948,
+  "ci_hi": 1.109,
+  "shift": "",
+  "name": "Data from Information Repositories"
+ },
+ {
+  "t": "T1113",
+  "n_report": 494,
+  "n_incident": 460,
+  "share_ratio": 1.016,
+  "ci_lo": 0.992,
+  "ci_hi": 1.039,
+  "shift": "",
+  "name": "Screen Capture"
+ },
+ {
+  "t": "T1221",
+  "n_report": 58,
+  "n_incident": 54,
+  "share_ratio": 1.016,
+  "ci_lo": 0.961,
+  "ci_hi": 1.085,
+  "shift": "",
+  "name": "Template Injection"
+ },
+ {
+  "t": "T1055",
+  "n_report": 663,
+  "n_incident": 618,
+  "share_ratio": 1.015,
+  "ci_lo": 0.991,
+  "ci_hi": 1.044,
+  "shift": "",
+  "name": "Process Injection"
+ },
+ {
+  "t": "T1070.004",
+  "n_report": 368,
+  "n_incident": 343,
+  "share_ratio": 1.015,
+  "ci_lo": 0.989,
+  "ci_hi": 1.042,
+  "shift": "",
+  "name": "File Deletion"
+ },
+ {
+  "t": "T1569.002",
+  "n_report": 147,
+  "n_incident": 137,
+  "share_ratio": 1.015,
+  "ci_lo": 0.975,
+  "ci_hi": 1.061,
+  "shift": "",
+  "name": "Service Execution"
+ },
+ {
+  "t": "T1539",
+  "n_report": 88,
+  "n_incident": 82,
+  "share_ratio": 1.015,
+  "ci_lo": 0.963,
+  "ci_hi": 1.073,
+  "shift": "",
+  "name": "Steal Web Session Cookie"
+ },
+ {
+  "t": "T1543.003",
+  "n_report": 223,
+  "n_incident": 208,
+  "share_ratio": 1.014,
+  "ci_lo": 0.98,
+  "ci_hi": 1.049,
+  "shift": "",
+  "name": "Windows Service"
+ },
+ {
+  "t": "T1059.005",
+  "n_report": 281,
+  "n_incident": 262,
+  "share_ratio": 1.014,
+  "ci_lo": 0.986,
+  "ci_hi": 1.046,
+  "shift": "",
+  "name": "Visual Basic"
+ },
+ {
+  "t": "T1059.001",
+  "n_report": 538,
+  "n_incident": 502,
+  "share_ratio": 1.013,
+  "ci_lo": 0.994,
+  "ci_hi": 1.036,
+  "shift": "",
+  "name": "PowerShell"
+ },
+ {
+  "t": "T1560.001",
+  "n_report": 105,
+  "n_incident": 98,
+  "share_ratio": 1.013,
+  "ci_lo": 0.965,
+  "ci_hi": 1.068,
+  "shift": "",
+  "name": "Archive via Utility"
+ },
+ {
+  "t": "T1204.002",
+  "n_report": 528,
+  "n_incident": 493,
+  "share_ratio": 1.013,
+  "ci_lo": 0.993,
+  "ci_hi": 1.035,
+  "shift": "",
+  "name": "Malicious File"
+ },
+ {
+  "t": "T1589.002",
+  "n_report": 30,
+  "n_incident": 28,
+  "share_ratio": 1.013,
+  "ci_lo": 0.942,
+  "ci_hi": 1.114,
+  "shift": "",
+  "name": "Email Addresses"
+ },
+ {
+  "t": "T1105",
+  "n_report": 910,
+  "n_incident": 850,
+  "share_ratio": 1.012,
+  "ci_lo": 0.998,
+  "ci_hi": 1.027,
+  "shift": "",
+  "name": "Ingress Tool Transfer"
+ },
+ {
+  "t": "T1547.001",
+  "n_report": 459,
+  "n_incident": 429,
+  "share_ratio": 1.012,
+  "ci_lo": 0.991,
+  "ci_hi": 1.034,
+  "shift": "",
+  "name": "Registry Run Keys / Startup Folder"
+ },
+ {
+  "t": "T1210",
+  "n_report": 154,
+  "n_incident": 144,
+  "share_ratio": 1.011,
+  "ci_lo": 0.969,
+  "ci_hi": 1.061,
+  "shift": "",
+  "name": "Exploitation of Remote Services"
+ },
+ {
+  "t": "T1566.002",
+  "n_report": 279,
+  "n_incident": 261,
+  "share_ratio": 1.011,
+  "ci_lo": 0.984,
+  "ci_hi": 1.038,
+  "shift": "",
+  "name": "Spearphishing Link"
+ },
+ {
+  "t": "T1583",
+  "n_report": 93,
+  "n_incident": 87,
+  "share_ratio": 1.011,
+  "ci_lo": 0.965,
+  "ci_hi": 1.065,
+  "shift": "",
+  "name": "Acquire Infrastructure"
+ },
+ {
+  "t": "T1561",
+  "n_report": 31,
+  "n_incident": 29,
+  "share_ratio": 1.011,
+  "ci_lo": 0.938,
+  "ci_hi": 1.171,
+  "shift": "",
+  "name": "Disk Wipe"
+ },
+ {
+  "t": "T1016",
+  "n_report": 453,
+  "n_incident": 424,
+  "share_ratio": 1.01,
+  "ci_lo": 0.99,
+  "ci_hi": 1.036,
+  "shift": "",
+  "name": "System Network Configuration Discovery"
+ },
+ {
+  "t": "T1098",
+  "n_report": 63,
+  "n_incident": 59,
+  "share_ratio": 1.01,
+  "ci_lo": 0.961,
+  "ci_hi": 1.074,
+  "shift": "",
+  "name": "Account Manipulation"
+ },
+ {
+  "t": "T1135",
+  "n_report": 158,
+  "n_incident": 148,
+  "share_ratio": 1.01,
+  "ci_lo": 0.975,
+  "ci_hi": 1.056,
+  "shift": "",
+  "name": "Network Share Discovery"
+ },
+ {
+  "t": "T1490",
+  "n_report": 189,
+  "n_incident": 177,
+  "share_ratio": 1.01,
+  "ci_lo": 0.966,
+  "ci_hi": 1.064,
+  "shift": "",
+  "name": "Inhibit System Recovery"
+ },
+ {
+  "t": "T1564.001",
+  "n_report": 78,
+  "n_incident": 73,
+  "share_ratio": 1.01,
+  "ci_lo": 0.959,
+  "ci_hi": 1.069,
+  "shift": "",
+  "name": "Hidden Files and Directories"
+ },
+ {
+  "t": "T1495",
+  "n_report": 32,
+  "n_incident": 30,
+  "share_ratio": 1.009,
+  "ci_lo": 0.942,
+  "ci_hi": 1.104,
+  "shift": "",
+  "name": "Firmware Corruption"
+ },
+ {
+  "t": "T1012",
+  "n_report": 259,
+  "n_incident": 243,
+  "share_ratio": 1.008,
+  "ci_lo": 0.979,
+  "ci_hi": 1.038,
+  "shift": "",
+  "name": "Query Registry"
+ },
+ {
+  "t": "T1071.001",
+  "n_report": 578,
+  "n_incident": 542,
+  "share_ratio": 1.008,
+  "ci_lo": 0.99,
+  "ci_hi": 1.028,
+  "shift": "",
+  "name": "Web Protocols"
+ },
+ {
+  "t": "T1005",
+  "n_report": 361,
+  "n_incident": 339,
+  "share_ratio": 1.007,
+  "ci_lo": 0.977,
+  "ci_hi": 1.048,
+  "shift": "",
+  "name": "Data from Local System"
+ },
+ {
+  "t": "T1059.006",
+  "n_report": 82,
+  "n_incident": 77,
+  "share_ratio": 1.007,
+  "ci_lo": 0.962,
+  "ci_hi": 1.067,
+  "shift": "",
+  "name": "Python"
+ },
+ {
+  "t": "T1218.005",
+  "n_report": 82,
+  "n_incident": 77,
+  "share_ratio": 1.007,
+  "ci_lo": 0.962,
+  "ci_hi": 1.056,
+  "shift": "",
+  "name": "Mshta"
+ },
+ {
+  "t": "T1584",
+  "n_report": 66,
+  "n_incident": 62,
+  "share_ratio": 1.007,
+  "ci_lo": 0.956,
+  "ci_hi": 1.069,
+  "shift": "",
+  "name": "Compromise Infrastructure"
+ },
+ {
+  "t": "T1218.010",
+  "n_report": 66,
+  "n_incident": 62,
+  "share_ratio": 1.007,
+  "ci_lo": 0.948,
+  "ci_hi": 1.09,
+  "shift": "",
+  "name": "Regsvr32"
+ },
+ {
+  "t": "T1587",
+  "n_report": 49,
+  "n_incident": 46,
+  "share_ratio": 1.007,
+  "ci_lo": 0.946,
+  "ci_hi": 1.078,
+  "shift": "",
+  "name": "Develop Capabilities"
+ },
+ {
+  "t": "T1570",
+  "n_report": 100,
+  "n_incident": 94,
+  "share_ratio": 1.006,
+  "ci_lo": 0.965,
+  "ci_hi": 1.052,
+  "shift": "",
+  "name": "Lateral Tool Transfer"
+ },
+ {
+  "t": "T1091",
+  "n_report": 67,
+  "n_incident": 63,
+  "share_ratio": 1.006,
+  "ci_lo": 0.959,
+  "ci_hi": 1.072,
+  "shift": "",
+  "name": "Replication Through Removable Media"
+ },
+ {
+  "t": "T1110",
+  "n_report": 167,
+  "n_incident": 157,
+  "share_ratio": 1.006,
+  "ci_lo": 0.975,
+  "ci_hi": 1.042,
+  "shift": "",
+  "name": "Brute Force"
+ },
+ {
+  "t": "T1497.001",
+  "n_report": 118,
+  "n_incident": 111,
+  "share_ratio": 1.005,
+  "ci_lo": 0.954,
+  "ci_hi": 1.092,
+  "shift": "",
+  "name": "System Checks"
+ },
+ {
+  "t": "T1059.003",
+  "n_report": 505,
+  "n_incident": 475,
+  "share_ratio": 1.005,
+  "ci_lo": 0.986,
+  "ci_hi": 1.028,
+  "shift": "",
+  "name": "Windows Command Shell"
+ },
+ {
+  "t": "T1018",
+  "n_report": 236,
+  "n_incident": 222,
+  "share_ratio": 1.005,
+  "ci_lo": 0.977,
+  "ci_hi": 1.035,
+  "shift": "",
+  "name": "Remote System Discovery"
+ },
+ {
+  "t": "T1685",
+  "n_report": 426,
+  "n_incident": 401,
+  "share_ratio": 1.005,
+  "ci_lo": 0.981,
+  "ci_hi": 1.032,
+  "shift": "",
+  "name": "Disable or Modify Tools"
+ },
+ {
+  "t": "T1027.003",
+  "n_report": 34,
+  "n_incident": 32,
+  "share_ratio": 1.005,
+  "ci_lo": 0.943,
+  "ci_hi": 1.098,
+  "shift": "",
+  "name": "Steganography"
+ },
+ {
+  "t": "T1547.006",
+  "n_report": 34,
+  "n_incident": 32,
+  "share_ratio": 1.005,
+  "ci_lo": 0.941,
+  "ci_hi": 1.09,
+  "shift": "",
+  "name": "Kernel Modules and Extensions"
+ },
+ {
+  "t": "T1049",
+  "n_report": 279,
+  "n_incident": 263,
+  "share_ratio": 1.003,
+  "ci_lo": 0.978,
+  "ci_hi": 1.031,
+  "shift": "",
+  "name": "System Network Connections Discovery"
+ },
+ {
+  "t": "T1518.001",
+  "n_report": 197,
+  "n_incident": 186,
+  "share_ratio": 1.002,
+  "ci_lo": 0.97,
+  "ci_hi": 1.037,
+  "shift": "",
+  "name": "Security Software Discovery"
+ },
+ {
+  "t": "T1087.001",
+  "n_report": 71,
+  "n_incident": 67,
+  "share_ratio": 1.002,
+  "ci_lo": 0.957,
+  "ci_hi": 1.064,
+  "shift": "",
+  "name": "Local Account"
+ },
+ {
+  "t": "T1204",
+  "n_report": 410,
+  "n_incident": 387,
+  "share_ratio": 1.002,
+  "ci_lo": 0.98,
+  "ci_hi": 1.028,
+  "shift": "",
+  "name": "User Execution"
+ },
+ {
+  "t": "T1548",
+  "n_report": 72,
+  "n_incident": 68,
+  "share_ratio": 1.001,
+  "ci_lo": 0.955,
+  "ci_hi": 1.059,
+  "shift": "",
+  "name": "Abuse Elevation Control Mechanism"
+ },
+ {
+  "t": "T1069.001",
+  "n_report": 36,
+  "n_incident": 34,
+  "share_ratio": 1.001,
+  "ci_lo": 0.941,
+  "ci_hi": 1.091,
+  "shift": "",
+  "name": "Local Groups"
+ },
+ {
+  "t": "T1133",
+  "n_report": 165,
+  "n_incident": 156,
+  "share_ratio": 1.0,
+  "ci_lo": 0.97,
+  "ci_hi": 1.038,
+  "shift": "",
+  "name": "External Remote Services"
+ },
+ {
+  "t": "T1020",
+  "n_report": 110,
+  "n_incident": 104,
+  "share_ratio": 1.0,
+  "ci_lo": 0.964,
+  "ci_hi": 1.046,
+  "shift": "",
+  "name": "Automated Exfiltration"
+ },
+ {
+  "t": "T1574",
+  "n_report": 244,
+  "n_incident": 231,
+  "share_ratio": 0.999,
+  "ci_lo": 0.972,
+  "ci_hi": 1.03,
+  "shift": "",
+  "name": "Hijack Execution Flow"
+ },
+ {
+  "t": "T1518",
+  "n_report": 170,
+  "n_incident": 161,
+  "share_ratio": 0.999,
+  "ci_lo": 0.968,
+  "ci_hi": 1.031,
+  "shift": "",
+  "name": "Software Discovery"
+ },
+ {
+  "t": "T1095",
+  "n_report": 285,
+  "n_incident": 270,
+  "share_ratio": 0.998,
+  "ci_lo": 0.971,
+  "ci_hi": 1.029,
+  "shift": "",
+  "name": "Non-Application Layer Protocol"
+ },
+ {
+  "t": "T1119",
+  "n_report": 171,
+  "n_incident": 162,
+  "share_ratio": 0.998,
+  "ci_lo": 0.968,
+  "ci_hi": 1.038,
+  "shift": "",
+  "name": "Automated Collection"
+ },
+ {
+  "t": "T1070",
+  "n_report": 306,
+  "n_incident": 290,
+  "share_ratio": 0.998,
+  "ci_lo": 0.971,
+  "ci_hi": 1.033,
+  "shift": "",
+  "name": "Indicator Removal"
+ },
+ {
+  "t": "T1114.001",
+  "n_report": 38,
+  "n_incident": 36,
+  "share_ratio": 0.998,
+  "ci_lo": 0.941,
+  "ci_hi": 1.078,
+  "shift": "",
+  "name": "Local Email Collection"
+ },
+ {
+  "t": "T1589.001",
+  "n_report": 38,
+  "n_incident": 36,
+  "share_ratio": 0.998,
+  "ci_lo": 0.94,
+  "ci_hi": 1.07,
+  "shift": "",
+  "name": "Credentials"
+ },
+ {
+  "t": "T1217",
+  "n_report": 38,
+  "n_incident": 36,
+  "share_ratio": 0.998,
+  "ci_lo": 0.947,
+  "ci_hi": 1.07,
+  "shift": "",
+  "name": "Browser Information Discovery"
+ },
+ {
+  "t": "T1543.001",
+  "n_report": 38,
+  "n_incident": 36,
+  "share_ratio": 0.998,
+  "ci_lo": 0.941,
+  "ci_hi": 1.078,
+  "shift": "",
+  "name": "Launch Agent"
+ },
+ {
+  "t": "T1046",
+  "n_report": 196,
+  "n_incident": 186,
+  "share_ratio": 0.997,
+  "ci_lo": 0.968,
+  "ci_hi": 1.027,
+  "shift": "",
+  "name": "Network Service Discovery"
+ },
+ {
+  "t": "T1497.003",
+  "n_report": 58,
+  "n_incident": 55,
+  "share_ratio": 0.997,
+  "ci_lo": 0.95,
+  "ci_hi": 1.058,
+  "shift": "",
+  "name": "Time Based Checks"
+ },
+ {
+  "t": "T1529",
+  "n_report": 59,
+  "n_incident": 56,
+  "share_ratio": 0.996,
+  "ci_lo": 0.944,
+  "ci_hi": 1.058,
+  "shift": "",
+  "name": "System Shutdown/Reboot"
+ },
+ {
+  "t": "T1219",
+  "n_report": 158,
+  "n_incident": 150,
+  "share_ratio": 0.996,
+  "ci_lo": 0.964,
+  "ci_hi": 1.037,
+  "shift": "",
+  "name": "Remote Access Tools"
+ },
+ {
+  "t": "T1036.005",
+  "n_report": 240,
+  "n_incident": 228,
+  "share_ratio": 0.995,
+  "ci_lo": 0.968,
+  "ci_hi": 1.03,
+  "shift": "",
+  "name": "Match Legitimate Resource Name or Location"
+ },
+ {
+  "t": "T1040",
+  "n_report": 81,
+  "n_incident": 77,
+  "share_ratio": 0.995,
+  "ci_lo": 0.955,
+  "ci_hi": 1.05,
+  "shift": "",
+  "name": "Network Sniffing"
+ },
+ {
+  "t": "T1053.005",
+  "n_report": 302,
+  "n_incident": 287,
+  "share_ratio": 0.995,
+  "ci_lo": 0.974,
+  "ci_hi": 1.021,
+  "shift": "",
+  "name": "Scheduled Task"
+ },
+ {
+  "t": "T1552",
+  "n_report": 81,
+  "n_incident": 77,
+  "share_ratio": 0.995,
+  "ci_lo": 0.957,
+  "ci_hi": 1.041,
+  "shift": "",
+  "name": "Unsecured Credentials"
+ },
+ {
+  "t": "T1134",
+  "n_report": 186,
+  "n_incident": 177,
+  "share_ratio": 0.994,
+  "ci_lo": 0.964,
+  "ci_hi": 1.024,
+  "shift": "",
+  "name": "Access Token Manipulation"
+ },
+ {
+  "t": "T1078",
+  "n_report": 246,
+  "n_incident": 234,
+  "share_ratio": 0.994,
+  "ci_lo": 0.971,
+  "ci_hi": 1.019,
+  "shift": "",
+  "name": "Valid Accounts"
+ },
+ {
+  "t": "T1572",
+  "n_report": 103,
+  "n_incident": 98,
+  "share_ratio": 0.994,
+  "ci_lo": 0.956,
+  "ci_hi": 1.038,
+  "shift": "",
+  "name": "Protocol Tunneling"
+ },
+ {
+  "t": "T1136",
+  "n_report": 62,
+  "n_incident": 59,
+  "share_ratio": 0.994,
+  "ci_lo": 0.95,
+  "ci_hi": 1.047,
+  "shift": "",
+  "name": "Create Account"
+ },
+ {
+  "t": "T1132",
+  "n_report": 127,
+  "n_incident": 121,
+  "share_ratio": 0.993,
+  "ci_lo": 0.961,
+  "ci_hi": 1.032,
+  "shift": "",
+  "name": "Data Encoding"
+ },
+ {
+  "t": "T1071",
+  "n_report": 454,
+  "n_incident": 433,
+  "share_ratio": 0.992,
+  "ci_lo": 0.973,
+  "ci_hi": 1.015,
+  "shift": "",
+  "name": "Application Layer Protocol"
+ },
+ {
+  "t": "T1496",
+  "n_report": 172,
+  "n_incident": 164,
+  "share_ratio": 0.992,
+  "ci_lo": 0.96,
+  "ci_hi": 1.034,
+  "shift": "",
+  "name": "Resource Hijacking"
+ },
+ {
+  "t": "T1552.001",
+  "n_report": 86,
+  "n_incident": 82,
+  "share_ratio": 0.992,
+  "ci_lo": 0.956,
+  "ci_hi": 1.038,
+  "shift": "",
+  "name": "Credentials In Files"
+ },
+ {
+  "t": "T1125",
+  "n_report": 86,
+  "n_incident": 82,
+  "share_ratio": 0.992,
+  "ci_lo": 0.953,
+  "ci_hi": 1.039,
+  "shift": "",
+  "name": "Video Capture"
+ },
+ {
+  "t": "T1190",
+  "n_report": 346,
+  "n_incident": 330,
+  "share_ratio": 0.992,
+  "ci_lo": 0.969,
+  "ci_hi": 1.016,
+  "shift": "",
+  "name": "Exploit Public-Facing Application"
+ },
+ {
+  "t": "T1059.004",
+  "n_report": 86,
+  "n_incident": 82,
+  "share_ratio": 0.992,
+  "ci_lo": 0.952,
+  "ci_hi": 1.039,
+  "shift": "",
+  "name": "Unix Shell"
+ },
+ {
+  "t": "T1547.009",
+  "n_report": 64,
+  "n_incident": 61,
+  "share_ratio": 0.992,
+  "ci_lo": 0.947,
+  "ci_hi": 1.055,
+  "shift": "",
+  "name": "Shortcut Modification"
+ },
+ {
+  "t": "T1560",
+  "n_report": 347,
+  "n_incident": 331,
+  "share_ratio": 0.991,
+  "ci_lo": 0.968,
+  "ci_hi": 1.014,
+  "shift": "",
+  "name": "Archive Collected Data"
+ },
+ {
+  "t": "T1078.002",
+  "n_report": 44,
+  "n_incident": 42,
+  "share_ratio": 0.991,
+  "ci_lo": 0.942,
+  "ci_hi": 1.061,
+  "shift": "",
+  "name": "Domain Accounts"
+ },
+ {
+  "t": "T1048",
+  "n_report": 65,
+  "n_incident": 62,
+  "share_ratio": 0.991,
+  "ci_lo": 0.95,
+  "ci_hi": 1.044,
+  "shift": "",
+  "name": "Exfiltration Over Alternative Protocol"
+ },
+ {
+  "t": "T1573.001",
+  "n_report": 224,
+  "n_incident": 214,
+  "share_ratio": 0.99,
+  "ci_lo": 0.963,
+  "ci_hi": 1.019,
+  "shift": "",
+  "name": "Symmetric Cryptography"
+ },
+ {
+  "t": "T1003",
+  "n_report": 356,
+  "n_incident": 340,
+  "share_ratio": 0.99,
+  "ci_lo": 0.968,
+  "ci_hi": 1.015,
+  "shift": "",
+  "name": "OS Credential Dumping"
+ },
+ {
+  "t": "T1587.001",
+  "n_report": 67,
+  "n_incident": 64,
+  "share_ratio": 0.99,
+  "ci_lo": 0.947,
+  "ci_hi": 1.044,
+  "shift": "",
+  "name": "Malware"
+ },
+ {
+  "t": "T1036",
+  "n_report": 659,
+  "n_incident": 630,
+  "share_ratio": 0.989,
+  "ci_lo": 0.972,
+  "ci_hi": 1.006,
+  "shift": "",
+  "name": "Masquerading"
+ },
+ {
+  "t": "T1036.004",
+  "n_report": 92,
+  "n_incident": 88,
+  "share_ratio": 0.989,
+  "ci_lo": 0.949,
+  "ci_hi": 1.034,
+  "shift": "",
+  "name": "Masquerade Task or Service"
+ },
+ {
+  "t": "T1573.002",
+  "n_report": 114,
+  "n_incident": 109,
+  "share_ratio": 0.989,
+  "ci_lo": 0.953,
+  "ci_hi": 1.029,
+  "shift": "",
+  "name": "Asymmetric Cryptography"
+ },
+ {
+  "t": "T1007",
+  "n_report": 141,
+  "n_incident": 135,
+  "share_ratio": 0.988,
+  "ci_lo": 0.956,
+  "ci_hi": 1.021,
+  "shift": "",
+  "name": "System Service Discovery"
+ },
+ {
+  "t": "T1583.001",
+  "n_report": 118,
+  "n_incident": 113,
+  "share_ratio": 0.988,
+  "ci_lo": 0.955,
+  "ci_hi": 1.027,
+  "shift": "",
+  "name": "Domains"
+ },
+ {
+  "t": "T1069.002",
+  "n_report": 47,
+  "n_incident": 45,
+  "share_ratio": 0.988,
+  "ci_lo": 0.942,
+  "ci_hi": 1.055,
+  "shift": "",
+  "name": "Domain Groups"
+ },
+ {
+  "t": "T1195",
+  "n_report": 116,
+  "n_incident": 111,
+  "share_ratio": 0.988,
+  "ci_lo": 0.954,
+  "ci_hi": 1.028,
+  "shift": "",
+  "name": "Supply Chain Compromise"
+ },
+ {
+  "t": "T1071.004",
+  "n_report": 95,
+  "n_incident": 91,
+  "share_ratio": 0.987,
+  "ci_lo": 0.951,
+  "ci_hi": 1.031,
+  "shift": "",
+  "name": "DNS"
+ },
+ {
+  "t": "T1132.001",
+  "n_report": 143,
+  "n_incident": 137,
+  "share_ratio": 0.987,
+  "ci_lo": 0.954,
+  "ci_hi": 1.034,
+  "shift": "",
+  "name": "Standard Encoding"
+ },
+ {
+  "t": "T1055.012",
+  "n_report": 95,
+  "n_incident": 91,
+  "share_ratio": 0.987,
+  "ci_lo": 0.95,
+  "ci_hi": 1.033,
+  "shift": "",
+  "name": "Process Hollowing"
+ },
+ {
+  "t": "T1014",
+  "n_report": 96,
+  "n_incident": 92,
+  "share_ratio": 0.987,
+  "ci_lo": 0.949,
+  "ci_hi": 1.032,
+  "shift": "",
+  "name": "Rootkit"
+ },
+ {
+  "t": "T1573",
+  "n_report": 268,
+  "n_incident": 257,
+  "share_ratio": 0.986,
+  "ci_lo": 0.964,
+  "ci_hi": 1.013,
+  "shift": "",
+  "name": "Encrypted Channel"
+ },
+ {
+  "t": "T1555.003",
+  "n_report": 218,
+  "n_incident": 209,
+  "share_ratio": 0.986,
+  "ci_lo": 0.96,
+  "ci_hi": 1.018,
+  "shift": "",
+  "name": "Credentials from Web Browsers"
+ },
+ {
+  "t": "T1059.007",
+  "n_report": 146,
+  "n_incident": 140,
+  "share_ratio": 0.986,
+  "ci_lo": 0.958,
+  "ci_hi": 1.023,
+  "shift": "",
+  "name": "JavaScript"
+ },
+ {
+  "t": "T1056.001",
+  "n_report": 299,
+  "n_incident": 287,
+  "share_ratio": 0.985,
+  "ci_lo": 0.961,
+  "ci_hi": 1.013,
+  "shift": "",
+  "name": "Keylogging"
+ },
+ {
+  "t": "T1204.001",
+  "n_report": 176,
+  "n_incident": 169,
+  "share_ratio": 0.985,
+  "ci_lo": 0.959,
+  "ci_hi": 1.015,
+  "shift": "",
+  "name": "Malicious Link"
+ },
+ {
+  "t": "T1218",
+  "n_report": 230,
+  "n_incident": 221,
+  "share_ratio": 0.984,
+  "ci_lo": 0.963,
+  "ci_hi": 1.008,
+  "shift": "",
+  "name": "System Binary Proxy Execution"
+ },
+ {
+  "t": "T1497",
+  "n_report": 207,
+  "n_incident": 199,
+  "share_ratio": 0.984,
+  "ci_lo": 0.959,
+  "ci_hi": 1.013,
+  "shift": "",
+  "name": "Virtualization/Sandbox Evasion"
+ },
+ {
+  "t": "T1571",
+  "n_report": 154,
+  "n_incident": 148,
+  "share_ratio": 0.984,
+  "ci_lo": 0.956,
+  "ci_hi": 1.023,
+  "shift": "",
+  "name": "Non-Standard Port"
+ },
+ {
+  "t": "T1566",
+  "n_report": 978,
+  "n_incident": 941,
+  "share_ratio": 0.983,
+  "ci_lo": 0.97,
+  "ci_hi": 0.996,
+  "shift": "under",
+  "name": "Phishing"
+ },
+ {
+  "t": "T1102",
+  "n_report": 369,
+  "n_incident": 355,
+  "share_ratio": 0.983,
+  "ci_lo": 0.962,
+  "ci_hi": 1.009,
+  "shift": "",
+  "name": "Web Service"
+ },
+ {
+  "t": "T1059",
+  "n_report": 989,
+  "n_incident": 951,
+  "share_ratio": 0.983,
+  "ci_lo": 0.966,
+  "ci_hi": 1.01,
+  "shift": "",
+  "name": "Command and Scripting Interpreter"
+ },
+ {
+  "t": "T1021",
+  "n_report": 261,
+  "n_incident": 251,
+  "share_ratio": 0.983,
+  "ci_lo": 0.962,
+  "ci_hi": 1.01,
+  "shift": "",
+  "name": "Remote Services"
+ },
+ {
+  "t": "T1068",
+  "n_report": 208,
+  "n_incident": 200,
+  "share_ratio": 0.983,
+  "ci_lo": 0.96,
+  "ci_hi": 1.011,
+  "shift": "",
+  "name": "Exploitation for Privilege Escalation"
+ },
+ {
+  "t": "T1199",
+  "n_report": 81,
+  "n_incident": 78,
+  "share_ratio": 0.982,
+  "ci_lo": 0.947,
+  "ci_hi": 1.027,
+  "shift": "",
+  "name": "Trusted Relationship"
+ },
+ {
+  "t": "T1123",
+  "n_report": 109,
+  "n_incident": 105,
+  "share_ratio": 0.982,
+  "ci_lo": 0.952,
+  "ci_hi": 1.016,
+  "shift": "",
+  "name": "Audio Capture"
+ },
+ {
+  "t": "T1567.002",
+  "n_report": 55,
+  "n_incident": 53,
+  "share_ratio": 0.981,
+  "ci_lo": 0.941,
+  "ci_hi": 1.039,
+  "shift": "",
+  "name": "Exfiltration to Cloud Storage"
+ },
+ {
+  "t": "T1553",
+  "n_report": 137,
+  "n_incident": 132,
+  "share_ratio": 0.981,
+  "ci_lo": 0.949,
+  "ci_hi": 1.023,
+  "shift": "",
+  "name": "Subvert Trust Controls"
+ },
+ {
+  "t": "T1568.002",
+  "n_report": 55,
+  "n_incident": 53,
+  "share_ratio": 0.981,
+  "ci_lo": 0.94,
+  "ci_hi": 1.038,
+  "shift": "",
+  "name": "Domain Generation Algorithms"
+ },
+ {
+  "t": "T1053",
+  "n_report": 317,
+  "n_incident": 306,
+  "share_ratio": 0.98,
+  "ci_lo": 0.962,
+  "ci_hi": 1.0,
+  "shift": "under",
+  "name": "Scheduled Task/Job"
+ },
+ {
+  "t": "T1189",
+  "n_report": 202,
+  "n_incident": 195,
+  "share_ratio": 0.98,
+  "ci_lo": 0.957,
+  "ci_hi": 1.002,
+  "shift": "",
+  "name": "Drive-by Compromise"
+ },
+ {
+  "t": "T1498",
+  "n_report": 92,
+  "n_incident": 89,
+  "share_ratio": 0.978,
+  "ci_lo": 0.945,
+  "ci_hi": 1.019,
+  "shift": "",
+  "name": "Network Denial of Service"
+ },
+ {
+  "t": "T1543",
+  "n_report": 121,
+  "n_incident": 117,
+  "share_ratio": 0.978,
+  "ci_lo": 0.948,
+  "ci_hi": 1.02,
+  "shift": "",
+  "name": "Create or Modify System Process"
+ },
+ {
+  "t": "T1074",
+  "n_report": 61,
+  "n_incident": 59,
+  "share_ratio": 0.978,
+  "ci_lo": 0.944,
+  "ci_hi": 1.024,
+  "shift": "",
+  "name": "Data Staged"
+ },
+ {
+  "t": "T1104",
+  "n_report": 189,
+  "n_incident": 183,
+  "share_ratio": 0.977,
+  "ci_lo": 0.953,
+  "ci_hi": 1.003,
+  "shift": "",
+  "name": "Multi-Stage Channels"
+ },
+ {
+  "t": "T1003.001",
+  "n_report": 154,
+  "n_incident": 149,
+  "share_ratio": 0.977,
+  "ci_lo": 0.956,
+  "ci_hi": 1.004,
+  "shift": "",
+  "name": "LSASS Memory"
+ },
+ {
+  "t": "T1115",
+  "n_report": 157,
+  "n_incident": 152,
+  "share_ratio": 0.977,
+  "ci_lo": 0.951,
+  "ci_hi": 1.007,
+  "shift": "",
+  "name": "Clipboard Data"
+ },
+ {
+  "t": "T1546",
+  "n_report": 62,
+  "n_incident": 60,
+  "share_ratio": 0.977,
+  "ci_lo": 0.943,
+  "ci_hi": 1.032,
+  "shift": "",
+  "name": "Event Triggered Execution"
+ },
+ {
+  "t": "T1074.001",
+  "n_report": 124,
+  "n_incident": 120,
+  "share_ratio": 0.977,
+  "ci_lo": 0.954,
+  "ci_hi": 1.01,
+  "shift": "",
+  "name": "Local Data Staging"
+ },
+ {
+  "t": "T1078.003",
+  "n_report": 31,
+  "n_incident": 30,
+  "share_ratio": 0.977,
+  "ci_lo": 0.939,
+  "ci_hi": 1.057,
+  "shift": "",
+  "name": "Local Accounts"
+ },
+ {
+  "t": "T1564",
+  "n_report": 123,
+  "n_incident": 119,
+  "share_ratio": 0.977,
+  "ci_lo": 0.945,
+  "ci_hi": 1.022,
+  "shift": "",
+  "name": "Hide Artifacts"
+ },
+ {
+  "t": "T1055.001",
+  "n_report": 130,
+  "n_incident": 126,
+  "share_ratio": 0.976,
+  "ci_lo": 0.948,
+  "ci_hi": 1.009,
+  "shift": "",
+  "name": "Dynamic-link Library Injection"
+ },
+ {
+  "t": "T1685.005",
+  "n_report": 65,
+  "n_incident": 63,
+  "share_ratio": 0.976,
+  "ci_lo": 0.943,
+  "ci_hi": 1.021,
+  "shift": "",
+  "name": "Clear Windows Event Logs"
+ },
+ {
+  "t": "T1620",
+  "n_report": 32,
+  "n_incident": 31,
+  "share_ratio": 0.976,
+  "ci_lo": 0.938,
+  "ci_hi": 1.048,
+  "shift": "",
+  "name": "Reflective Code Loading"
+ },
+ {
+  "t": "T1114",
+  "n_report": 98,
+  "n_incident": 95,
+  "share_ratio": 0.976,
+  "ci_lo": 0.947,
+  "ci_hi": 1.013,
+  "shift": "",
+  "name": "Email Collection"
+ },
+ {
+  "t": "T1090.003",
+  "n_report": 64,
+  "n_incident": 62,
+  "share_ratio": 0.976,
+  "ci_lo": 0.941,
+  "ci_hi": 1.02,
+  "shift": "",
+  "name": "Multi-hop Proxy"
+ },
+ {
+  "t": "T1021.005",
+  "n_report": 32,
+  "n_incident": 31,
+  "share_ratio": 0.976,
+  "ci_lo": 0.938,
+  "ci_hi": 1.043,
+  "shift": "",
+  "name": "VNC"
+ },
+ {
+  "t": "T1021.001",
+  "n_report": 133,
+  "n_incident": 129,
+  "share_ratio": 0.975,
+  "ci_lo": 0.946,
+  "ci_hi": 1.015,
+  "shift": "",
+  "name": "Remote Desktop Protocol"
+ },
+ {
+  "t": "T1090",
+  "n_report": 333,
+  "n_incident": 323,
+  "share_ratio": 0.975,
+  "ci_lo": 0.955,
+  "ci_hi": 0.998,
+  "shift": "under",
+  "name": "Proxy"
+ },
+ {
+  "t": "T1001",
+  "n_report": 132,
+  "n_incident": 128,
+  "share_ratio": 0.975,
+  "ci_lo": 0.948,
+  "ci_hi": 1.01,
+  "shift": "",
+  "name": "Data Obfuscation"
+ },
+ {
+  "t": "T1564.003",
+  "n_report": 67,
+  "n_incident": 65,
+  "share_ratio": 0.975,
+  "ci_lo": 0.943,
+  "ci_hi": 1.019,
+  "shift": "",
+  "name": "Hidden Window"
+ },
+ {
+  "t": "T1557",
+  "n_report": 33,
+  "n_incident": 32,
+  "share_ratio": 0.975,
+  "ci_lo": 0.938,
+  "ci_hi": 1.046,
+  "shift": "",
+  "name": "Adversary-in-the-Middle"
+ },
+ {
+  "t": "T1564.004",
+  "n_report": 33,
+  "n_incident": 32,
+  "share_ratio": 0.975,
+  "ci_lo": 0.938,
+  "ci_hi": 1.042,
+  "shift": "",
+  "name": "NTFS File Attributes"
+ },
+ {
+  "t": "T1555",
+  "n_report": 172,
+  "n_incident": 167,
+  "share_ratio": 0.974,
+  "ci_lo": 0.952,
+  "ci_hi": 0.999,
+  "shift": "under",
+  "name": "Credentials from Password Stores"
+ },
+ {
+  "t": "T1102.002",
+  "n_report": 69,
+  "n_incident": 67,
+  "share_ratio": 0.974,
+  "ci_lo": 0.942,
+  "ci_hi": 1.017,
+  "shift": "",
+  "name": "Bidirectional Communication"
+ },
+ {
+  "t": "T1547",
+  "n_report": 496,
+  "n_incident": 482,
+  "share_ratio": 0.973,
+  "ci_lo": 0.959,
+  "ci_hi": 0.988,
+  "shift": "under",
+  "name": "Boot or Logon Autostart Execution"
+ },
+ {
+  "t": "T1056",
+  "n_report": 357,
+  "n_incident": 347,
+  "share_ratio": 0.973,
+  "ci_lo": 0.955,
+  "ci_hi": 0.992,
+  "shift": "under",
+  "name": "Input Capture"
+ },
+ {
+  "t": "T1029",
+  "n_report": 36,
+  "n_incident": 35,
+  "share_ratio": 0.973,
+  "ci_lo": 0.938,
+  "ci_hi": 1.042,
+  "shift": "",
+  "name": "Scheduled Transfer"
+ },
+ {
+  "t": "T1087.002",
+  "n_report": 72,
+  "n_incident": 70,
+  "share_ratio": 0.973,
+  "ci_lo": 0.944,
+  "ci_hi": 1.013,
+  "shift": "",
+  "name": "Domain Account"
+ },
+ {
+  "t": "T1598.003",
+  "n_report": 35,
+  "n_incident": 34,
+  "share_ratio": 0.973,
+  "ci_lo": 0.938,
+  "ci_hi": 1.035,
+  "shift": "",
+  "name": "Spearphishing Link"
+ },
+ {
+  "t": "T1027.005",
+  "n_report": 37,
+  "n_incident": 36,
+  "share_ratio": 0.972,
+  "ci_lo": 0.939,
+  "ci_hi": 1.029,
+  "shift": "",
+  "name": "Indicator Removal from Tools"
+ },
+ {
+  "t": "T1110.003",
+  "n_report": 37,
+  "n_incident": 36,
+  "share_ratio": 0.972,
+  "ci_lo": 0.941,
+  "ci_hi": 1.033,
+  "shift": "",
+  "name": "Password Spraying"
+ },
+ {
+  "t": "T1528",
+  "n_report": 39,
+  "n_incident": 38,
+  "share_ratio": 0.971,
+  "ci_lo": 0.938,
+  "ci_hi": 1.03,
+  "shift": "",
+  "name": "Steal Application Access Token"
+ },
+ {
+  "t": "T1559.002",
+  "n_report": 39,
+  "n_incident": 38,
+  "share_ratio": 0.971,
+  "ci_lo": 0.939,
+  "ci_hi": 1.022,
+  "shift": "",
+  "name": "Dynamic Data Exchange"
+ },
+ {
+  "t": "T1003.004",
+  "n_report": 39,
+  "n_incident": 38,
+  "share_ratio": 0.971,
+  "ci_lo": 0.939,
+  "ci_hi": 1.025,
+  "shift": "",
+  "name": "LSA Secrets"
+ },
+ {
+  "t": "T1197",
+  "n_report": 38,
+  "n_incident": 37,
+  "share_ratio": 0.971,
+  "ci_lo": 0.937,
+  "ci_hi": 1.031,
+  "shift": "",
+  "name": "BITS Jobs"
+ },
+ {
+  "t": "T1608.001",
+  "n_report": 39,
+  "n_incident": 38,
+  "share_ratio": 0.971,
+  "ci_lo": 0.937,
+  "ci_hi": 1.024,
+  "shift": "",
+  "name": "Upload Malware"
+ },
+ {
+  "t": "T1505",
+  "n_report": 118,
+  "n_incident": 115,
+  "share_ratio": 0.97,
+  "ci_lo": 0.947,
+  "ci_hi": 1.002,
+  "shift": "",
+  "name": "Server Software Component"
+ },
+ {
+  "t": "T1120",
+  "n_report": 82,
+  "n_incident": 80,
+  "share_ratio": 0.969,
+  "ci_lo": 0.942,
+  "ci_hi": 1.009,
+  "shift": "",
+  "name": "Peripheral Device Discovery"
+ },
+ {
+  "t": "T1048.003",
+  "n_report": 43,
+  "n_incident": 42,
+  "share_ratio": 0.968,
+  "ci_lo": 0.94,
+  "ci_hi": 1.025,
+  "shift": "",
+  "name": "Exfiltration Over Unencrypted Non-C2 Protocol"
+ },
+ {
+  "t": "T1056.004",
+  "n_report": 44,
+  "n_incident": 43,
+  "share_ratio": 0.968,
+  "ci_lo": 0.938,
+  "ci_hi": 1.018,
+  "shift": "",
+  "name": "Credential API Hooking"
+ },
+ {
+  "t": "T1589",
+  "n_report": 43,
+  "n_incident": 42,
+  "share_ratio": 0.968,
+  "ci_lo": 0.937,
+  "ci_hi": 1.017,
+  "shift": "",
+  "name": "Gather Victim Identity Information"
+ },
+ {
+  "t": "T1090.001",
+  "n_report": 43,
+  "n_incident": 42,
+  "share_ratio": 0.968,
+  "ci_lo": 0.938,
+  "ci_hi": 1.022,
+  "shift": "",
+  "name": "Internal Proxy"
+ },
+ {
+  "t": "T1608",
+  "n_report": 46,
+  "n_incident": 45,
+  "share_ratio": 0.967,
+  "ci_lo": 0.938,
+  "ci_hi": 1.021,
+  "shift": "",
+  "name": "Stage Capabilities"
+ },
+ {
+  "t": "T1090.002",
+  "n_report": 47,
+  "n_incident": 46,
+  "share_ratio": 0.966,
+  "ci_lo": 0.939,
+  "ci_hi": 1.012,
+  "shift": "",
+  "name": "External Proxy"
+ },
+ {
+  "t": "T1185",
+  "n_report": 51,
+  "n_incident": 50,
+  "share_ratio": 0.965,
+  "ci_lo": 0.938,
+  "ci_hi": 1.013,
+  "shift": "",
+  "name": "Browser Session Hijacking"
+ },
+ {
+  "t": "T1614",
+  "n_report": 50,
+  "n_incident": 49,
+  "share_ratio": 0.965,
+  "ci_lo": 0.938,
+  "ci_hi": 1.01,
+  "shift": "",
+  "name": "System Location Discovery"
+ },
+ {
+  "t": "T1560.003",
+  "n_report": 50,
+  "n_incident": 49,
+  "share_ratio": 0.965,
+  "ci_lo": 0.938,
+  "ci_hi": 1.013,
+  "shift": "",
+  "name": "Archive via Custom Method"
+ },
+ {
+  "t": "T1027.001",
+  "n_report": 51,
+  "n_incident": 50,
+  "share_ratio": 0.965,
+  "ci_lo": 0.938,
+  "ci_hi": 1.01,
+  "shift": "",
+  "name": "Binary Padding"
+ },
+ {
+  "t": "T1187",
+  "n_report": 49,
+  "n_incident": 48,
+  "share_ratio": 0.965,
+  "ci_lo": 0.938,
+  "ci_hi": 1.011,
+  "shift": "",
+  "name": "Forced Authentication"
+ },
+ {
+  "t": "T1499",
+  "n_report": 52,
+  "n_incident": 51,
+  "share_ratio": 0.964,
+  "ci_lo": 0.938,
+  "ci_hi": 1.012,
+  "shift": "",
+  "name": "Endpoint Denial of Service"
+ },
+ {
+  "t": "T1559",
+  "n_report": 54,
+  "n_incident": 53,
+  "share_ratio": 0.964,
+  "ci_lo": 0.939,
+  "ci_hi": 1.004,
+  "shift": "",
+  "name": "Inter-Process Communication"
+ },
+ {
+  "t": "T1069",
+  "n_report": 56,
+  "n_incident": 55,
+  "share_ratio": 0.963,
+  "ci_lo": 0.938,
+  "ci_hi": 1.005,
+  "shift": "",
+  "name": "Permission Groups Discovery"
+ },
+ {
+  "t": "T1176",
+  "n_report": 120,
+  "n_incident": 118,
+  "share_ratio": 0.962,
+  "ci_lo": 0.94,
+  "ci_hi": 0.988,
+  "shift": "under",
+  "name": "Software Extensions"
+ },
+ {
+  "t": "T1530",
+  "n_report": 69,
+  "n_incident": 68,
+  "share_ratio": 0.96,
+  "ci_lo": 0.937,
+  "ci_hi": 0.995,
+  "shift": "under",
+  "name": "Data from Cloud Storage"
+ },
+ {
+  "t": "T1137.001",
+  "n_report": 87,
+  "n_incident": 86,
+  "share_ratio": 0.957,
+  "ci_lo": 0.939,
+  "ci_hi": 0.981,
+  "shift": "under",
+  "name": "Office Template Macros"
+ },
+ {
+  "t": "T1127",
+  "n_report": 85,
+  "n_incident": 84,
+  "share_ratio": 0.957,
+  "ci_lo": 0.939,
+  "ci_hi": 0.982,
+  "shift": "under",
+  "name": "Trusted Developer Utilities Proxy Execution"
+ },
+ {
+  "t": "T1569",
+  "n_report": 97,
+  "n_incident": 96,
+  "share_ratio": 0.956,
+  "ci_lo": 0.938,
+  "ci_hi": 0.982,
+  "shift": "under",
+  "name": "System Services"
+ },
+ {
+  "t": "T1588.002",
+  "n_report": 115,
+  "n_incident": 114,
+  "share_ratio": 0.954,
+  "ci_lo": 0.938,
+  "ci_hi": 0.973,
+  "shift": "under",
+  "name": "Tool"
+ },
+ {
+  "t": "T1592",
+  "n_report": 65,
+  "n_incident": 65,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "Gather Victim Host Information"
+ },
+ {
+  "t": "T1003.003",
+  "n_report": 35,
+  "n_incident": 35,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "NTDS"
+ },
+ {
+  "t": "T1102.001",
+  "n_report": 31,
+  "n_incident": 31,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "Dead Drop Resolver"
+ },
+ {
+  "t": "T1560.002",
+  "n_report": 30,
+  "n_incident": 30,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "Archive via Library"
+ },
+ {
+  "t": "T1552.004",
+  "n_report": 30,
+  "n_incident": 30,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "Private Keys"
+ },
+ {
+  "t": "T1222",
+  "n_report": 42,
+  "n_incident": 42,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "File and Directory Permissions Modification"
+ },
+ {
+  "t": "T1595.002",
+  "n_report": 51,
+  "n_incident": 51,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "Vulnerability Scanning"
+ },
+ {
+  "t": "T1567",
+  "n_report": 74,
+  "n_incident": 74,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "Exfiltration Over Web Service"
+ },
+ {
+  "t": "T1202",
+  "n_report": 32,
+  "n_incident": 32,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "Indirect Command Execution"
+ },
+ {
+  "t": "T1583.003",
+  "n_report": 30,
+  "n_incident": 30,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "Virtual Private Server"
+ },
+ {
+  "t": "T1550.002",
+  "n_report": 31,
+  "n_incident": 31,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "Pass the Hash"
+ },
+ {
+  "t": "T1550",
+  "n_report": 32,
+  "n_incident": 32,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "Use Alternate Authentication Material"
+ },
+ {
+  "t": "T1598",
+  "n_report": 53,
+  "n_incident": 53,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "Phishing for Information"
+ },
+ {
+  "t": "T1003.002",
+  "n_report": 40,
+  "n_incident": 40,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "Security Account Manager"
+ },
+ {
+  "t": "T1218.007",
+  "n_report": 39,
+  "n_incident": 39,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "Msiexec"
+ },
+ {
+  "t": "T1110.001",
+  "n_report": 38,
+  "n_incident": 38,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "Password Guessing"
+ },
+ {
+  "t": "T1136.001",
+  "n_report": 39,
+  "n_incident": 39,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "Local Account"
+ },
+ {
+  "t": "T1588",
+  "n_report": 52,
+  "n_incident": 52,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "Obtain Capabilities"
+ },
+ {
+  "t": "T1195.002",
+  "n_report": 40,
+  "n_incident": 40,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "Compromise Software Supply Chain"
+ },
+ {
+  "t": "T1021.004",
+  "n_report": 37,
+  "n_incident": 37,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "SSH"
+ },
+ {
+  "t": "T1595",
+  "n_report": 37,
+  "n_incident": 37,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "Active Scanning"
+ },
+ {
+  "t": "T1134.001",
+  "n_report": 33,
+  "n_incident": 33,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "Token Impersonation/Theft"
+ },
+ {
+  "t": "T1583.004",
+  "n_report": 33,
+  "n_incident": 33,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "Server"
+ },
+ {
+  "t": "T1558",
+  "n_report": 30,
+  "n_incident": 30,
+  "share_ratio": 0.946,
+  "ci_lo": 0.934,
+  "ci_hi": 0.955,
+  "shift": "under",
+  "name": "Steal or Forge Kerberos Tickets"
+ }
+]

@@ -1,0 +1,96 @@
+{
+ "n_entries": 6025,
+ "levels": [
+  {
+   "setting": "same_report",
+   "units": 5596,
+   "largest": 12,
+   "tech_tau_b": 0.993,
+   "tech_top10": 1.0,
+   "tech_top20": 0.95,
+   "tech_top50": 1.0,
+   "parent_tau_b": 0.993,
+   "parent_top10": 1.0,
+   "parent_top20": 0.95,
+   "parent_top50": 1.0
+  },
+  {
+   "setting": "incident_t30",
+   "units": 5468,
+   "largest": 17,
+   "tech_tau_b": 0.992,
+   "tech_top10": 1.0,
+   "tech_top20": 0.95,
+   "tech_top50": 1.0,
+   "parent_tau_b": 0.992,
+   "parent_top10": 1.0,
+   "parent_top20": 0.95,
+   "parent_top50": 1.0
+  },
+  {
+   "setting": "incident_t60",
+   "units": 5442,
+   "largest": 17,
+   "tech_tau_b": 0.992,
+   "tech_top10": 1.0,
+   "tech_top20": 0.95,
+   "tech_top50": 1.0,
+   "parent_tau_b": 0.991,
+   "parent_top10": 1.0,
+   "parent_top20": 0.95,
+   "parent_top50": 1.0
+  },
+  {
+   "setting": "incident_t90",
+   "units": 5442,
+   "largest": 17,
+   "tech_tau_b": 0.992,
+   "tech_top10": 1.0,
+   "tech_top20": 0.95,
+   "tech_top50": 1.0,
+   "parent_tau_b": 0.991,
+   "parent_top10": 1.0,
+   "parent_top20": 0.95,
+   "parent_top50": 1.0
+  },
+  {
+   "setting": "incident_t180",
+   "units": 5442,
+   "largest": 17,
+   "tech_tau_b": 0.992,
+   "tech_top10": 1.0,
+   "tech_top20": 0.95,
+   "tech_top50": 1.0,
+   "parent_tau_b": 0.991,
+   "parent_top10": 1.0,
+   "parent_top20": 0.95,
+   "parent_top50": 1.0
+  },
+  {
+   "setting": "incident_t60_span180",
+   "units": 5413,
+   "largest": 40,
+   "tech_tau_b": 0.991,
+   "tech_top10": 1.0,
+   "tech_top20": 0.95,
+   "tech_top50": 1.0,
+   "parent_tau_b": 0.99,
+   "parent_top10": 1.0,
+   "parent_top20": 0.95,
+   "parent_top50": 1.0
+  },
+  {
+   "setting": "incident_t60_span365",
+   "units": 5408,
+   "largest": 66,
+   "tech_tau_b": 0.991,
+   "tech_top10": 1.0,
+   "tech_top20": 0.95,
+   "tech_top50": 1.0,
+   "parent_tau_b": 0.99,
+   "parent_top10": 1.0,
+   "parent_top20": 0.95,
+   "parent_top50": 1.0
+  }
+ ]
+}

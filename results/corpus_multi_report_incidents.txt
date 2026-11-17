@@ -1,0 +1,144 @@
+## incident 165: 6 labelled reports; top entities [('SUNBURST', 4), ('TEARDROP', 1), ('APT29', 1)]
+  2020-12-13                              apt:46758aa98959
+  2020-12-17 CISA                         AA20-352A Advanced Persistent Threat Compromise of Government Agencies, Critical Infrastructure, and Private Sector Organizations
+  2020-12-18 www.microsoft.com            Analyzing Solorigate, the compromised DLL file that started a sophisticated cyberattack, and how Microsoft Defender helps protect customers | Microsoft Security Blog
+  2020-12-30                              apt:b555bc89a3a8
+  2021-01-08 CISA                         web:d30add31f5_ncas-alerts-aa21-008a
+  2021-01-20 www.microsoft.com            Deep dive into the Solorigate second-stage activation: From SUNBURST to TEARDROP and Raindrop | Microsoft Security Blog
+## incident 53: 5 labelled reports; top entities [('Ryuk', 4), ('Bazar', 3), ('TrickBot', 1)]
+  2020-09-29                              annoctr:zscaler_2020-09-29_spear-phishing-campaign-delivers-buer.txt
+  2020-10-08 The DFIR Report              Ryuk's Return - The DFIR Report
+  2020-10-28 CISA                         web:1c506b056b_ncas-alerts-aa20-302a
+  2020-10-30 Unit 42                      Threat Assessment: Ryuk Ransomware
+  2020-11-05 The DFIR Report              Ryuk Speed Run, 2 Hours to Ransom - The DFIR Report
+## incident 3663: 5 labelled reports; top entities [('FlawedGrace', 3), ('TA505', 2), ('Raspberry Robin', 1)]
+  2023-06-07 CISA                         web:de0e8bfce6_e-cl0p-ransomware-gang-exploits-moveit-vulnerability-5-0-pdf
+  2023-06-07 CISA                         #StopRansomware: CL0P Ransomware Gang Exploits CVE-2023-34362 MOVEit Vulnerability | CISA
+  2023-06-12 The DFIR Report              A Truly Graceful Wipe Out - The DFIR Report
+  2023-07-06 CISA                         Increased Truebot Activity Infects U.S. and Canada Based Networks | CISA
+  2023-07-06 CISA                         web:09337bf192_-truebot-activity-infects-us-and-canada-based-networks-1-pdf
+## incident 3209: 3 labelled reports; top entities [('IcedID', 2), ('Conti', 1), ('Lazarus Group', 1)]
+  2021-04-27                              apt:e89c63fb8f2b
+  2021-05-12 The DFIR Report              Conti Ransomware
+  2021-06-20 The DFIR Report              From Word to Lateral Movement in 1 Hour
+## incident 444: 3 labelled reports; top entities [('Conti', 2), ('IcedID', 1), ('TrickBot', 1)]
+  2021-07-19 The DFIR Report              IcedID and Cobalt Strike vs Antivirus
+  2021-08-01 The DFIR Report              BazarCall to Conti Ransomware via Trickbot and Cobalt Strike
+  2021-09-13 The DFIR Report              BazarLoader to Conti Ransomware in 32 Hours
+## incident 159: 3 labelled reports; top entities [('TrickBot', 3), ('WastedLocker', 1)]
+  2021-03-17 CISA                         AA21-076A TrickBot Malware
+  2021-03-18                              apt:9807dbe836d4
+  2021-05-02 The DFIR Report              Trickbot Brief: Creds and Beacons
+## incident 381: 3 labelled reports; top entities [('SystemBC', 2), ('Royal', 1)]
+  2024-08-12 The DFIR Report              Threat Actors' Toolkit: Leveraging Sliver, PoshC2 & Batch Scripts - The DFIR Report
+  2024-08-26 The DFIR Report              BlackSuit Ransomware - The DFIR Report
+  2024-08-27 CISA                         #StopRansomware: Blacksuit (Royal) Ransomware | CISA
+## incident 3220: 3 labelled reports; top entities [('APT29', 3), ('WellMess', 1)]
+  2021-05-07                              apt:54e368656f8c
+  2021-05-27                              apt:714b97855b6b
+  2021-05-28 CISA                         web:dfb25438cd_ncas-alerts-aa21-148a
+## incident 261: 3 labelled reports; top entities [('SystemBC', 2), ('RansomHub', 1), ('Qilin', 1)]
+  2025-07-22 CISA                         AA25-203A #StopRansomware: Interlock
+  2025-07-31 Cisco Talos                  IR Trends Q2 2025: Phishing attacks persist as actors leverage compromised valid accounts to enhance legitimacy
+  2025-09-08 The DFIR Report              Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs - The DFIR Report
+## incident 1475: 3 labelled reports; top entities [('RansomHub', 3)]
+  2024-08-29 CISA                         AA24-242A #StopRansomware: RansomHub Ransomware
+  2024-09-10 ESET WeLiveSecurity          CosmicBeetle steps up: Probation period at RansomHub
+  2024-10-24 Cisco Talos                  Talos IR trends Q3 2024: Identity-based operations loom large
+## incident 1160: 3 labelled reports; top entities [('Qilin', 2), ('Babuk', 2)]
+  2025-10-09 Cisco Talos                  Velociraptor leveraged in ransomware attacks
+  2025-10-23 Cisco Talos                  IR Trends Q3 2025: ToolShell attacks dominate, highlighting criticality of segmentation and rapid response
+  2025-10-27 Cisco Talos                  Uncovering Qilin attack methods exposed through multiple cases
+## incident 3031: 3 labelled reports; top entities [('Winnti Group', 3), ('PipeMon', 1)]
+  2020-04-20                              apt:1936abcedd5c
+  2020-04-20                              annoctr:quoteintelligence_2020-04-20_winnti-group-insights-from-the.txt
+  2020-05-21                              apt:0953a87a680e
+## incident 3194: 3 labelled reports; top entities [('Ecipekac', 3), ('SodaMaster', 2)]
+  2021-01-31                              apt:1dfd4cd9d9a5
+  2021-02-25                              apt:42da0553f984
+  2021-03-30                              apt:7c8a47dad544
+## incident 3377: 3 labelled reports; top entities [('APT41', 3), ('DUSTTRAP', 1)]
+  2024-07-10                              apt:b409b56d8ac0
+  2024-07-10                              apt:713707179b05
+  2024-07-19                              apt:afd353c869cd
+## incident 127: 2 labelled reports; top entities [('Conti', 2)]
+  2021-09-22 CISA                         Conti Ransomware | CISA
+  2021-10-04 The DFIR Report              BazarLoader and the Conti Leaks
+## incident 3280: 2 labelled reports; top entities [('FIN13', 2)]
+  None f.hubspotusercontent30.net   web:fd2cbe1e03_hubfs-8776530-sygnia-20elephant-20beetle-jan2022-pdf
+  2021-12-07                              apt:8d9d36d5a0f7
+## incident 3111: 2 labelled reports; top entities [('Kimsuky', 2)]
+  2020-10-27 CISA                         web:b2638a4b41_ncas-alerts-aa20-301a
+  2020-10-27                              apt:e9982868ab5e
+## incident 3233: 2 labelled reports; top entities [('Leviathan', 2)]
+  2021-07-19 CISA                         web:9bd45c740f_ncas-alerts-aa21-200a
+  2021-07-19                              apt:0f3bf0752bfd
+## incident 83: 2 labelled reports; top entities []
+  2022-03-15 CISA                         web:ec12443c83_uscert-sites-default-files-publications-aa22-074a-stix-xml
+  2022-05-02 CISA                         Russian State-Sponsored Cyber Actors Gain Network Access by Exploiting Default Multifactor Authentication Protocols and “PrintNightmare” Vulnerability | CISA
+## incident 1677: 2 labelled reports; top entities [('IcedID', 2)]
+  2023-04-03 The DFIR Report              Malicious ISO File Leads to Domain Wide Ransomware - The DFIR Report
+  2023-05-22 The DFIR Report              IcedID Macro Ends in Nokoyawa Ransomware - The DFIR Report
+## incident 3733: 2 labelled reports; top entities []
+  2023-07-01 CISA                         web:861284ee0c_ors-exploiting-citrix-cve-2023-3519-to-implant-webshells-pdf
+  2023-07-20 CISA                         AA23-201A Threat Actors Exploiting Citrix CVE-2023-3519 to Implant Webshells
+## incident 164: 2 labelled reports; top entities [('QakBot', 2)]
+  2022-02-07 The DFIR Report              Qbot Likes to Move It, Move It
+  2022-02-21 The DFIR Report              Qbot and Zerologon Lead To Full Domain Compromise
+## incident 116: 2 labelled reports; top entities [('APT28', 2)]
+  2022-01-25                              apt:08fff1030cce
+  2022-02-16 CISA                         Russian State-Sponsored Cyber Actors Target Cleared Defense Contractor Networks to Obtain Sensitive U.S. Defense Information and Technology | CISA
+## incident 190: 2 labelled reports; top entities [('Bazar', 2), ('Ryuk', 1), ('Anchor', 1)]
+  2021-01-31 The DFIR Report              Bazar, No Ryuk?
+  2021-03-08 The DFIR Report              Bazar Drops the Anchor
+## incident 250: 2 labelled reports; top entities [('IcedID', 2)]
+  2022-04-04 The DFIR Report              Stolen Images Campaign Ends in Conti Ransomware
+  2022-04-25 The DFIR Report              Quantum Ransomware
+## incident 249: 2 labelled reports; top entities []
+  2021-07-01 CISA                         web:5454a82bba_hinese-gas-pipeline-intrusion-campaign-2011-to-2013-20-1-pdf
+  2021-07-20 CISA                         web:2141eef257_ncas-alerts-aa21-201a
+## incident 365: 2 labelled reports; top entities [('IcedID', 2)]
+  2024-04-01 The DFIR Report              From OneNote to RansomNote: An Ice Cold Intrusion - The DFIR Report
+  2024-04-29 The DFIR Report              From IcedID to Dagon Locker Ransomware in 29 Days - The DFIR Report
+## incident 387: 2 labelled reports; top entities [('BlackCat', 2), ('Fox Kitten', 1)]
+  2024-08-28 CISA                         AA24-241A Iran-based Cyber Actors Enabling Ransomware Attacks on US Organizations
+  2024-09-30 The DFIR Report              Nitrogen Campaign Drops Sliver and Ends With BlackCat Ransomware - The DFIR Report
+## incident 46: 2 labelled reports; top entities [('Threat Group-3390', 1), ('ZIRCONIUM', 1)]
+  2025-07-22 Microsoft Threat Intelligenc Disrupting active exploitation of on-premises SharePoint vulnerabilities | Microsoft Security Blog
+  2025-07-24 ESET WeLiveSecurity          ToolShell: An all-you-can-eat buffet for threat actors
+## incident 1327: 2 labelled reports; top entities [('Lumma Stealer', 1)]
+  2025-05-21 ESET WeLiveSecurity          ESET takes part in global operation to disrupt Lumma Stealer
+  2025-05-21 CISA                         AA25-141B Threat Actors Deploy LummaC2 Malware to Exfiltrate Sensitive Data from Organizations
+## incident 3757: 2 labelled reports; top entities [('APT28', 2), ('JHUHUGIT', 1)]
+  2025-05-15 ESET WeLiveSecurity          Operation RoundPress targeting high-value webmail servers
+  2025-05-21 CISA                         AA25-141A Russian GRU Targeting Western Logistics Entities and Technology Companies
+## incident 965: 2 labelled reports; top entities [('TeamPCP', 2), ('TeamTNT', 1)]
+  2026-03-31 Unit 42                      Weaponizing the Protectors: TeamPCP’s Multi-Stage Supply Chain Attack on Security Infrastructure
+  2026-04-06 Unit 42                      Understanding Current Threats to Kubernetes Environments
+## incident 2837: 2 labelled reports; top entities [('Turla', 2), ('LightNeuron', 1)]
+  2019-05-07                              apt:44ea6ae12ca9
+  2019-05-29                              apt:a6ba7a30e00d
+## incident 2909: 2 labelled reports; top entities [('Attor', 2)]
+  2019-10-10                              apt:bbb2512ccf76
+  2019-10-10                              apt:dc342c30cc53
+## incident 2917: 2 labelled reports; top entities [('Winnti Group', 2)]
+  2019-10-10                              apt:fa008c2924f6
+  2019-10-21                              apt:7f98a609e1dc
+## incident 3420: 2 labelled reports; top entities [('Turla', 1)]
+  None                              apt:63c7af76b7bf
+  2020-03-12                              apt:68b971b44c01
+## incident 3064: 2 labelled reports; top entities [('Turla', 2), ('ComRAT', 1)]
+  2020-05-26                              apt:7bcdfae2ef02
+  2020-07-14                              apt:19cf361089a3
+## incident 3388: 2 labelled reports; top entities [('Lazarus Group', 2)]
+  2020-08-13                              apt:dbd58d46b251
+  2020-08-18                              apt:ae100f502bae
+## incident 251: 2 labelled reports; top entities [('Zebrocy', 2), ('APT28', 2)]
+  2020-09-22                              apt:e08daeb493b2
+  2020-09-22                              annoctr:quoteintelligence_2020-09-22_apt28-zebrocy-malware-campaign-nato.txt
+## incident 3522: 2 labelled reports; top entities []
+  2021-01-05                              apt:425780581a76
+  2021-01-06                              annoctr:quoteintelligence_2021-01-06_reconhellcat-uses-nist-theme-as.txt
+## incident 395: 2 labelled reports; top entities [('APT29', 2), ('APT28', 1)]
+  2024-02-13                              apt:edb8c33bf3b3
+  2024-02-26 CISA                         AA24-057A SVR Cyber Actors Adapt Tactics for Initial Cloud Access

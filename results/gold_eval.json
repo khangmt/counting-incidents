@@ -1,0 +1,7 @@
+{"note": "205 stratified pairs labelled by Claude from titles, dates and main entities (189 decided, 16 unsure); P and R are over the decided pairs of a stratified sample, not population estimates; corpus with CISA, tau=60",
+ "by_span": [
+  {"span": 180, "incidents": 443, "TP": 59, "FP": 27, "FN": 24, "P": 0.69, "R": 0.71, "tau_b": 0.986, "top20": 0.85, "over": ["T1003.001","T1018","T1021.001","T1021.002","T1055","T1059.001","T1087.002","T1135","T1218.011","T1482","T1486","T1518.001"]},
+  {"span": 90, "incidents": 460, "TP": 57, "FP": 19, "FN": 26, "P": 0.75, "R": 0.69, "tau_b": 0.988, "top20": 0.95, "over": ["T1018","T1021.002","T1059.001","T1482","T1486"]},
+  {"span": 60, "incidents": 470, "TP": 56, "FP": 12, "FN": 27, "P": 0.82, "R": 0.67, "tau_b": 0.990, "top20": 0.95, "over": ["T1021.002","T1055","T1059.001","T1482","T1566.002"]},
+  {"span": 45, "incidents": 478, "TP": 53, "FP": 11, "FN": 30, "P": 0.83, "R": 0.64, "tau_b": 0.990, "top20": 0.90, "over": ["T1018","T1021.002","T1055","T1059.001","T1482","T1566.002"]}],
+ "merged_stratum_span180": {"ioc_links": "17/25 same", "entity_links": "17/36 same", "pairs_le_60_days_apart": "33/47 same", "pairs_gt_60_days_apart": "1/14 same"}}
