@@ -4,6 +4,7 @@ A. The exact prior-work rule (Rahman et al.: shared group or malware within 2 mo
 B. Stability of the over-counted set across span caps.
 C. Permutation null: same incident-size distribution, reports assigned at random within their year."""
 import json, sys, random, collections as C
+NPERM = 2000
 sys.path.insert(0, RB + 'scripts')
 from cluster_rank import load, cluster, counts, compare, pairwise_eval, shared_software, cluster_edges, entity_edges
 from share_bootstrap import share_ratio_boot
@@ -50,7 +51,7 @@ for l, idx in grp.items():
     ys = {year[i] for i in idx}
     sizes_by_year[year[idx[0]] if len(ys) == 1 else 'mixed'].append(len(idx))
 random.seed(1); null = C.defaultdict(list)
-for _ in range(200):
+for _ in range(NPERM):
     lab = [None] * len(rows); nxt = 0
     pool = C.defaultdict(list)
     for i, y in enumerate(year): pool[y].append(i)
@@ -64,12 +65,19 @@ for _ in range(200):
     for i in range(len(rows)):
         if lab[i] is None: lab[i] = nxt; nxt += 1     # reports of cross-year incidents stay single in the null
     for t, v in rho(lab).items(): null[t].append(v)
-nl = {}
-for t in sorted(main, key=lambda t: -real[t]):
-    z = sorted(null[t]); nl[t] = {'real': round(real[t], 3), 'null_mean': round(sum(z) / len(z), 3), 'null_975': round(z[int(.975 * len(z)) - 1], 3),
-                                  'p_null': round(sum(x >= real[t] for x in z) / len(z), 3)}
+from share_bootstrap import bh
+nR = C.Counter(t for r in rows for t in set(r['techniques']))
+tested = [t for t in real if nR[t] >= 20]                       # same techniques as the bootstrap test
+items = []
+for t in tested:
+    z = sorted(null[t]); items.append({'t': t, 'real': round(real[t], 3), 'null_mean': round(sum(z) / len(z), 3), 'null_975': round(z[int(.975 * len(z)) - 1], 3),
+                                       'p_null': round((sum(x >= real[t] for x in z) + 1) / (len(z) + 1), 4), 'in_bootstrap_over_set': t in main})
+bh(items, 'p_null', 'q_null_bh')
+nl = {x['t']: x for x in sorted(items, key=lambda x: -x['real'])}
+out['attack_permutation_meta'] = {'n_permutations': NPERM, 'n_tested': len(items), 'seed': 1,
+    'over_bootstrap_and_null_bh': sorted(x['t'] for x in items if x['in_bootstrap_over_set'] and x['q_null_bh'] <= 0.05)}
 out['attack_permutation_null'] = nl
-print('C', json.dumps(nl, indent=0)[:1500])
+print('C', out['attack_permutation_meta'])
 # ---------- A on texts: Rahman rule on full texts (any matched group/malware, no subject guard, no indicator links)
 src = open(RB + 'scripts/run_corpus.py').read().split('# technique-labelled subset')[0]
 g = {}; exec(src, g)

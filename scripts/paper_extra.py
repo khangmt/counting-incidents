@@ -51,9 +51,12 @@ def decompose(rows, lab, B=1000, min_n=20, seed=0):
     for t in sR:
         if nR[t] < min_n: continue
         z = sorted(boots[t]); lo, hi = z[int(.025 * len(z))], z[int(.975 * len(z)) - 1]
+        pp = min(1, 2 * min((sum(x <= 1 for x in z) + 1) / (len(z) + 1), (sum(x >= 1 for x in z) + 1) / (len(z) + 1)))
         out.append({'t': t, 'name': names.get(t, ''), 'n_report': nR[t], 'share_report': round(sR[t], 5), 'share_vendor_bal': round(sV.get(t, 0), 5),
                     'share_incident': round(sI.get(t, 0), 5), 'producer_ratio': round(sR[t] / sV[t], 3), 'producer_ci': [round(lo, 3), round(hi, 3)],
-                    'producer_shift': 'over' if lo > 1 else 'under' if hi < 1 else '', 'duplicate_ratio': round(sR[t] / sI[t], 3)})
+                    'producer_shift': 'over' if lo > 1 else 'under' if hi < 1 else '', 'producer_p': round(pp, 4), 'duplicate_ratio': round(sR[t] / sI[t], 3)})
+    from share_bootstrap import bh
+    bh(out, 'producer_p', 'producer_q_bh')
     return {'n_reports': len(rows), 'n_vendors': len(nv), 'n_unknown_producer': sum(1 for v in vend if v.startswith('unknown:')), 'top_vendors': nv.most_common(12),
             'top_vendor_share_of_reports': round(nv.most_common(1)[0][1] / len(rows), 3), 'techniques': sorted(out, key=lambda x: -x['producer_ratio'])}
 

@@ -1,7 +1,7 @@
 from paths import RB, DATA, TEXTS  # set RB_ROOT, RB_DATA, RB_TEXTS to relocate
 import json, sys, csv, re, collections as C, itertools
 sys.path.insert(0, RB + 'scripts')
-from cluster_rank import load, UF, counts, compare, pairwise_eval
+from cluster_rank import load, UF, counts, compare, pairwise_eval, pairwise_ci
 from share_bootstrap import share_ratio_boot
 RES = RB + 'results/'
 rows = [r for r in load(RES + 'corpus_reports.jsonl') if r['vendor'] != 'attack.mitre.org']  # ATT&CK group pages are summaries, not reports
@@ -56,7 +56,7 @@ for name, kw in [('ioc_only', dict(use_ent=False)), ('ent_only_t60', dict(use_io
     for lvl in ['tech', 'parent']:
         cr, nr = counts(sub, None, lvl); ci, ni = counts(sub, L, lvl); o = compare(cr, nr, ci, ni)
         row.update({f'{lvl}_tau_b': round(o['kendall_tau_b'], 3), f'{lvl}_top10': o['top10_overlap'], f'{lvl}_top20': o['top20_overlap'], f'{lvl}_top50': o['top50_overlap']})
-    ev = pairwise_eval(rows, lab, gold); row.update({'val_P': round(ev['P'], 3), 'val_R': round(ev['R'], 3), 'val_F1': round(ev['F1'], 3), 'val_pos_pairs': ev['pairs_gold_pos']})
+    ev = pairwise_eval(rows, lab, gold); row.update({'val_P': round(ev['P'], 3), 'val_R': round(ev['R'], 3), 'val_F1': round(ev['F1'], 3), 'val_pos_pairs': ev['pairs_gold_pos'], 'val_tp': ev['tp'], 'val_fp': ev['fp'], 'val_fn': ev['fn'], **pairwise_ci(rows, lab, gold)})
     summary.append(row); print(row)
 json.dump(summary, open(RES + 'corpus_sensitivity.json', 'w'), indent=1)
 lab = cluster2(tau=60); L = [lab[i] for i in lab_idx]

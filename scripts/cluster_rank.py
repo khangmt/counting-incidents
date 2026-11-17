@@ -71,7 +71,28 @@ def pairwise_eval(rows, labels, gold):
         g = gold[i] == gold[j]; p = labels[i] == labels[j]
         tp += g and p; fp += p and not g; fn += g and not p
     P = tp / (tp + fp) if tp + fp else float('nan'); R = tp / (tp + fn) if tp + fn else float('nan')
-    return {'P': P, 'R': R, 'F1': 2 * P * R / (P + R) if P + R else 0, 'pairs_gold_pos': tp + fn, 'n_labelled': len(idx)}
+    return {'P': P, 'R': R, 'F1': 2 * P * R / (P + R) if P + R else 0, 'pairs_gold_pos': tp + fn, 'n_labelled': len(idx), 'tp': tp, 'fp': fp, 'fn': fn}
+
+def pairwise_ci(rows, labels, gold, B=1000, seed=0):
+    """95% CIs for pairwise P and R from a bootstrap over gold groups (campaigns or folders), because pairs are not independent.
+    A row drawn twice (in two copies of its group) is never paired with itself."""
+    import random
+    from math import comb
+    groups = C.defaultdict(list)
+    for i, g in gold.items(): groups[g].append(i)
+    keys = list(groups); random.seed(seed); Ps, Rs = [], []
+    for _ in range(B):
+        draw = random.choices(keys, k=len(keys))
+        by_lab = C.defaultdict(C.Counter); row_n = C.Counter(); gold_pairs = 0
+        for n, k in enumerate(draw):
+            gold_pairs += comb(len(groups[k]), 2)
+            for i in groups[k]: by_lab[labels[i]][n] += 1; row_n[i] += 1
+        tp = sum(comb(c, 2) for cnt in by_lab.values() for c in cnt.values())
+        pred = sum(comb(sum(cnt.values()), 2) for cnt in by_lab.values()) - sum(comb(k, 2) for k in row_n.values())
+        if pred: Ps.append(tp / pred)
+        if gold_pairs: Rs.append(tp / gold_pairs)
+    q = lambda z: [round(sorted(z)[int(.025 * len(z))], 3), round(sorted(z)[int(.975 * len(z)) - 1], 3)] if z else None
+    return {'P_ci': q(Ps), 'R_ci': q(Rs)}
 
 def shared_software(stix_path, min_groups=4):
     """Software used by >= min_groups groups/campaigns in ATT&CK (Cobalt Strike, Mimikatz, PlugX...): not evidence of a shared incident."""

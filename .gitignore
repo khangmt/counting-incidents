@@ -7,3 +7,4 @@ data/
 *.bbl
 *.blg
 *.out
+results/runs/*.log

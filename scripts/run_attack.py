@@ -2,6 +2,7 @@ from paths import RB, DATA, TEXTS  # set RB_ROOT, RB_DATA, RB_TEXTS to relocate
 import json, sys, collections as C
 sys.path.insert(0, RB + 'scripts')
 from cluster_rank import *
+from cluster_rank import pairwise_ci
 SHARED = shared_software(DATA + 'attack_stix/enterprise-attack.json')
 MAIN_SPAN = 60  # incident may span at most this many days (hand-checked pairs: merges > 60 days apart were almost all wrong)
 def clus(rows, tau, link, exclude=(), span=MAIN_SPAN):
@@ -26,7 +27,7 @@ for link in [('intrusion-set', 'campaign', 'malware'), ('intrusion-set', 'campai
         sizes = C.Counter(lab); big = max(sizes.values())
         ev = pairwise_eval(rows, lab_nc, gold)
         row = {'link': '+'.join(x[:3] for x in link), 'tau': tau, 'n_incidents': len(sizes), 'largest': big,
-               'singletons': sum(1 for v in sizes.values() if v == 1), 'val_P': round(ev['P'], 3), 'val_R': round(ev['R'], 3), 'val_F1': round(ev['F1'], 3)}
+               'singletons': sum(1 for v in sizes.values() if v == 1), 'val_P': round(ev['P'], 3), 'val_R': round(ev['R'], 3), 'val_F1': round(ev['F1'], 3), 'val_tp': ev['tp'], 'val_fp': ev['fp'], 'val_fn': ev['fn'], **pairwise_ci(rows, lab_nc, gold)}
         for lvl in ['tech', 'parent']:
             cr, nr = counts(rows, None, lvl); ci, ni = counts(rows, lab, lvl); cmp_ = compare(cr, nr, ci, ni)
             row.update({f'{lvl}_tau_b': round(cmp_['kendall_tau_b'], 3), f'{lvl}_top10': cmp_['top10_overlap'], f'{lvl}_top20': cmp_['top20_overlap'], f'{lvl}_top50': cmp_['top50_overlap']})
@@ -35,7 +36,7 @@ for span in [45, 90, 180, 365, None]:   # span-cap sweep at tau=60
     link = ('intrusion-set', 'campaign', 'malware')
     lab = clus(rows, 60, link, span=span); lab_nc = clus(rows, 60, link, exclude=camps, span=span)
     ev = pairwise_eval(rows, lab_nc, gold); sizes = C.Counter(lab)
-    row = {'link': 'int+cam+mal', 'tau': 60, 'span': span, 'n_incidents': len(sizes), 'largest': max(sizes.values()), 'val_P': round(ev['P'], 3), 'val_R': round(ev['R'], 3), 'val_F1': round(ev['F1'], 3)}
+    row = {'link': 'int+cam+mal', 'tau': 60, 'span': span, 'n_incidents': len(sizes), 'largest': max(sizes.values()), 'val_P': round(ev['P'], 3), 'val_R': round(ev['R'], 3), 'val_F1': round(ev['F1'], 3), 'val_tp': ev['tp'], 'val_fp': ev['fp'], 'val_fn': ev['fn'], **pairwise_ci(rows, lab_nc, gold)}
     for lvl in ['tech', 'parent']:
         cr, nr = counts(rows, None, lvl); ci, ni = counts(rows, lab, lvl); cmp_ = compare(cr, nr, ci, ni)
         row.update({f'{lvl}_tau_b': round(cmp_['kendall_tau_b'], 3), f'{lvl}_top10': cmp_['top10_overlap'], f'{lvl}_top20': cmp_['top20_overlap'], f'{lvl}_top50': cmp_['top50_overlap']})
