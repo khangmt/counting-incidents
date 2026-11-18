@@ -55,6 +55,10 @@
   ],
   "n_tested": 215,
   "spearman_producer_vs_duplicate": -0.033,
+  "spearman_ci": [
+   -0.178,
+   0.112
+  ],
   "n_producer_ci_excludes_1": 27,
   "n_producer_bh_sig": 0,
   "top_vendor_share_of_reports": 0.073,
@@ -1743,23 +1747,6 @@
     "producer_q_bh": 0.9423
    },
    {
-    "t": "T1125",
-    "name": "Video Capture",
-    "n_report": 53,
-    "share_report": 0.00235,
-    "share_vendor_bal": 0.00227,
-    "share_incident": 0.00252,
-    "producer_ratio": 1.036,
-    "producer_ci": [
-     0.727,
-     1.755
-    ],
-    "producer_shift": "",
-    "producer_p": 0.8591,
-    "duplicate_ratio": 0.934,
-    "producer_q_bh": 0.9529
-   },
-   {
     "t": "T1555.003",
     "name": "Credentials from Web Browsers",
     "n_report": 137,
@@ -1775,6 +1762,23 @@
     "producer_p": 0.7313,
     "duplicate_ratio": 0.969,
     "producer_q_bh": 0.911
+   },
+   {
+    "t": "T1125",
+    "name": "Video Capture",
+    "n_report": 53,
+    "share_report": 0.00235,
+    "share_vendor_bal": 0.00227,
+    "share_incident": 0.00252,
+    "producer_ratio": 1.036,
+    "producer_ci": [
+     0.727,
+     1.755
+    ],
+    "producer_shift": "",
+    "producer_p": 0.8591,
+    "duplicate_ratio": 0.934,
+    "producer_q_bh": 0.9529
    },
    {
     "t": "T1030",
@@ -3772,6 +3776,10 @@
   ],
   "n_tested": 196,
   "spearman_producer_vs_duplicate": 0.005,
+  "spearman_ci": [
+   -0.14,
+   0.144
+  ],
   "n_producer_ci_excludes_1": 50,
   "n_producer_bh_sig": 0,
   "top_vendor_share_of_reports": 0.239,

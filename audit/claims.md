@@ -88,4 +88,8 @@ Each number is recomputed from the results file and must appear verbatim in pape
 | Validation prior rule, texts R | 0.73 | results/reviewer_checks.json | verified |
 | Texts q, SMB shares and Process Injection | $q$ 0.08 and 0.13 | results/corpus_share_shift.json | verified |
 | Nominal ATT&CK q range | $q$ = 0.08--0.12 | results/attack_share_shift.json | verified |
+| TIE units removed by URL merging | 429 | results/tie_sensitivity.json | verified |
+| TIE units removed by incident linking | 154 | results/tie_sensitivity.json | verified |
+| Spearman CI, ATT&CK | CI $-0.18$ to $0.11$ | results/producer_vs_duplicate.json | verified |
+| Spearman CI, texts | CI $-0.14$ to $0.14$ | results/producer_vs_duplicate.json | verified |
 | TIE techniques passing BH | seven | results/tie_share_shift.json | verified |

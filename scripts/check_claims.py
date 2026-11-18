@@ -121,6 +121,10 @@ CLAIMS += [
  ('Validation prior rule, texts R', f2(RC['texts_rahman_rule']['R']), 'reviewer_checks.json'),
  ('Texts q, SMB shares and Process Injection', f"$q$ {T['T1021.002']['q_bh']:.2f} and {T['T1055']['q_bh']:.2f}", 'corpus_share_shift.json'),
  ('Nominal ATT&CK q range', f"$q$ = {min(A[t]['q_bh'] for t in ['T1528','T1195.001','T1561.002']):.2f}--{max(A[t]['q_bh'] for t in ['T1528','T1195.001','T1561.002']):.2f}", 'attack_share_shift.json'),
+ ('TIE units removed by URL merging', str(TM['n_units_report'] - [x for x in TS if x['setting'] == 'same_report'][0]['units']), 'tie_sensitivity.json'),
+ ('TIE units removed by incident linking', str([x for x in TS if x['setting'] == 'same_report'][0]['units'] - TM['n_units_incident']), 'tie_sensitivity.json'),
+ ('Spearman CI, ATT&CK', f"CI ${P['attack']['spearman_ci'][0]:.2f}$ to ${P['attack']['spearman_ci'][1]:.2f}$".replace('$-', '$-').replace('CI $', 'CI $'), 'producer_vs_duplicate.json'),
+ ('Spearman CI, texts', f"CI ${P['corpus']['spearman_ci'][0]:.2f}$ to ${P['corpus']['spearman_ci'][1]:.2f}$", 'producer_vs_duplicate.json'),
  ('TIE techniques passing BH', {7: 'seven'}.get(sum(1 for x in J('tie_share_shift.json') if x['shift_bh'] == 'over'), '?'), 'tie_share_shift.json'),
 ]
 
