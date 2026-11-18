@@ -84,6 +84,46 @@ CLAIMS = [  # (claim, value as it must appear in the paper, source file)
  ('Top-10 entries changed', f"{sum(y['n_changed'] for y in YT)} entries", 'attack_yearly_top10.json'),
  ('2026 reports and incidents', f"{YT[-1]['reports']} cited reports form {YT[-1]['incidents']} incidents", 'attack_yearly_top10.json'),
 ]
+
+import glob, re as _re
+def LOG(script, pattern, group=1):
+    f = sorted(glob.glob(RES + f'runs/{script}-*.log'))[-1]
+    return _re.search(pattern, open(f).read()).group(group)
+PR = {k: {x['t']: x for x in P[k]['techniques']} for k in P}
+TS = J('tie_sensitivity.json')['levels']
+cl = J('attack_clusters_main.json'); import collections as _C
+sz = _C.Counter(cl.values()); multi = [k for k, v in sz.items() if v > 1]
+_inc = _C.defaultdict(set)
+for r in att: _inc[cl[r['source_name']]] |= set(r['techniques'])
+BASE = sum(len(v) for v in _inc.values()) / sum(len(set(r['techniques'])) for r in att)
+taus = [x['tech_tau_b'] for x in AS if x['tau'] is not None]
+CLAIMS += [
+ ('Gold: ATT&CK campaign reports', LOG('run_attack', r'one campaign\): (\d+)'), 'runs/run_attack-*.log'),
+ ('Gold: ATT&CK campaigns', LOG('run_attack', r'campaigns: (\d+)'), 'runs/run_attack-*.log'),
+ ('Gold: campaign folders with 2+ texts', LOG('run_corpus', r'folders with >=2 docs (\d+)'), 'runs/run_corpus-*.log'),
+ ('TIE entries with OTX metadata', LOG('run_tie', r'with OTX metadata (\d+)'), 'runs/run_tie-*.log'),
+ ('TIE dated entries', n(int(LOG('run_tie', r'dated (\d+)'))), 'runs/run_tie-*.log'),
+ ('CISA advisories not already present', LOG('run_corpus', r'advisories added: (\d+)'), 'runs/run_corpus-*.log'),
+ ('TIE distinct reports', n([x for x in TS if x['setting'] == 'same_report'][0]['units']), 'tie_sensitivity.json'),
+ ('ATT&CK reports in multi-report incidents', n(sum(sz[k] for k in multi)), 'attack_clusters_main.json'),
+ ('ATT&CK multi-report incidents', n(len(multi)), 'attack_clusters_main.json'),
+ ('ATT&CK tau_b, all time-window settings (min)', f2(min(taus)), 'attack_sensitivity.json'),
+ ('ATT&CK tau_b, all time-window settings (max)', f3(max(taus)), 'attack_sensitivity.json'),
+ ('ATT&CK tau_b, no time window', f3(sens(None)['tech_tau_b']), 'attack_sensitivity.json'),
+ ('Baseline rho = sum I / sum R (ATT&CK)', f2(BASE), 'attack_reports.jsonl + attack_clusters_main.json'),
+ ('Producer ratio Financial Theft (ATT&CK)', f2(PR['attack']['T1657']['producer_ratio']), 'producer_vs_duplicate.json'),
+ ('Producer ratio token theft (ATT&CK)', f2(PR['attack']['T1528']['producer_ratio']), 'producer_vs_duplicate.json'),
+ ('Producer ratio Disk Structure Wipe (ATT&CK)', f2(PR['attack']['T1561.002']['producer_ratio']), 'producer_vs_duplicate.json'),
+ ('Producer, texts vendors', str(P['corpus']['n_vendors']), 'producer_vs_duplicate.json'),
+ ('Producer vs duplicate Spearman, texts', f"{P['corpus']['spearman_producer_vs_duplicate']:.3f}", 'producer_vs_duplicate.json'),
+ ('Validation ATT&CK R (S=180)', f2(sens(60, 180)['val_R']), 'attack_sensitivity.json'),
+ ('Validation ATT&CK R (no time limit)', f2(sens(None)['val_R']), 'attack_sensitivity.json'),
+ ('Validation prior rule, texts R', f2(RC['texts_rahman_rule']['R']), 'reviewer_checks.json'),
+ ('Texts q, SMB shares and Process Injection', f"$q$ {T['T1021.002']['q_bh']:.2f} and {T['T1055']['q_bh']:.2f}", 'corpus_share_shift.json'),
+ ('Nominal ATT&CK q range', f"$q$ = {min(A[t]['q_bh'] for t in ['T1528','T1195.001','T1561.002']):.2f}--{max(A[t]['q_bh'] for t in ['T1528','T1195.001','T1561.002']):.2f}", 'attack_share_shift.json'),
+ ('TIE techniques passing BH', {7: 'seven'}.get(sum(1 for x in J('tie_share_shift.json') if x['shift_bh'] == 'over'), '?'), 'tie_share_shift.json'),
+]
+
 rows, bad = [], 0
 for claim, val, src in CLAIMS:
     ok = val in TEX or val in ('yes',)

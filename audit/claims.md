@@ -65,3 +65,27 @@ Each number is recomputed from the results file and must appear verbatim in pape
 | Years with a changed top-10 | 8 of 12 years | results/attack_yearly_top10.json | verified |
 | Top-10 entries changed | 13 entries | results/attack_yearly_top10.json | verified |
 | 2026 reports and incidents | 67 cited reports form 26 incidents | results/attack_yearly_top10.json | verified |
+| Gold: ATT&CK campaign reports | 59 | results/runs/run_attack-*.log | verified |
+| Gold: ATT&CK campaigns | 33 | results/runs/run_attack-*.log | verified |
+| Gold: campaign folders with 2+ texts | 97 | results/runs/run_corpus-*.log | verified |
+| TIE entries with OTX metadata | 305 | results/runs/run_tie-*.log | verified |
+| TIE dated entries | 1,564 | results/runs/run_tie-*.log | verified |
+| CISA advisories not already present | 186 | results/runs/run_corpus-*.log | verified |
+| TIE distinct reports | 5,596 | results/tie_sensitivity.json | verified |
+| ATT&CK reports in multi-report incidents | 810 | results/attack_clusters_main.json | verified |
+| ATT&CK multi-report incidents | 302 | results/attack_clusters_main.json | verified |
+| ATT&CK tau_b, all time-window settings (min) | 0.96 | results/attack_sensitivity.json | verified |
+| ATT&CK tau_b, all time-window settings (max) | 0.997 | results/attack_sensitivity.json | verified |
+| ATT&CK tau_b, no time window | 0.905 | results/attack_sensitivity.json | verified |
+| Baseline rho = sum I / sum R (ATT&CK) | 0.90 | results/attack_reports.jsonl + attack_clusters_main.json | verified |
+| Producer ratio Financial Theft (ATT&CK) | 0.68 | results/producer_vs_duplicate.json | verified |
+| Producer ratio token theft (ATT&CK) | 0.53 | results/producer_vs_duplicate.json | verified |
+| Producer ratio Disk Structure Wipe (ATT&CK) | 3.15 | results/producer_vs_duplicate.json | verified |
+| Producer, texts vendors | 188 | results/producer_vs_duplicate.json | verified |
+| Producer vs duplicate Spearman, texts | 0.005 | results/producer_vs_duplicate.json | verified |
+| Validation ATT&CK R (S=180) | 0.41 | results/attack_sensitivity.json | verified |
+| Validation ATT&CK R (no time limit) | 0.48 | results/attack_sensitivity.json | verified |
+| Validation prior rule, texts R | 0.73 | results/reviewer_checks.json | verified |
+| Texts q, SMB shares and Process Injection | $q$ 0.08 and 0.13 | results/corpus_share_shift.json | verified |
+| Nominal ATT&CK q range | $q$ = 0.08--0.12 | results/attack_share_shift.json | verified |
+| TIE techniques passing BH | seven | results/tie_share_shift.json | verified |

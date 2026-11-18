@@ -17,3 +17,12 @@ Checked against `how_to_research_correctly.md` (17 Nov 2026). Status as of 17 No
 - Leakage: validation uses only independent groupings (ATT&CK campaigns, dated campaign folders). The span cap was tuned with AI-labelled pairs and then checked on the same independent sets, so validation numbers are not held-out; the paper says so. AI-labelled pairs are kept in `audit/error_analysis/` and are not evidence.
 - No LLM is part of the method. The AI-use declaration is in the paper (Springer style, closing declaration).
 - Open caveat: for the campaign-folder precision, the bootstrap interval sits at or slightly below the point estimate (e.g. 0.25, interval 0.15–0.25), because the pair-ratio estimator is skewed when false merges concentrate in a few large clusters. Worth a sentence if a reviewer asks.
+
+## Self-check against the guide, 18 Nov 2026
+
+- Evidence gate: `check_claims.py` now recomputes 85 numbers (up from 61), including counts read from the run logs. A few narrative numbers still rely on manual checks: the sizes of named events (SolarWinds 12, etc., visible in `raw_samples.md`) and Rahman et al.'s 920 to 667 (from their paper).
+- G0: there was no dated plan before the analysis. This cannot be fixed afterwards; the paper says the study is exploratory.
+- Leakage (guide 3.3, 5.1): the span cap was tuned and then evaluated on the same external groupings, so validation is development-set, not held-out. This is disclosed. ChatGPT's review flagged it too (W6).
+- G1: robots.txt was not logged for the vendor pages in the text corpus.
+- Outside review: ChatGPT reviewed the paper (`audit/reviews/`). DeepSeek was not reached, because chat.deepseek.com would not load in the author's Chrome. The AI-use statement now mentions the ChatGPT review.
+- Privacy: the review was sent through a ChatGPT free account, where chats may be used for training unless that setting is off.
