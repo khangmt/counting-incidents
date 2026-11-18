@@ -59,8 +59,13 @@ def decompose(rows, lab, B=1000, min_n=20, seed=0):
     bh(out, 'producer_p', 'producer_q_bh')
     from scipy.stats import spearmanr
     rho_s = spearmanr([x['producer_ratio'] for x in out], [x['duplicate_ratio'] for x in out])[0]
+    import random as _r; _g = _r.Random(seed); bs = []
+    for _ in range(B):   # percentile interval, resampling techniques
+        smp = [out[_g.randrange(len(out))] for _ in out]
+        bs.append(spearmanr([x['producer_ratio'] for x in smp], [x['duplicate_ratio'] for x in smp])[0])
+    bs.sort(); rho_ci = [round(float(bs[int(.025 * B)]), 3), round(float(bs[int(.975 * B) - 1]), 3)]
     return {'n_reports': len(rows), 'n_vendors': len(nv), 'n_unknown_producer': sum(1 for v in vend if v.startswith('unknown:')), 'top_vendors': nv.most_common(12),
-            'n_tested': len(out), 'spearman_producer_vs_duplicate': round(float(rho_s), 3),
+            'n_tested': len(out), 'spearman_producer_vs_duplicate': round(float(rho_s), 3), 'spearman_ci': rho_ci,
             'n_producer_ci_excludes_1': sum(1 for x in out if x['producer_shift']), 'n_producer_bh_sig': sum(1 for x in out if x['producer_q_bh'] <= 0.05),
             'top_vendor_share_of_reports': round(nv.most_common(1)[0][1] / len(rows), 3), 'techniques': sorted(out, key=lambda x: -x['producer_ratio'])}
 
