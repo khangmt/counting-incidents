@@ -1,0 +1,33 @@
+{
+ "script": "paper_extra.py",
+ "args": [],
+ "status": "failed",
+ "exit_code": 1,
+ "start_utc": "2026-11-22T09:38:38+00:00",
+ "seconds": 19.9,
+ "machine": "vm",
+ "platform": "Linux-6.18.44-fc-v726-x86_64-with-glibc2.39",
+ "python": "3.13.18",
+ "git_commit": "b0f92f4c16d2cdac32994ffdc5738a52d8f1a236",
+ "git_dirty": false,
+ "script_sha256": "59c1877e50000a0214c3b53900765a4283ae201ff4d1ee966dff6b7ec2c58daf",
+ "command": "python3 paper_extra.py",
+ "env": {
+  "RB_ROOT": null,
+  "RB_DATA": "/mnt/project-files/causality-benchmark/data/",
+  "RB_TEXTS": "/home/user/rb_texts",
+  "WITH_CISA": null
+ },
+ "seeds": "bootstrap seed 0 (share_bootstrap.py, paper_extra.py); permutation seed 1 (reviewer_checks.py)",
+ "llm_used": null,
+ "inputs": {
+  "$RB/results/attack_reports.jsonl": "9fc8c15d7641988a71cfa7d40ec886910fbd4d3eea5d37a766c6242df45f1247",
+  "$RB/results/attack_clusters_main.json": "ae1376e92c69accf853f48bb56688963e30370406636b7197a6126014f5da3a5",
+  "$RB/results/corpus_reports.jsonl": "3cd0a05417d93a52eac3e0d6156d458b6837b34bd071113e683dcc6c6e1dbbef",
+  "$RB/results/corpus_clusters_main.json": "b4eba1c35bea725d047b43d497cc80a826954eea19c4ae5bc85dbcf53c87bb01"
+ },
+ "outputs": {
+  "$RB/results/producer_vs_duplicate.json": "595e225367375bdc86efe7bab6fa5e06034711afd33e253d1d2646ea4ce0388d"
+ },
+ "log": "$RB/results/runs/paper_extra-2026-11-22T093838+0000.log"
+}

@@ -1,0 +1,35 @@
+{
+ "script": "make_figures.py",
+ "args": [],
+ "status": "ok",
+ "exit_code": 0,
+ "start_utc": "2026-11-22T09:38:58+00:00",
+ "seconds": 4.8,
+ "machine": "vm",
+ "platform": "Linux-6.18.44-fc-v726-x86_64-with-glibc2.39",
+ "python": "3.13.18",
+ "git_commit": "b0f92f4c16d2cdac32994ffdc5738a52d8f1a236",
+ "git_dirty": false,
+ "script_sha256": "aeed4029238e2c01700c995e93bfd0f26083174eb91c17a01dd0279f5d35c2d3",
+ "command": "python3 make_figures.py",
+ "env": {
+  "RB_ROOT": null,
+  "RB_DATA": "/mnt/project-files/causality-benchmark/data/",
+  "RB_TEXTS": "/home/user/rb_texts",
+  "WITH_CISA": null
+ },
+ "seeds": "bootstrap seed 0 (share_bootstrap.py, paper_extra.py); permutation seed 1 (reviewer_checks.py)",
+ "llm_used": null,
+ "inputs": {
+  "$RB/results/attack_share_shift.json": "b8906f19c9e72aa007b5ff9d0cb3de21d6b3f13f4b9a493803522c37d46f301f",
+  "$RB/results/corpus_share_shift.json": "c1bf55cbff131e7c770de5ae1bb752ec3e9cb2895216f0b5f1e1d2c65895203c",
+  "$RB/results/attack_clusters_main.json": "ae1376e92c69accf853f48bb56688963e30370406636b7197a6126014f5da3a5"
+ },
+ "outputs": {
+  "$RB/paper/fig_2026_top10.pdf": "108184ba1837908f54cf5ab54c1f0340ce31ecf3734ada03bf948b80b1279785",
+  "$RB/paper/fig_2026_top10.png": "2ceb9eedffb3ee09baab9159cb58f4ce6b75dedfbc130c5374ca5c44e1c404fc",
+  "$RB/paper/fig_share_ratio.pdf": "42823a06f6b209aa4e15a5a3149a51eb8bac8d435081dd5efadd41092cf7ef2e",
+  "$RB/paper/fig_share_ratio.png": "dc8524b2eb3a5535cc0ffed9dbaa70ecd4ab10a4fd27d79726e374e42d57d955"
+ },
+ "log": "$RB/results/runs/make_figures-2026-11-22T093858+0000.log"
+}

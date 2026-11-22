@@ -56,8 +56,8 @@
   "n_tested": 215,
   "spearman_producer_vs_duplicate": -0.033,
   "spearman_ci": [
-   -0.172,
-   0.115
+   -0.171,
+   0.109
   ],
   "n_producer_ci_excludes_1": 27,
   "n_producer_bh_sig": 0,
@@ -761,23 +761,6 @@
     "producer_q_bh": 0.4133
    },
    {
-    "t": "T1218.011",
-    "name": "Rundll32",
-    "n_report": 123,
-    "share_report": 0.00546,
-    "share_vendor_bal": 0.00433,
-    "share_incident": 0.00554,
-    "producer_ratio": 1.264,
-    "producer_ci": [
-     0.994,
-     1.727
-    ],
-    "producer_shift": "",
-    "producer_p": 0.0579,
-    "duplicate_ratio": 0.987,
-    "producer_q_bh": 0.4436
-   },
-   {
     "t": "T1027.003",
     "name": "Steganography",
     "n_report": 29,
@@ -793,6 +776,23 @@
     "producer_p": 0.4535,
     "duplicate_ratio": 0.965,
     "producer_q_bh": 0.8193
+   },
+   {
+    "t": "T1218.011",
+    "name": "Rundll32",
+    "n_report": 123,
+    "share_report": 0.00546,
+    "share_vendor_bal": 0.00433,
+    "share_incident": 0.00554,
+    "producer_ratio": 1.264,
+    "producer_ci": [
+     0.994,
+     1.727
+    ],
+    "producer_shift": "",
+    "producer_p": 0.0579,
+    "duplicate_ratio": 0.987,
+    "producer_q_bh": 0.4436
    },
    {
     "t": "T1585.001",
@@ -1237,23 +1237,6 @@
     "producer_q_bh": 0.9359
    },
    {
-    "t": "T1685.005",
-    "name": "Clear Windows Event Logs",
-    "n_report": 55,
-    "share_report": 0.00244,
-    "share_vendor_bal": 0.00215,
-    "share_incident": 0.00267,
-    "producer_ratio": 1.135,
-    "producer_ci": [
-     0.749,
-     2.174
-    ],
-    "producer_shift": "",
-    "producer_p": 0.5934,
-    "duplicate_ratio": 0.915,
-    "producer_q_bh": 0.8679
-   },
-   {
     "t": "T1008",
     "name": "Fallback Channels",
     "n_report": 65,
@@ -1269,6 +1252,23 @@
     "producer_p": 0.5135,
     "duplicate_ratio": 1.043,
     "producer_q_bh": 0.8335
+   },
+   {
+    "t": "T1685.005",
+    "name": "Clear Windows Event Logs",
+    "n_report": 55,
+    "share_report": 0.00244,
+    "share_vendor_bal": 0.00215,
+    "share_incident": 0.00267,
+    "producer_ratio": 1.135,
+    "producer_ci": [
+     0.749,
+     2.174
+    ],
+    "producer_shift": "",
+    "producer_p": 0.5934,
+    "duplicate_ratio": 0.915,
+    "producer_q_bh": 0.8679
    },
    {
     "t": "T1608.001",
@@ -1934,23 +1934,6 @@
     "producer_q_bh": 0.999
    },
    {
-    "t": "T1074.001",
-    "name": "Local Data Staging",
-    "n_report": 157,
-    "share_report": 0.00698,
-    "share_vendor_bal": 0.00693,
-    "share_incident": 0.00702,
-    "producer_ratio": 1.006,
-    "producer_ci": [
-     0.768,
-     1.295
-    ],
-    "producer_shift": "",
-    "producer_p": 0.985,
-    "duplicate_ratio": 0.993,
-    "producer_q_bh": 0.9989
-   },
-   {
     "t": "T1027.009",
     "name": "Embedded Payloads",
     "n_report": 27,
@@ -1966,6 +1949,23 @@
     "producer_p": 0.951,
     "duplicate_ratio": 0.898,
     "producer_q_bh": 0.9948
+   },
+   {
+    "t": "T1074.001",
+    "name": "Local Data Staging",
+    "n_report": 157,
+    "share_report": 0.00698,
+    "share_vendor_bal": 0.00693,
+    "share_incident": 0.00702,
+    "producer_ratio": 1.006,
+    "producer_ci": [
+     0.768,
+     1.295
+    ],
+    "producer_shift": "",
+    "producer_p": 0.985,
+    "duplicate_ratio": 0.993,
+    "producer_q_bh": 0.9989
    },
    {
     "t": "T1070.004",
@@ -2087,23 +2087,6 @@
     "producer_q_bh": 0.9989
    },
    {
-    "t": "T1595.002",
-    "name": "Vulnerability Scanning",
-    "n_report": 22,
-    "share_report": 0.00098,
-    "share_vendor_bal": 0.001,
-    "share_incident": 0.00104,
-    "producer_ratio": 0.977,
-    "producer_ci": [
-     0.553,
-     2.847
-    ],
-    "producer_shift": "",
-    "producer_p": 0.9091,
-    "duplicate_ratio": 0.941,
-    "producer_q_bh": 0.9794
-   },
-   {
     "t": "T1588.001",
     "name": "Malware",
     "n_report": 28,
@@ -2119,6 +2102,23 @@
     "producer_p": 0.955,
     "duplicate_ratio": 0.968,
     "producer_q_bh": 0.9948
+   },
+   {
+    "t": "T1595.002",
+    "name": "Vulnerability Scanning",
+    "n_report": 22,
+    "share_report": 0.00098,
+    "share_vendor_bal": 0.001,
+    "share_incident": 0.00104,
+    "producer_ratio": 0.977,
+    "producer_ci": [
+     0.553,
+     2.847
+    ],
+    "producer_shift": "",
+    "producer_p": 0.9091,
+    "duplicate_ratio": 0.941,
+    "producer_q_bh": 0.9794
    },
    {
     "t": "T1548.002",
@@ -2614,23 +2614,6 @@
     "producer_q_bh": 0.7371
    },
    {
-    "t": "T1564.001",
-    "name": "Hidden Files and Directories",
-    "n_report": 75,
-    "share_report": 0.00333,
-    "share_vendor_bal": 0.00373,
-    "share_incident": 0.00341,
-    "producer_ratio": 0.894,
-    "producer_ci": [
-     0.648,
-     1.373
-    ],
-    "producer_shift": "",
-    "producer_p": 0.6054,
-    "duplicate_ratio": 0.977,
-    "producer_q_bh": 0.8763
-   },
-   {
     "t": "T1059.005",
     "name": "Visual Basic",
     "n_report": 197,
@@ -2646,6 +2629,23 @@
     "producer_p": 0.3417,
     "duplicate_ratio": 0.983,
     "producer_q_bh": 0.754
+   },
+   {
+    "t": "T1564.001",
+    "name": "Hidden Files and Directories",
+    "n_report": 75,
+    "share_report": 0.00333,
+    "share_vendor_bal": 0.00373,
+    "share_incident": 0.00341,
+    "producer_ratio": 0.894,
+    "producer_ci": [
+     0.648,
+     1.373
+    ],
+    "producer_shift": "",
+    "producer_p": 0.6054,
+    "duplicate_ratio": 0.977,
+    "producer_q_bh": 0.8763
    },
    {
     "t": "T1614",
@@ -2920,23 +2920,6 @@
     "producer_q_bh": 0.703
    },
    {
-    "t": "T1136.001",
-    "name": "Local Account",
-    "n_report": 33,
-    "share_report": 0.00147,
-    "share_vendor_bal": 0.00177,
-    "share_incident": 0.00158,
-    "producer_ratio": 0.829,
-    "producer_ci": [
-     0.491,
-     1.744
-    ],
-    "producer_shift": "",
-    "producer_p": 0.4855,
-    "duplicate_ratio": 0.927,
-    "producer_q_bh": 0.8318
-   },
-   {
     "t": "T1114.001",
     "name": "Local Email Collection",
     "n_report": 23,
@@ -2952,6 +2935,23 @@
     "producer_p": 0.5894,
     "duplicate_ratio": 0.898,
     "producer_q_bh": 0.8679
+   },
+   {
+    "t": "T1136.001",
+    "name": "Local Account",
+    "n_report": 33,
+    "share_report": 0.00147,
+    "share_vendor_bal": 0.00177,
+    "share_incident": 0.00158,
+    "producer_ratio": 0.829,
+    "producer_ci": [
+     0.491,
+     1.744
+    ],
+    "producer_shift": "",
+    "producer_p": 0.4855,
+    "duplicate_ratio": 0.927,
+    "producer_q_bh": 0.8318
    },
    {
     "t": "T1078.003",
@@ -3056,23 +3056,6 @@
     "producer_q_bh": 0.457
    },
    {
-    "t": "T1570",
-    "name": "Lateral Tool Transfer",
-    "n_report": 58,
-    "share_report": 0.00258,
-    "share_vendor_bal": 0.0032,
-    "share_incident": 0.00272,
-    "producer_ratio": 0.806,
-    "producer_ci": [
-     0.554,
-     1.289
-    ],
-    "producer_shift": "",
-    "producer_p": 0.2757,
-    "duplicate_ratio": 0.947,
-    "producer_q_bh": 0.7371
-   },
-   {
     "t": "T1491.001",
     "name": "Internal Defacement",
     "n_report": 30,
@@ -3088,6 +3071,23 @@
     "producer_p": 0.4456,
     "duplicate_ratio": 1.225,
     "producer_q_bh": 0.8119
+   },
+   {
+    "t": "T1570",
+    "name": "Lateral Tool Transfer",
+    "n_report": 58,
+    "share_report": 0.00258,
+    "share_vendor_bal": 0.0032,
+    "share_incident": 0.00272,
+    "producer_ratio": 0.806,
+    "producer_ci": [
+     0.554,
+     1.289
+    ],
+    "producer_shift": "",
+    "producer_p": 0.2757,
+    "duplicate_ratio": 0.947,
+    "producer_q_bh": 0.7371
    },
    {
     "t": "T1119",
@@ -3175,23 +3175,6 @@
     "producer_q_bh": 0.595
    },
    {
-    "t": "T1690",
-    "name": "Prevent Command History Logging",
-    "n_report": 20,
-    "share_report": 0.00089,
-    "share_vendor_bal": 0.00113,
-    "share_incident": 0.00079,
-    "producer_ratio": 0.787,
-    "producer_ci": [
-     0.365,
-     2.768
-    ],
-    "producer_shift": "",
-    "producer_p": 0.5195,
-    "duplicate_ratio": 1.123,
-    "producer_q_bh": 0.8335
-   },
-   {
     "t": "T1217",
     "name": "Browser Information Discovery",
     "n_report": 44,
@@ -3207,6 +3190,23 @@
     "producer_p": 0.2917,
     "duplicate_ratio": 1.068,
     "producer_q_bh": 0.7385
+   },
+   {
+    "t": "T1690",
+    "name": "Prevent Command History Logging",
+    "n_report": 20,
+    "share_report": 0.00089,
+    "share_vendor_bal": 0.00113,
+    "share_incident": 0.00079,
+    "producer_ratio": 0.787,
+    "producer_ci": [
+     0.365,
+     2.768
+    ],
+    "producer_shift": "",
+    "producer_p": 0.5195,
+    "duplicate_ratio": 1.123,
+    "producer_q_bh": 0.8335
    },
    {
     "t": "T1055.012",
@@ -3328,21 +3328,21 @@
     "producer_q_bh": 0.7371
    },
    {
-    "t": "T1561.001",
-    "name": "Disk Content Wipe",
-    "n_report": 20,
-    "share_report": 0.00089,
-    "share_vendor_bal": 0.0012,
+    "t": "T1195.001",
+    "name": "Compromise Software Dependencies and Development Tools",
+    "n_report": 31,
+    "share_report": 0.00138,
+    "share_vendor_bal": 0.00187,
     "share_incident": 0.00074,
     "producer_ratio": 0.738,
     "producer_ci": [
-     0.368,
-     2.063
+     0.46,
+     1.372
     ],
     "producer_shift": "",
-    "producer_p": 0.4615,
-    "duplicate_ratio": 1.198,
-    "producer_q_bh": 0.8207
+    "producer_p": 0.2597,
+    "duplicate_ratio": 1.857,
+    "producer_q_bh": 0.7371
    },
    {
     "t": "T1543.001",
@@ -3362,21 +3362,21 @@
     "producer_q_bh": 0.7507
    },
    {
-    "t": "T1195.001",
-    "name": "Compromise Software Dependencies and Development Tools",
-    "n_report": 31,
-    "share_report": 0.00138,
-    "share_vendor_bal": 0.00187,
+    "t": "T1561.001",
+    "name": "Disk Content Wipe",
+    "n_report": 20,
+    "share_report": 0.00089,
+    "share_vendor_bal": 0.0012,
     "share_incident": 0.00074,
     "producer_ratio": 0.738,
     "producer_ci": [
-     0.46,
-     1.372
+     0.368,
+     2.063
     ],
     "producer_shift": "",
-    "producer_p": 0.2597,
-    "duplicate_ratio": 1.857,
-    "producer_q_bh": 0.7371
+    "producer_p": 0.4615,
+    "duplicate_ratio": 1.198,
+    "producer_q_bh": 0.8207
    },
    {
     "t": "T1053.003",
@@ -3566,23 +3566,6 @@
     "producer_q_bh": 0.6794
    },
    {
-    "t": "T1552.004",
-    "name": "Private Keys",
-    "n_report": 34,
-    "share_report": 0.00151,
-    "share_vendor_bal": 0.00237,
-    "share_incident": 0.00129,
-    "producer_ratio": 0.636,
-    "producer_ci": [
-     0.412,
-     1.086
-    ],
-    "producer_shift": "",
-    "producer_p": 0.0759,
-    "duplicate_ratio": 1.175,
-    "producer_q_bh": 0.4875
-   },
-   {
     "t": "T1552.001",
     "name": "Credentials In Files",
     "n_report": 78,
@@ -3598,6 +3581,23 @@
     "producer_p": 0.02,
     "duplicate_ratio": 1.112,
     "producer_q_bh": 0.3926
+   },
+   {
+    "t": "T1552.004",
+    "name": "Private Keys",
+    "n_report": 34,
+    "share_report": 0.00151,
+    "share_vendor_bal": 0.00237,
+    "share_incident": 0.00129,
+    "producer_ratio": 0.636,
+    "producer_ci": [
+     0.412,
+     1.086
+    ],
+    "producer_shift": "",
+    "producer_p": 0.0759,
+    "duplicate_ratio": 1.175,
+    "producer_q_bh": 0.4875
    },
    {
     "t": "T1677",
@@ -3777,8 +3777,8 @@
   "n_tested": 196,
   "spearman_producer_vs_duplicate": 0.005,
   "spearman_ci": [
-   -0.143,
-   0.142
+   -0.139,
+   0.137
   ],
   "n_producer_ci_excludes_1": 50,
   "n_producer_bh_sig": 0,
@@ -5315,23 +5315,6 @@
     "producer_q_bh": 0.8338
    },
    {
-    "t": "T1569.002",
-    "name": "Service Execution",
-    "n_report": 74,
-    "share_report": 0.00661,
-    "share_vendor_bal": 0.00617,
-    "share_incident": 0.00667,
-    "producer_ratio": 1.071,
-    "producer_ci": [
-     0.721,
-     1.709
-    ],
-    "producer_shift": "",
-    "producer_p": 0.9211,
-    "duplicate_ratio": 0.991,
-    "producer_q_bh": 0.9502
-   },
-   {
     "t": "T1547.001",
     "name": "Registry Run Keys / Startup Folder",
     "n_report": 74,
@@ -5347,6 +5330,23 @@
     "producer_p": 0.6154,
     "duplicate_ratio": 1.019,
     "producer_q_bh": 0.7634
+   },
+   {
+    "t": "T1569.002",
+    "name": "Service Execution",
+    "n_report": 74,
+    "share_report": 0.00661,
+    "share_vendor_bal": 0.00617,
+    "share_incident": 0.00667,
+    "producer_ratio": 1.071,
+    "producer_ci": [
+     0.721,
+     1.709
+    ],
+    "producer_shift": "",
+    "producer_p": 0.9211,
+    "duplicate_ratio": 0.991,
+    "producer_q_bh": 0.9502
    },
    {
     "t": "T1090",
@@ -5791,23 +5791,6 @@
     "producer_q_bh": 0.2377
    },
    {
-    "t": "T1573",
-    "name": "Encrypted Channel",
-    "n_report": 30,
-    "share_report": 0.00268,
-    "share_vendor_bal": 0.00303,
-    "share_incident": 0.00282,
-    "producer_ratio": 0.883,
-    "producer_ci": [
-     0.64,
-     1.313
-    ],
-    "producer_shift": "",
-    "producer_p": 0.4995,
-    "duplicate_ratio": 0.95,
-    "producer_q_bh": 0.6873
-   },
-   {
     "t": "T1480",
     "name": "Execution Guardrails",
     "n_report": 15,
@@ -5823,6 +5806,23 @@
     "producer_p": 0.7792,
     "duplicate_ratio": 0.95,
     "producer_q_bh": 0.8485
+   },
+   {
+    "t": "T1573",
+    "name": "Encrypted Channel",
+    "n_report": 30,
+    "share_report": 0.00268,
+    "share_vendor_bal": 0.00303,
+    "share_incident": 0.00282,
+    "producer_ratio": 0.883,
+    "producer_ci": [
+     0.64,
+     1.313
+    ],
+    "producer_shift": "",
+    "producer_p": 0.4995,
+    "duplicate_ratio": 0.95,
+    "producer_q_bh": 0.6873
    },
    {
     "t": "T1564.003",
@@ -6029,23 +6029,6 @@
     "producer_q_bh": 0.6873
    },
    {
-    "t": "T1588.003",
-    "name": "Code Signing Certificates",
-    "n_report": 16,
-    "share_report": 0.00143,
-    "share_vendor_bal": 0.00176,
-    "share_incident": 0.0015,
-    "producer_ratio": 0.811,
-    "producer_ci": [
-     0.388,
-     1.579
-    ],
-    "producer_shift": "",
-    "producer_p": 0.516,
-    "duplicate_ratio": 0.95,
-    "producer_q_bh": 0.6873
-   },
-   {
     "t": "T1102.002",
     "name": "Bidirectional Communication",
     "n_report": 16,
@@ -6061,6 +6044,23 @@
     "producer_p": 0.5375,
     "duplicate_ratio": 0.95,
     "producer_q_bh": 0.707
+   },
+   {
+    "t": "T1588.003",
+    "name": "Code Signing Certificates",
+    "n_report": 16,
+    "share_report": 0.00143,
+    "share_vendor_bal": 0.00176,
+    "share_incident": 0.0015,
+    "producer_ratio": 0.811,
+    "producer_ci": [
+     0.388,
+     1.579
+    ],
+    "producer_shift": "",
+    "producer_p": 0.516,
+    "duplicate_ratio": 0.95,
+    "producer_q_bh": 0.6873
    },
    {
     "t": "T1112",
@@ -6471,23 +6471,6 @@
     "producer_q_bh": 0.2848
    },
    {
-    "t": "T1140",
-    "name": "Deobfuscate/Decode Files or Information",
-    "n_report": 144,
-    "share_report": 0.01285,
-    "share_vendor_bal": 0.01924,
-    "share_incident": 0.01287,
-    "producer_ratio": 0.668,
-    "producer_ci": [
-     0.471,
-     0.989
-    ],
-    "producer_shift": "under",
-    "producer_p": 0.044,
-    "duplicate_ratio": 0.999,
-    "producer_q_bh": 0.1875
-   },
-   {
     "t": "T1007",
     "name": "System Service Discovery",
     "n_report": 32,
@@ -6503,6 +6486,23 @@
     "producer_p": 0.0619,
     "duplicate_ratio": 0.981,
     "producer_q_bh": 0.2247
+   },
+   {
+    "t": "T1140",
+    "name": "Deobfuscate/Decode Files or Information",
+    "n_report": 144,
+    "share_report": 0.01285,
+    "share_vendor_bal": 0.01924,
+    "share_incident": 0.01287,
+    "producer_ratio": 0.668,
+    "producer_ci": [
+     0.471,
+     0.989
+    ],
+    "producer_shift": "under",
+    "producer_p": 0.044,
+    "duplicate_ratio": 0.999,
+    "producer_q_bh": 0.1875
    },
    {
     "t": "T1543",
@@ -6590,23 +6590,6 @@
     "producer_q_bh": 0.1352
    },
    {
-    "t": "T1204",
-    "name": "User Execution",
-    "n_report": 63,
-    "share_report": 0.00562,
-    "share_vendor_bal": 0.00878,
-    "share_incident": 0.00545,
-    "producer_ratio": 0.641,
-    "producer_ci": [
-     0.452,
-     0.958
-    ],
-    "producer_shift": "under",
-    "producer_p": 0.028,
-    "duplicate_ratio": 1.032,
-    "producer_q_bh": 0.1524
-   },
-   {
     "t": "T1008",
     "name": "Fallback Channels",
     "n_report": 27,
@@ -6622,6 +6605,23 @@
     "producer_p": 0.1239,
     "duplicate_ratio": 0.95,
     "producer_q_bh": 0.3373
+   },
+   {
+    "t": "T1204",
+    "name": "User Execution",
+    "n_report": 63,
+    "share_report": 0.00562,
+    "share_vendor_bal": 0.00878,
+    "share_incident": 0.00545,
+    "producer_ratio": 0.641,
+    "producer_ci": [
+     0.452,
+     0.958
+    ],
+    "producer_shift": "under",
+    "producer_p": 0.028,
+    "duplicate_ratio": 1.032,
+    "producer_q_bh": 0.1524
    },
    {
     "t": "T1074",
@@ -7032,23 +7032,6 @@
     "producer_q_bh": 0.1238
    },
    {
-    "t": "T1193",
-    "name": "",
-    "n_report": 16,
-    "share_report": 0.00143,
-    "share_vendor_bal": 0.00372,
-    "share_incident": 0.0015,
-    "producer_ratio": 0.383,
-    "producer_ci": [
-     0.2,
-     0.86
-    ],
-    "producer_shift": "under",
-    "producer_p": 0.018,
-    "duplicate_ratio": 0.95,
-    "producer_q_bh": 0.1307
-   },
-   {
     "t": "T1032",
     "name": "",
     "n_report": 16,
@@ -7064,6 +7047,23 @@
     "producer_p": 0.016,
     "duplicate_ratio": 1.014,
     "producer_q_bh": 0.1254
+   },
+   {
+    "t": "T1193",
+    "name": "",
+    "n_report": 16,
+    "share_report": 0.00143,
+    "share_vendor_bal": 0.00372,
+    "share_incident": 0.0015,
+    "producer_ratio": 0.383,
+    "producer_ci": [
+     0.2,
+     0.86
+    ],
+    "producer_shift": "under",
+    "producer_p": 0.018,
+    "duplicate_ratio": 0.95,
+    "producer_q_bh": 0.1307
    },
    {
     "t": "T1050",
@@ -7124,8 +7124,8 @@
   "n_tested": 135,
   "spearman_producer_vs_duplicate": 0.085,
   "spearman_ci": [
-   -0.094,
-   0.246
+   -0.088,
+   0.258
   ],
   "n_producer_bh_sig": 0
  },
