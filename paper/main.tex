@@ -190,7 +190,7 @@ The vendor-balanced correction does not track the duplicate effect. Across the 2
 
 \paragraph{Incident or episode.} The rule joins reports on the same actor and malware within 60 days. For incident-response blogs this can join separate intrusions by the same crew, so our incidents are closest to campaign waves.
 
-\paragraph{Validation.} Both independent sets are small (69 and 212 positive pairs), recall on \attack{} campaigns is 0.39, and folder precision is only a lower bound. Under-merging makes the estimates conservative. A larger independent gold set, such as vendor campaign identifiers, would tighten them.
+\paragraph{Validation.} Both external groupings are small (69 and 212 positive pairs) and campaign-level, recall on \attack{} campaigns is 0.39, and folder precision is only a lower bound. A larger external grouping, such as vendor campaign identifiers, would tighten these estimates.
 
 \paragraph{Labels and entities.} \attack{} cites a report only for some behaviours, so per-report technique sets are partial; this affects absolute shares more than the comparison. Report texts contribute only explicit technique IDs, which favours recent CISA, DFIR and vendor reports. Actor and malware names are matched to \attack{} aliases; short aliases that are common words caused false matches (``Page'' for Elise, ``Play'' for Playcrypt) and are stop-listed, but some noise remains.
 

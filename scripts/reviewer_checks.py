@@ -95,4 +95,47 @@ def csumm(lab):
 out['texts_rahman_rule'] = csumm(cluster(crow, 60, ('intrusion-set', 'malware')))
 out['texts_main'] = csumm(g['cluster2'](tau=60))
 print('A texts', out['texts_rahman_rule'], out['texts_main'])
+
+# ---------- D: the same permutation null on the labelled report texts (reviewer request)
+def perm_null(rows_, lab_, min_n, seed, nperm=NPERM):
+    def rho_(lab):
+        inc = C.defaultdict(set); R = C.Counter()
+        for r, l in zip(rows_, lab):
+            ts = set(r['techniques']); R.update(ts); inc[l] |= ts
+        I = C.Counter(t for s_ in inc.values() for t in s_); sr, si = sum(R.values()), sum(I.values())
+        return {t: (R[t] / sr) / (I[t] / si) for t in I}
+    real_ = rho_(lab_); yr = [r['date'][:4] if r['date'] else None for r in rows_]
+    g_ = C.defaultdict(list)
+    for i, l in enumerate(lab_): g_[l].append(i)
+    sizes = C.defaultdict(list)
+    for idx in g_.values():
+        ys = {yr[i] for i in idx}
+        if len(ys) == 1: sizes[yr[idx[0]]].append(len(idx))      # cross-year incidents: their reports stay single
+    rnd = random.Random(seed); nul = C.defaultdict(list)
+    for _ in range(nperm):
+        lab = [None] * len(rows_); nxt = 0; pool = C.defaultdict(list)
+        for i, y in enumerate(yr): pool[y].append(i)
+        for y in pool: rnd.shuffle(pool[y])
+        for y, sz in sizes.items():
+            for s_ in sz:
+                for _k in range(s_): lab[pool[y].pop()] = nxt
+                nxt += 1
+        for i in range(len(rows_)):
+            if lab[i] is None: lab[i] = nxt; nxt += 1
+        for t, v in rho_(lab).items(): nul[t].append(v)
+    nR_ = C.Counter(t for r in rows_ for t in set(r['techniques']))
+    its = []
+    for t in real_:
+        if nR_[t] < min_n: continue
+        z = nul[t]; its.append({'t': t, 'real': round(real_[t], 3), 'p_null': round((sum(x >= real_[t] for x in z) + 1) / (len(z) + 1), 4)})
+    bh(its, 'p_null', 'q_null_bh')
+    return {x['t']: x for x in its}
+csub = [crow[i] for i in lab_idx]; cmain = g['cluster2'](tau=60); cL = [cmain[i] for i in lab_idx]
+tn = perm_null(csub, cL, 15, 1)
+cboot = {x['t']: x for x in json.load(open(RES + 'corpus_share_shift.json'))}
+out['texts_permutation_meta'] = {'n_permutations': NPERM, 'n_tested': len(tn), 'seed': 1,
+    'over_bootstrap_bh_and_null_bh': sorted(t for t, x in tn.items() if cboot.get(t, {}).get('shift_bh') == 'over' and x['q_null_bh'] <= 0.05),
+    'over_bootstrap_and_null_bh': sorted(t for t, x in tn.items() if cboot.get(t, {}).get('shift') == 'over' and x['q_null_bh'] <= 0.05)}
+out['texts_permutation_null'] = {t: tn[t] for t in sorted(tn, key=lambda t: -tn[t]['real'])}
+print('D texts', out['texts_permutation_meta'])
 json.dump(out, open(RES + 'reviewer_checks.json', 'w'), indent=1)
