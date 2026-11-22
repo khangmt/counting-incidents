@@ -36,13 +36,14 @@ Each number is recomputed from the results file and must appear verbatim in pape
 | ATT&CK techniques tested | 215 | results/reviewer_checks.json | verified |
 | Texts techniques tested | 196 | results/corpus_share_shift.json | verified |
 | TIE techniques tested | 241 | results/tie_share_shift.json | verified |
+| Headline range of over-counting (6 techniques) | 13 to 36\% | results/attack_share_shift.json | verified |
 | Headline set size (bootstrap BH and null BH) | six | results/reviewer_checks.json | verified |
 | Headline set stable at every span cap (BH) | yes | results/reviewer_checks.json | verified |
 | Data Destruction rho | 1.36 | results/attack_share_shift.json | verified |
-| Data Destruction CI | 12--66\% | results/attack_share_shift.json | verified |
+| Data Destruction CI | 1.12--1.66 | results/attack_share_shift.json | verified |
 | Financial Theft rho | 1.27 | results/attack_share_shift.json | verified |
 | Data Encrypted for Impact rho | 1.22 | results/attack_share_shift.json | verified |
-| Data Encrypted for Impact CI | 12--35\% | results/attack_share_shift.json | verified |
+| Data Encrypted for Impact CI | 1.12--1.35 | results/attack_share_shift.json | verified |
 | Inhibit System Recovery rho | 1.19 | results/attack_share_shift.json | verified |
 | Domains rho | 1.15 | results/attack_share_shift.json | verified |
 | JavaScript rho | 1.13 | results/attack_share_shift.json | verified |
@@ -54,7 +55,6 @@ Each number is recomputed from the results file and must appear verbatim in pape
 | Data Destruction rank move | rank 88 to 114 | results/attack_main_tech.csv | verified |
 | Financial Theft rank move | 78 to 101 | results/attack_main_tech.csv | verified |
 | Ransomware encryption rank move | 30 to 37 | results/attack_main_tech.csv | verified |
-| Max rank places lost (token theft) | 74 | results/attack_main_tech.csv | verified |
 | Generic techniques: smallest null p (rounded down) | 0.09 | results/reviewer_checks.json | verified |
 | PowerShell rank move (texts) | rank 2 to 4 | results/corpus_main_tech.csv | verified |
 | Producer vs duplicate Spearman, ATT&CK | $-0.03 | results/producer_vs_duplicate.json | verified |
