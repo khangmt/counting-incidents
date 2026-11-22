@@ -56,8 +56,8 @@
   "n_tested": 215,
   "spearman_producer_vs_duplicate": -0.033,
   "spearman_ci": [
-   -0.178,
-   0.112
+   -0.179,
+   0.113
   ],
   "n_producer_ci_excludes_1": 27,
   "n_producer_bh_sig": 0,
@@ -1747,23 +1747,6 @@
     "producer_q_bh": 0.9423
    },
    {
-    "t": "T1555.003",
-    "name": "Credentials from Web Browsers",
-    "n_report": 137,
-    "share_report": 0.00609,
-    "share_vendor_bal": 0.00587,
-    "share_incident": 0.00628,
-    "producer_ratio": 1.036,
-    "producer_ci": [
-     0.826,
-     1.4
-    ],
-    "producer_shift": "",
-    "producer_p": 0.7313,
-    "duplicate_ratio": 0.969,
-    "producer_q_bh": 0.911
-   },
-   {
     "t": "T1125",
     "name": "Video Capture",
     "n_report": 53,
@@ -1779,6 +1762,23 @@
     "producer_p": 0.8591,
     "duplicate_ratio": 0.934,
     "producer_q_bh": 0.9529
+   },
+   {
+    "t": "T1555.003",
+    "name": "Credentials from Web Browsers",
+    "n_report": 137,
+    "share_report": 0.00609,
+    "share_vendor_bal": 0.00587,
+    "share_incident": 0.00628,
+    "producer_ratio": 1.036,
+    "producer_ci": [
+     0.826,
+     1.4
+    ],
+    "producer_shift": "",
+    "producer_p": 0.7313,
+    "duplicate_ratio": 0.969,
+    "producer_q_bh": 0.911
    },
    {
     "t": "T1030",
@@ -3777,8 +3777,8 @@
   "n_tested": 196,
   "spearman_producer_vs_duplicate": 0.005,
   "spearman_ci": [
-   -0.14,
-   0.144
+   -0.134,
+   0.158
   ],
   "n_producer_ci_excludes_1": 50,
   "n_producer_bh_sig": 0,
@@ -7032,23 +7032,6 @@
     "producer_q_bh": 0.1238
    },
    {
-    "t": "T1032",
-    "name": "",
-    "n_report": 16,
-    "share_report": 0.00143,
-    "share_vendor_bal": 0.00372,
-    "share_incident": 0.00141,
-    "producer_ratio": 0.383,
-    "producer_ci": [
-     0.19,
-     0.835
-    ],
-    "producer_shift": "under",
-    "producer_p": 0.016,
-    "duplicate_ratio": 1.014,
-    "producer_q_bh": 0.1254
-   },
-   {
     "t": "T1193",
     "name": "",
     "n_report": 16,
@@ -7064,6 +7047,23 @@
     "producer_p": 0.018,
     "duplicate_ratio": 0.95,
     "producer_q_bh": 0.1307
+   },
+   {
+    "t": "T1032",
+    "name": "",
+    "n_report": 16,
+    "share_report": 0.00143,
+    "share_vendor_bal": 0.00372,
+    "share_incident": 0.00141,
+    "producer_ratio": 0.383,
+    "producer_ci": [
+     0.19,
+     0.835
+    ],
+    "producer_shift": "under",
+    "producer_p": 0.016,
+    "duplicate_ratio": 1.014,
+    "producer_q_bh": 0.1254
    },
    {
     "t": "T1050",
@@ -7117,5 +7117,40 @@
     "producer_q_bh": 0.1238
    }
   ]
+ },
+ "corpus_known_vendor_only": {
+  "n_reports": 355,
+  "n_vendors": 11,
+  "n_tested": 135,
+  "spearman_producer_vs_duplicate": 0.085,
+  "spearman_ci": [
+   -0.087,
+   0.233
+  ],
+  "n_producer_bh_sig": 0
+ },
+ "corpus_sources": {
+  "all": {
+   "vendor_2025_2026": 1616,
+   "apt_collection": 1557,
+   "cisa_laptop": 186,
+   "tie_cisa": 155,
+   "annoctr": 120,
+   "attack_flow": 51,
+   "tie_dfir": 48,
+   "dfir_all": 31,
+   "dfir_recent": 11
+  },
+  "labelled": {
+   "vendor_2025_2026": 154,
+   "apt_collection": 151,
+   "tie_cisa": 70,
+   "cisa_laptop": 54,
+   "tie_dfir": 42,
+   "annoctr": 26,
+   "dfir_all": 16,
+   "attack_flow": 13,
+   "dfir_recent": 6
+  }
  }
 }

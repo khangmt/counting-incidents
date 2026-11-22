@@ -94,7 +94,7 @@ if __name__ == '__main__':
     out['corpus_known_vendor_only'] = {k: kd[k] for k in ('n_reports', 'n_vendors', 'n_tested', 'spearman_producer_vs_duplicate', 'spearman_ci', 'n_producer_bh_sig')}
     out['corpus_sources'] = {'all': dict(C.Counter(r['source'] for r in cr).most_common()), 'labelled': dict(C.Counter(r['source'] for r in sub).most_common())}
     json.dump(out, open(RES + 'producer_vs_duplicate.json', 'w'), indent=1)
-    for k, v in out.items():
+    for k, v in [(k, v) for k, v in out.items() if k in ('attack', 'corpus')]:
         print(k, 'reports', v['n_reports'], 'vendors', v['n_vendors'], 'top', v['top_vendors'][:5])
         print('  producer over:', [(x['t'], x['name'][:22], x['producer_ratio'], x['duplicate_ratio']) for x in v['techniques'] if x['producer_shift'] == 'over'][:12])
         print('  producer under:', [(x['t'], x['name'][:22], x['producer_ratio'], x['duplicate_ratio']) for x in v['techniques'] if x['producer_shift'] == 'under'][:12])
