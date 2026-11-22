@@ -17,8 +17,9 @@ lab = lambda t: f"{SHORT.get(t, names.get(t, t))} ({t})"
 
 # Figure 1: share ratio with 95% CI for techniques whose CI lies above 1; filled marker = BH q <= 0.05, two panels
 att = [x for x in json.load(open(RES + 'attack_share_shift.json')) if x['shift'] == 'over'][:9]
-txt = [x for x in json.load(open(RES + 'corpus_share_shift.json')) if x['shift'] == 'over']
-fig, axes = plt.subplots(2, 1, figsize=(4.6, 3.9), gridspec_kw={'height_ratios': [9, 5]})
+_tn = json.load(open(RES + 'reviewer_checks.json'))['texts_permutation_null']
+txt = [x for x in json.load(open(RES + 'corpus_share_shift.json')) if x['shift'] == 'over' and _tn[x['t']]['q_null_bh'] <= 0.05]   # same filter as panel (a)
+fig, axes = plt.subplots(2, 1, figsize=(4.6, 3.6), gridspec_kw={'height_ratios': [len(att), len(txt)]})
 for ax, data, title, base in [(axes[0], att, '(a) ATT&CK citations: 1,936 reports, 1,428 incidents', None),
                                (axes[1], txt, '(b) Report texts: 532 reports, 470 incidents', None)]:
     data = data[::-1]; y = range(len(data))

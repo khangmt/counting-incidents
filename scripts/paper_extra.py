@@ -89,6 +89,10 @@ if __name__ == '__main__':
     ccl = json.load(open(RES + 'corpus_clusters_main.json'))
     sub = [r for r in cr if len(r['techniques']) >= 3]
     out['corpus'] = decompose(sub, [ccl[r['id']] for r in sub], min_n=15)
+    known = [r for r in sub if vendor(r) and not vendor(r).startswith('unknown:')]     # sensitivity: drop texts without a URL
+    kd = decompose(known, [ccl[r['id']] for r in known], min_n=15)
+    out['corpus_known_vendor_only'] = {k: kd[k] for k in ('n_reports', 'n_vendors', 'n_tested', 'spearman_producer_vs_duplicate', 'spearman_ci', 'n_producer_bh_sig')}
+    out['corpus_sources'] = {'all': dict(C.Counter(r['source'] for r in cr).most_common()), 'labelled': dict(C.Counter(r['source'] for r in sub).most_common())}
     json.dump(out, open(RES + 'producer_vs_duplicate.json', 'w'), indent=1)
     for k, v in out.items():
         print(k, 'reports', v['n_reports'], 'vendors', v['n_vendors'], 'top', v['top_vendors'][:5])
