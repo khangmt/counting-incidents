@@ -56,8 +56,8 @@
   "n_tested": 215,
   "spearman_producer_vs_duplicate": -0.033,
   "spearman_ci": [
-   -0.179,
-   0.113
+   -0.172,
+   0.115
   ],
   "n_producer_ci_excludes_1": 27,
   "n_producer_bh_sig": 0,
@@ -3777,8 +3777,8 @@
   "n_tested": 196,
   "spearman_producer_vs_duplicate": 0.005,
   "spearman_ci": [
-   -0.134,
-   0.158
+   -0.143,
+   0.142
   ],
   "n_producer_ci_excludes_1": 50,
   "n_producer_bh_sig": 0,
@@ -7124,8 +7124,8 @@
   "n_tested": 135,
   "spearman_producer_vs_duplicate": 0.085,
   "spearman_ci": [
-   -0.087,
-   0.233
+   -0.094,
+   0.246
   ],
   "n_producer_bh_sig": 0
  },

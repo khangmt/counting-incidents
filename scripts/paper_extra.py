@@ -59,7 +59,7 @@ def decompose(rows, lab, B=1000, min_n=20, seed=0):
     bh(out, 'producer_p', 'producer_q_bh')
     from scipy.stats import spearmanr
     rho_s = spearmanr([x['producer_ratio'] for x in out], [x['duplicate_ratio'] for x in out])[0]
-    import random as _r; _g = _r.Random(seed); bs = []
+    import random as _r; _g = _r.Random(seed); bs = []; out.sort(key=lambda x: x['t'])   # fixed order: set iteration order varies between runs
     for _ in range(B):   # percentile interval, resampling techniques
         smp = [out[_g.randrange(len(out))] for _ in out]
         bs.append(spearmanr([x['producer_ratio'] for x in smp], [x['duplicate_ratio'] for x in smp])[0])

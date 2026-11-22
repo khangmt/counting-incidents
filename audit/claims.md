@@ -90,6 +90,18 @@ Each number is recomputed from the results file and must appear verbatim in pape
 | Nominal ATT&CK q range | $q$ = 0.08--0.12 | results/attack_share_shift.json | verified |
 | TIE units removed by URL merging | 429 | results/tie_sensitivity.json | verified |
 | TIE units removed by incident linking | 154 | results/tie_sensitivity.json | verified |
-| Spearman CI, ATT&CK | CI $-0.18$ to $0.11$ | results/producer_vs_duplicate.json | verified |
+| Spearman CI, ATT&CK | CI $-0.17$ to $0.12$ | results/producer_vs_duplicate.json | MISMATCH: not found in main.tex |
 | Spearman CI, texts | CI $-0.14$ to $0.14$ | results/producer_vs_duplicate.json | verified |
+| Texts passing both corrected tests | Domain Trust Discovery and Spearphishing Link | results/reviewer_checks.json | verified |
+| PowerShell null q (texts) | $q = 0.14$ | results/reviewer_checks.json | verified |
+| Texts: URL-less producer units | 177 | results/producer_vs_duplicate.json | verified |
+| Texts with a known vendor | 355 | results/producer_vs_duplicate.json | verified |
+| Known vendors in texts | 11 | results/producer_vs_duplicate.json | verified |
+| Spearman, texts without URL-less | 0.085 (CI $-0.09$ to $0.25$) | results/producer_vs_duplicate.json | MISMATCH: not found in main.tex |
+| Texts from vendor-blog crawl | 1,616 | results/producer_vs_duplicate.json | verified |
+| Texts from APT collection | 1,557 | results/producer_vs_duplicate.json | verified |
+| CISA pages | 341 | results/producer_vs_duplicate.json | verified |
+| DFIR Report posts | 90 | results/producer_vs_duplicate.json | verified |
+| AnnoCTR texts | 120 | results/producer_vs_duplicate.json | verified |
+| Attack Flow texts | 51 | results/producer_vs_duplicate.json | verified |
 | TIE techniques passing BH | seven | results/tie_share_shift.json | verified |

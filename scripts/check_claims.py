@@ -89,7 +89,7 @@ import glob, re as _re
 def LOG(script, pattern, group=1):
     f = sorted(glob.glob(RES + f'runs/{script}-*.log'))[-1]
     return _re.search(pattern, open(f).read()).group(group)
-PR = {k: {x['t']: x for x in P[k]['techniques']} for k in P}
+PR = {k: {x['t']: x for x in P[k]['techniques']} for k in ('attack', 'corpus')}
 TS = J('tie_sensitivity.json')['levels']
 cl = J('attack_clusters_main.json'); import collections as _C
 sz = _C.Counter(cl.values()); multi = [k for k, v in sz.items() if v > 1]
@@ -125,6 +125,18 @@ CLAIMS += [
  ('TIE units removed by incident linking', str([x for x in TS if x['setting'] == 'same_report'][0]['units'] - TM['n_units_incident']), 'tie_sensitivity.json'),
  ('Spearman CI, ATT&CK', f"CI ${P['attack']['spearman_ci'][0]:.2f}$ to ${P['attack']['spearman_ci'][1]:.2f}$".replace('$-', '$-').replace('CI $', 'CI $'), 'producer_vs_duplicate.json'),
  ('Spearman CI, texts', f"CI ${P['corpus']['spearman_ci'][0]:.2f}$ to ${P['corpus']['spearman_ci'][1]:.2f}$", 'producer_vs_duplicate.json'),
+ ('Texts passing both corrected tests', 'Domain Trust Discovery and Spearphishing Link' if RC['texts_permutation_meta']['over_bootstrap_bh_and_null_bh'] == ['T1482', 'T1566.002'] else 'CHANGED', 'reviewer_checks.json'),
+ ('PowerShell null q (texts)', f"$q = {RC['texts_permutation_null']['T1059.001']['q_null_bh']:.2f}$", 'reviewer_checks.json'),
+ ('Texts: URL-less producer units', str(P['corpus']['n_unknown_producer']), 'producer_vs_duplicate.json'),
+ ('Texts with a known vendor', str(P['corpus_known_vendor_only']['n_reports']), 'producer_vs_duplicate.json'),
+ ('Known vendors in texts', str(P['corpus_known_vendor_only']['n_vendors']), 'producer_vs_duplicate.json'),
+ ('Spearman, texts without URL-less', f"{P['corpus_known_vendor_only']['spearman_producer_vs_duplicate']:.3f} (CI ${P['corpus_known_vendor_only']['spearman_ci'][0]:.2f}$ to ${P['corpus_known_vendor_only']['spearman_ci'][1]:.2f}$)", 'producer_vs_duplicate.json'),
+ ('Texts from vendor-blog crawl', n(P['corpus_sources']['all']['vendor_2025_2026']), 'producer_vs_duplicate.json'),
+ ('Texts from APT collection', n(P['corpus_sources']['all']['apt_collection']), 'producer_vs_duplicate.json'),
+ ('CISA pages', str(P['corpus_sources']['all']['cisa_laptop'] + P['corpus_sources']['all']['tie_cisa']), 'producer_vs_duplicate.json'),
+ ('DFIR Report posts', str(sum(P['corpus_sources']['all'][k] for k in ('tie_dfir', 'dfir_all', 'dfir_recent'))), 'producer_vs_duplicate.json'),
+ ('AnnoCTR texts', str(P['corpus_sources']['all']['annoctr']), 'producer_vs_duplicate.json'),
+ ('Attack Flow texts', str(P['corpus_sources']['all']['attack_flow']), 'producer_vs_duplicate.json'),
  ('TIE techniques passing BH', {7: 'seven'}.get(sum(1 for x in J('tie_share_shift.json') if x['shift_bh'] == 'over'), '?'), 'tie_share_shift.json'),
 ]
 
