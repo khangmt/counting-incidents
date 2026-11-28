@@ -4,6 +4,13 @@ Each number is recomputed from the results file and must appear verbatim in pape
 
 | Claim | Number in paper | Source | Status |
 |---|---|---|---|
+| Hold-out: early folders | 742 | results/enrich_checks.json | verified |
+| Hold-out: later folders | 591 | results/enrich_checks.json | verified |
+| Hold-out: S chosen on early folders | $S = 45$ | results/enrich_checks.json | verified |
+| Hold-out: later P at S=45 | 0.22 | results/enrich_checks.json | verified |
+| Hold-out: later P at S=60 | 0.17 | results/enrich_checks.json | verified |
+| Hold-out: later R | 0.63 | results/enrich_checks.json | verified |
+| Hold-out: ATT&CK campaigns before split | four | results/enrich_checks.json | verified |
 | ATT&CK cited reports | 1,936 | results/attack_reports.jsonl | verified |
 | ATT&CK dated reports | 1,839 | results/attack_reports.jsonl | verified |
 | ATT&CK incidents | 1,428 | results/attack_main_tech.json | verified |

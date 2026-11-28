@@ -18,6 +18,7 @@ INPUTS = {  # declared inputs per script (outputs of earlier steps are listed to
     'run_tie.py': [DATA + 'tie/combined_dataset_full_frequency.json', RB + 'data/otx/pulses.jsonl'],
     'paper_extra.py': [RB + 'results/attack_reports.jsonl', RB + 'results/attack_clusters_main.json', RB + 'results/corpus_reports.jsonl', RB + 'results/corpus_clusters_main.json'],
     'reviewer_checks.py': [RB + 'results/attack_reports.jsonl', RB + 'results/corpus_reports.jsonl'],
+    'enrich_checks.py': [RB + 'results/attack_reports.jsonl', RB + 'results/corpus_reports.jsonl', RB + 'results/corpus_share_shift.json'],
     'make_figures.py': [RB + 'results/attack_share_shift.json', RB + 'results/corpus_share_shift.json', RB + 'results/attack_clusters_main.json'],
 }
 script, args = sys.argv[1], sys.argv[2:]

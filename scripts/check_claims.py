@@ -13,6 +13,7 @@ n = lambda x: f"{x:,}"
 f2 = lambda x: f"{x:.2f}"; f3 = lambda x: f"{x:.3f}"
 pct = lambda r: f"{round((r - 1) * 100)}\\%"
 A, T, P = by_t('attack_share_shift.json'), by_t('corpus_share_shift.json'), J('producer_vs_duplicate.json')
+EC = J('enrich_checks.json')
 RC, AM, CM, TM = J('reviewer_checks.json'), J('attack_main_tech.json'), J('corpus_main_tech.json'), J('tie_main_tech.json')
 AS = J('attack_sensitivity.json'); CS = {x['setting']: x for x in J('corpus_sensitivity.json')}
 AT, CT = tech_csv('attack_main_tech.csv'), tech_csv('corpus_main_tech.csv')
@@ -22,6 +23,13 @@ def sens(tau, span='main'):
     for x in AS:
         if x['link'] == 'int+cam+mal' and x['tau'] == tau and x.get('span', 'main') == span: return x
 CLAIMS = [  # (claim, value as it must appear in the paper, source file)
+ ('Hold-out: early folders', n(EC['texts_holdout']['by_span']['60']['early']['n_groups']), 'enrich_checks.json'),
+ ('Hold-out: later folders', n(EC['texts_holdout']['by_span']['60']['late']['n_groups']), 'enrich_checks.json'),
+ ('Hold-out: S chosen on early folders', '$S = ' + EC['texts_holdout']['chosen_on_early'] + '$', 'enrich_checks.json'),
+ ('Hold-out: later P at S=45', f2(EC['texts_holdout']['by_span']['45']['late']['P']), 'enrich_checks.json'),
+ ('Hold-out: later P at S=60', f2(EC['texts_holdout']['by_span']['60']['late']['P']), 'enrich_checks.json'),
+ ('Hold-out: later R', f2(EC['texts_holdout']['by_span']['60']['late']['R']), 'enrich_checks.json'),
+ ('Hold-out: ATT&CK campaigns before split', ['zero','one','two','three','four','five'][EC['attack_holdout']['by_span']['60']['early']['n_groups']], 'enrich_checks.json'),
  ('ATT&CK cited reports', n(len(att)), 'attack_reports.jsonl'),
  ('ATT&CK dated reports', n(sum(1 for r in att if r['date'])), 'attack_reports.jsonl'),
  ('ATT&CK incidents', n(AM['n_units_incident']), 'attack_main_tech.json'),

@@ -1,0 +1,32 @@
+{
+ "script": "enrich_checks.py",
+ "args": [],
+ "status": "ok",
+ "exit_code": 0,
+ "start_utc": "2026-11-28T04:22:22+00:00",
+ "seconds": 25.2,
+ "machine": "vm",
+ "platform": "Linux-6.18.44-fc-v880-x86_64-with-glibc2.39",
+ "python": "3.13.18",
+ "git_commit": "8eb520cfac6b3188da082ce541552e73b0722671",
+ "git_dirty": true,
+ "script_sha256": "38ec7bd4bbd4c797c4e17d903836fe239155b950328ac7aeafd12434eea791c6",
+ "command": "python3 enrich_checks.py",
+ "env": {
+  "RB_ROOT": null,
+  "RB_DATA": "/mnt/project-files/causality-benchmark/data/",
+  "RB_TEXTS": "/home/user/rb_texts",
+  "WITH_CISA": null
+ },
+ "seeds": "bootstrap seed 0 (share_bootstrap.py, paper_extra.py); permutation seed 1 (reviewer_checks.py)",
+ "llm_used": null,
+ "inputs": {
+  "$RB/results/attack_reports.jsonl": "9fc8c15d7641988a71cfa7d40ec886910fbd4d3eea5d37a766c6242df45f1247",
+  "$RB/results/corpus_reports.jsonl": "3cd0a05417d93a52eac3e0d6156d458b6837b34bd071113e683dcc6c6e1dbbef",
+  "$RB/results/corpus_share_shift.json": "c1bf55cbff131e7c770de5ae1bb752ec3e9cb2895216f0b5f1e1d2c65895203c"
+ },
+ "outputs": {
+  "$RB/results/enrich_checks.json": "e2f3921d0f2e87c7a4c3c2c001939543c18de408551d8393c0b0f688d90dd6ae"
+ },
+ "log": "$RB/results/runs/enrich_checks-2026-11-28T042222+0000.log"
+}
